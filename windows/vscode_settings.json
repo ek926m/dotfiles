@@ -1,0 +1,15 @@
+// VISUAL STUDIO CODE SETTINGS - %APPDATA%\Code\User\settings.json
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "vscode-icontheme-nomo-dark-macos",
+    "editor.wordWrap": "on",
+    "workbench.panel.defaultLocation": "right",
+    "terminal.integrated.fontSize": 16,
+    "remote.SSH.remotePlatform": {
+        "192.168.1.240": "linux"
+    },
+    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
+}
