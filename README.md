@@ -90,8 +90,8 @@ some configs and scripts I need to setup my dev environment
 
 ### git
 ###### config
-    $ git config --global user.email "your@mail.com"
-    $ git config --global user.name "Your Name"
+    $ git config --global user.email "ek926m@gmail.com"
+    $ git config --global user.name "Eugen Kaiser"
 ###### generate key
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
@@ -127,9 +127,11 @@ some configs and scripts I need to setup my dev environment
 
 ### software
 ###### gui
-    $ sudo apt install -y gpick gnome-tweak-tool chrome-gnome-shell gimp vlc obs-studio usb-creator-gtk virtualbox libreoffice remmina transmission
+    $ sudo apt install -y gpick gimp vlc obs-studio libreoffice remmina transmission papirus-icon-theme
+###### theme
+    adapta-nokto via cinnamon theme finder
 ###### remove crap
-    $ sudo apt-get purge -y snapd aisleriot gnome-sudoku gnome-mines gnome-mahjongg cheese thunderbird seahorse gnome-todo totem totem-plugins shotwell deja-dup gnome-todo-common gnome-getting-started-docs gnome-logs gnome-power-manager yelp rhythmbox mpv
+    $ sudo apt-get purge -y snapd aisleriot gnome-sudoku gnome-mines gnome-mahjongg cheese thunderbird seahorse gnome-todo totem totem-plugins shotwell deja-dup gnome-todo-common gnome-getting-started-docs gnome-logs gnome-power-manager yelp rhythmbox mpv && sudo apt-get purge -y aisleriot gnome-sudoku gnome-mines gnome-mahjongg cheese thunderbird seahorse gnome-todo totem totem-plugins shotwell deja-dup gnome-todo-common gnome-getting-started-docs gnome-logs gnome-power-manager yelp rhythmbox mpv five-or-more four-in-a-row gnome-chess gnome-klotski gnome-nibbles gnome-robots gnome-taquin gnome-tetravex hitori hoichess iagno lightsoff quadrapassel swell-foop tali brasero pidgin sound-juicer mlterm xiterm+thai xterm goldendict fcitx kasumi hdate-applet uim mozc-data mozc-server mozc-utils-gui uim-mozc uim-data mlterm-common fcitx-* && sudo apt autoremove -y
 ###### remove old packages
     $ sudo apt autoremove -y
 
@@ -164,6 +166,15 @@ some configs and scripts I need to setup my dev environment
 
 ### power management for notebooks
     $ sudo apt install tlp -y
+    $ sudo systemctl enable tlp
+
+
+
+### ONLY IF REALLY NEEDED [BACKPORTS] 
+    $ echo "deb http://deb.debian.org/debian buster-backports main" | sudo tee /etc/apt/sources.list.d/buster-backports.list
+##### NEW KERNEL
+    $ sudo apt-get update && apt search -t buster-backports linux-image && sudo apt install -t buster-backports -y linux-image-amd64
+
 
 
 ### key bindings
