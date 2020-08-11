@@ -22,9 +22,10 @@ some configs and scripts I need to setup my dev environment
     
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
-    neofetch --disable gpu --ascii_distro debian
+    #neofetch --disable gpu --ascii_distro debian
     #fortune | cowsay -f tux
-
+    export PATH=~/.composer/vendor/bin:$PATH
+    
 
 ### configuration
 ###### change root password
