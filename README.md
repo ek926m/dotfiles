@@ -49,7 +49,7 @@ some configs and scripts I need to setup my dev environment
 ###### update
     $ sudo apt update && sudo apt upgrade -y
 ###### base & dev
-    $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl exfat-fuse exfat-utils
+    $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl exfat-fuse exfat-utils
 ###### remove old packages
     $ sudo apt autoremove -y
 
