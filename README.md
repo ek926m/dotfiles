@@ -68,6 +68,8 @@ some configs and scripts I need to setup my dev environment
     $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ###### global
     $ composer global require laravel/installer && rm composer-setup.php
+###### edit your ~/.bashrc (on mac: ~/.bash_profile)
+    export PATH=~/.composer/vendor/bin:$PATH
 
 
 ### docker
