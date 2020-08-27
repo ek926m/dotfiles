@@ -14,7 +14,6 @@ some configs and scripts I need to setup my dev environment
     alias nano='nano -$'
 
     alias servertux='ssh root@134.122.75.61'
-    alias home='cd ~/projects'
 
     git_branch() {
       git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -25,7 +24,9 @@ some configs and scripts I need to setup my dev environment
     #neofetch --disable gpu --ascii_distro debian
     #fortune | cowsay -f tux
     export PATH=~/.composer/vendor/bin:$PATH
-    
+    # if wsl:
+    # export PATH=/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/bin:$PATH
+
 
 ### configuration
 ###### change root password
