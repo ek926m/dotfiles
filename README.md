@@ -142,6 +142,7 @@ some configs and scripts I need to setup my dev environment
     # vscode-icons
     # vetur
     # remote ssh
+    # if wsl: remote wsl
 
 ### spotify
     $ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
