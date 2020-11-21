@@ -48,7 +48,10 @@ some configs and scripts I need to setup my dev environment
     neofetch --disable gpu --ascii_distro debian
 
     export PATH=~/.composer/vendor/bin:$PATH
-
+    
+    # if wsl:
+    # export PATH=/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/bin:$PATH
+    
     EOT
 
 ### system packages
