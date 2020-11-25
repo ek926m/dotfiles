@@ -26,7 +26,7 @@
 
     export PATH=~/.composer/vendor/bin:$PATH
     
-    # if wsl:
+    # if wsl: explorer.exe \\wsl$
     # export PATH=/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/bin:$PATH
     
     EOT
