@@ -4,24 +4,6 @@ some configs and scripts I need to setup my dev environment
 ## debian based setup
 
 ### configuration
-###### change root password
-    $ passwd
-###### create user
-    $ useradd -m user
-    $ passwd user
-###### add user to groups
-    $ usermod -aG sudo,audio,video user
-###### change shell to bash
-    $ sudo chsh -s /bin/bash user
-
-### ssh
-###### authorized_keys
-    $ cd && mkdir .ssh && touch .ssh/authorized_keys
-    ### ADD YOUR MAIN MACHINE SSH KEY INTO THAT FILE
-
-### firewall
-###### cli
-    $ sudo apt install -y ufw
 
 ### ~/.bashrc
 ###### append following lines
@@ -114,8 +96,8 @@ some configs and scripts I need to setup my dev environment
 ## desktop environment packages
 
 ### firewall
-###### gui
-    $ sudo apt install -y gufw
+###### cli and gui
+    $ sudo apt install -y ufw gufw
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -169,4 +151,16 @@ some configs and scripts I need to setup my dev environment
     $ curl 'http://localhost/test'
     $ curl -A "test user agent" 'http://localhost/api/helloworld?name=ek&lang=de'
     $ curl -A "test user agent" -d '{"data1": "0","data2": "0"}' -H "Content-Type: application/json" -X POST http://localhost/api/test
+###### change root password
+    $ passwd
+###### create user
+    $ useradd -m user
+    $ passwd user
+###### add user to groups
+    $ usermod -aG sudo,audio,video user
+###### change shell to bash
+    $ sudo chsh -s /bin/bash user
+###### ssh authorized_keys
+    $ cd && mkdir .ssh && touch .ssh/authorized_keys
+    ### ADD YOUR MAIN MACHINE SSH KEY INTO THAT FILE
 
