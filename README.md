@@ -3,7 +3,6 @@ some configs and scripts I need to setup my dev environment
 
 ## debian based setup
 
-
 ### configuration
 ###### change root password
     $ passwd
@@ -23,7 +22,6 @@ some configs and scripts I need to setup my dev environment
 ### firewall
 ###### cli
     $ sudo apt install -y ufw
-
 
 ### ~/.bashrc
 ###### append following lines
@@ -115,10 +113,6 @@ some configs and scripts I need to setup my dev environment
 
 ## desktop environment packages
 
-### xfce stuff
-    $ sudo apt install -y exfat-fuse exfat-utils redshift adapta-gtk-theme preload filezilla obs-studio
-    $ sudo apt remove -y sgt-launcher sgt-puzzles gnome-sudoku gnome-mines
-
 ### firewall
 ###### gui
     $ sudo apt install -y gufw
@@ -156,15 +150,12 @@ some configs and scripts I need to setup my dev environment
     ###   SUPER+F             Home folder
     ###   SUPER+W             Launch web browser
     ###   SUPER+T             gnome-terminal
-    ###   *SUPER+RETURN       Maximize Window
-    ###   *CTRL+ALT+SHIFT+1   Move Window to workspace 1
-    ###   *CTRL+ALT+SHIFT+2   Move Window to workspace 2
-    ###   *CTRL+ALT+SHIFT+3   Move Window to workspace 3
-    ###   *CTRL+ALT+SHIFT+4   Move Window to workspace 4
-    ###   *F11                Toggle fullscreen mode
-    ###   *ALT+M		          Move Window
-    ###   *ALT+R		          Resize Window
-    ###   *SUPER+SPACE	      xfce4-popup-whiskermenu
+    ###   SUPER+RETURN        Maximize Window
+    ###   CTRL+ALT+1          Move Window to workspace 1
+    ###   CTRL+ALT+2          Move Window to workspace 2
+    ###   CTRL+ALT+3          Move Window to workspace 3
+    ###   CTRL+ALT+4          Move Window to workspace 4
+    ###   F11                 Toggle fullscreen mode
     ###   CTRL+ALT+S          systemctl suspend
     ###   SUPER+L             Lock screen
 
@@ -178,12 +169,4 @@ some configs and scripts I need to setup my dev environment
     $ curl 'http://localhost/test'
     $ curl -A "test user agent" 'http://localhost/api/helloworld?name=ek&lang=de'
     $ curl -A "test user agent" -d '{"data1": "0","data2": "0"}' -H "Content-Type: application/json" -X POST http://localhost/api/test
-###### redshift
-    $ redshift -t 5000:4000
-###### set dpi in xfce
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 192
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 96
-###### tiling windowmanager like feeling
-    # Window Manager Tweaks -> Placement -> Large
-    $ sudo mkdir -p /usr/share/themes/empty/xfwm4 && sudo touch /usr/share/themes/empty/xfwm4/themerc
-    # Window Manager -> Style -> Theme -> empty
+
