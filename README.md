@@ -1,6 +1,3 @@
-# dotfiles and scripts
-some configs and scripts I need to setup my dev environment
-
 ## debian based setup
 
 ### configuration
