@@ -88,6 +88,8 @@ some configs and scripts I need to setup my dev environment
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
+    ### fix RH Kernel Issue:
+    $ sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
     ### REBOOT
 ###### redis
     $ docker pull redis
