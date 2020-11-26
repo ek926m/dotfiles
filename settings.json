@@ -53,7 +53,6 @@
         "colorScheme": "One Half Light",
         "fontFace": "Droid Sans Mono",
         "fontSize": 12,
-        "padding": "10, 10, 10, 10",
         "startingDirectory": "//wsl$/Debian/home/user/projects"
       },
       {
