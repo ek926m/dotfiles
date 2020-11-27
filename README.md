@@ -157,6 +157,8 @@
     $ usermod -aG sudo,audio,video user
 ###### change shell to bash
     $ sudo chsh -s /bin/bash user
+###### switch user
+    $ su user
 ###### ssh authorized_keys
     $ cd && mkdir .ssh && touch .ssh/authorized_keys
     ### ADD YOUR MAIN MACHINE SSH KEY INTO THAT FILE
