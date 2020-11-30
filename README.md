@@ -109,17 +109,18 @@
     $ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
     $ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
     $ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-    $ sudo apt install apt-transport-https
-    $ sudo apt update
+    $ sudo apt install apt-transport-https $$ sudo apt update -y
     $ sudo apt install code
-    $ sudo nano /etc/sysctl.conf
-    # fs.inotify.max_user_watches = 524288
-    $ sudo sysctl -p --system
+##### extensions 
     # Laravel Extension Pack
+    # miguelsolorio.min-theme
     # vscode-icons
     # vetur
     # remote ssh
-    # if wsl: remote wsl
+##### fix system limits
+    $ sudo nano /etc/sysctl.conf
+    # fs.inotify.max_user_watches = 524288
+    $ sudo sysctl -p --system
 
 ### spotify
     $ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
@@ -134,13 +135,11 @@
 ### key bindings
     ###   SUPER+F             Home folder
     ###   SUPER+W             Launch web browser
-    ###   SUPER+T             gnome-terminal
-    ###   SUPER+RETURN        Maximize Window
+    ###   SUPER+T             Launch terminal
     ###   CTRL+ALT+1          Move Window to workspace 1
     ###   CTRL+ALT+2          Move Window to workspace 2
     ###   CTRL+ALT+3          Move Window to workspace 3
     ###   CTRL+ALT+4          Move Window to workspace 4
-    ###   F11                 Toggle fullscreen mode
     ###   CTRL+ALT+S          systemctl suspend
     ###   SUPER+L             Lock screen
 
