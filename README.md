@@ -1,5 +1,5 @@
-## debian based setup
-
+# debian based setup
+## Ubuntu (select minimal install)
 ### configuration
 
 ### ~/.bashrc
@@ -83,7 +83,7 @@
     $ docker pull phpmyadmin/phpmyadmin
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
 
-### mysql (native)
+### optional (if no docker): mysql (native)
     $ sudo apt install -y mariadb-server
     $ sudo mysql_secure_installation
     $ sudo mysql -u root -p
@@ -95,6 +95,10 @@
 ### firewall
 ###### cli and gui
     $ sudo apt install -y ufw gufw
+
+### gnome
+    $ sudo apt install -y gnome-tweak-tool
+    # set font scaling to 1.25
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -123,7 +127,9 @@
     $ sudo apt-get update && sudo apt-get install spotify-client
 
 ### discord
-    $ cd && cd Downloads && wget 'https://discordapp.com/api/download?platform=linux&format=deb' -O discord.deb && sudo dpkg -i discord.deb && sudo apt install -y -f
+    $ cd && cd Downloads && wget 'https://discordapp.com/api/download?platform=linux&format=deb' -O discord.deb && sudo dpkg -i discord.deb
+###### if it fails
+    $ sudo apt install -f
 
 ### key bindings
     ###   SUPER+F             Home folder
