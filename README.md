@@ -54,6 +54,8 @@
     $ composer global require laravel/installer && rm composer-setup.php
 
 ### ruby on rails
+###### terminal settings
+    RUN COMMAND AS A LOGIN SHELL
 ###### dependencies
     $ sudo apt install -y gnupg2
 ###### import keys
