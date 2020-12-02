@@ -61,9 +61,6 @@
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
     ### REBOOT
-###### redis
-    $ docker pull redis
-    $ docker run --name some-redis --restart=always -p 6379:6379 redis
 ###### mariadb
     $ docker pull mariadb
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
