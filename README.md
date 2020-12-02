@@ -90,30 +90,18 @@
     $ docker pull phpmyadmin/phpmyadmin
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
 
-### optional (if no docker): mysql (native)
-    $ sudo apt install -y mariadb-server
-    $ sudo mysql_secure_installation
-    $ sudo mysql -u root -p
-    $ CREATE DATABASE laravel;
-    $ CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'laravel'; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; update mysql.user set plugin='' where user='laravel'; FLUSH PRIVILEGES;
-
 ## desktop environment packages
-
-### firewall
-###### cli and gui
-    $ sudo apt install -y ufw gufw
 
 ### apps
     $ sudo apt remove -y mpv
-    # set font scaling to 1.25
-    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp
+    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp ufw gufw
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
 ###### if it fails
     $ sudo apt install -f
 
-### if you want to use snaps
+### snaps
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager insomnia discord beekeeper-studio
     $ sudo snap install code --classic
@@ -133,6 +121,13 @@
     ###   SUPER+L             Lock screen
 
 ### helpful scripts
+
+### optional (if no docker): mysql (native)
+    $ sudo apt install -y mariadb-server
+    $ sudo mysql_secure_installation
+    $ sudo mysql -u root -p
+    $ CREATE DATABASE laravel;
+    $ CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'laravel'; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; update mysql.user set plugin='' where user='laravel'; FLUSH PRIVILEGES;
 
 ###### copy host folder x over ssh with user@ip to home folder of remote
     $ rsync -v -r foldername user@12.34.56.78:.
