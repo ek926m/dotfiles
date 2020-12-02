@@ -109,7 +109,9 @@
     $ sudo snap install pycharm-community --classic
     $ sudo snap install android-studio --classic
 
-### key bindings
+### helpful
+
+###### key bindings
     ###   SUPER+F             Home folder
     ###   SUPER+W             Launch web browser
     ###   SUPER+T             Launch terminal
@@ -120,9 +122,8 @@
     ###   CTRL+ALT+S          systemctl suspend
     ###   SUPER+L             Lock screen
 
-### helpful scripts
 
-### optional (if no docker): mysql (native)
+###### optional (if no docker): mysql (native)
     $ sudo apt install -y mariadb-server
     $ sudo mysql_secure_installation
     $ sudo mysql -u root -p
