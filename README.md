@@ -118,7 +118,7 @@
 ### if you want to use snaps
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager insomnia discord
-    $ sudo snap install code intellij-idea-community pycharm-community --classic
+    $ sudo snap install code intellij-idea-community pycharm-community android-studio --classic
 
 ### key bindings
     ###   SUPER+F             Home folder
