@@ -22,12 +22,9 @@
 
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
-    neofetch --disable gpu --ascii_distro debian
+    neofetch
 
     export PATH=~/.composer/vendor/bin:$PATH
-    
-    # if wsl: explorer.exe \\wsl$
-    # export PATH=/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/bin:$PATH
     
     EOT
 
@@ -107,8 +104,9 @@
     $ sudo apt install -y ufw gufw
 
 ### apps
+    $ sudo apt remove -y mpv
     # set font scaling to 1.25
-    $ sudo apt install -y gnome-tweak-tool obs-studio gimp
+    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
