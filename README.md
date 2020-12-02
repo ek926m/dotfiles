@@ -28,53 +28,36 @@
     EOT
 
 ### system packages
-###### update
     $ sudo apt update -y && sudo apt upgrade -y
-###### base & dev
     $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl ufw
-###### remove old packages
     $ sudo apt autoremove -y
 
 ### nodejs
-###### install
     $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     $ sudo apt-get install -y nodejs
-###### global
     $ sudo npm install -g eslint nodemon pm2 @vue/cli
 
 ### laravel
-###### composer
     $ cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php
     $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-###### global
     $ composer global require laravel/installer && rm composer-setup.php
 
 ### ruby on rails
-###### terminal settings
-    RUN COMMAND AS A LOGIN SHELL
-###### dependencies
+    # RUN COMMAND AS A LOGIN SHELL
     $ sudo apt install -y gnupg2
-###### import keys
     $ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-###### ruby + rails
     $ \curl -sSL https://get.rvm.io | bash -s stable --rails
 
 ### git
-###### config
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
-###### generate key
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
-###### add to account
     ### https://github.com/settings/keys
-###### verify
     $ ssh -T git@github.com
 
 ### docker
-###### install
     $ sudo apt install -y docker.io docker-compose
-###### service & group
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
@@ -97,7 +80,6 @@
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
-###### if it fails
     $ sudo apt install -f
 
 ### snaps
