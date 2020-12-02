@@ -1,4 +1,3 @@
-# debian based setup
 ## Ubuntu (select minimal install)
 ### configuration
 
@@ -32,7 +31,7 @@
 ###### update
     $ sudo apt update -y && sudo apt upgrade -y
 ###### base & dev
-    $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl
+    $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl ufw
 ###### remove old packages
     $ sudo apt autoremove -y
 
@@ -94,7 +93,7 @@
 
 ### apps
     $ sudo apt remove -y mpv
-    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp ufw gufw
+    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp gufw
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
