@@ -86,7 +86,7 @@
     $ sudo snap install pycharm-community --classic
     $ sudo snap install android-studio --classic
 
-### helpful
+## helpful
 
 ###### key bindings
     ###   SUPER+F             Home folder
