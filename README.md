@@ -1,5 +1,4 @@
 ## Ubuntu (select minimal install)
-### configuration
 
 ### ~/.bashrc
 ###### append following lines
