@@ -1,9 +1,6 @@
 ## Ubuntu (select minimal install)
 
 ### ~/.bashrc
-###### append following lines
-    $ cat <<EOT >> ~/.bashrc
-
     alias ls='ls -l --color=auto'
     alias ll='ls -lah --color=auto'
     alias cp='cp -v'
@@ -11,21 +8,14 @@
     alias grep='grep --color=auto'
     alias rm='rm -v'
     alias nano='nano -$'
-
     alias servertux='ssh root@127.0.0.1'
-
     git_branch() {
       git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
-
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
-
     neofetch
-
     export PATH=~/.composer/vendor/bin:$PATH
-    
-    EOT
-
+  
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
     $ sudo apt install -y git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl ufw
