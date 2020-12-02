@@ -106,46 +106,19 @@
 ###### cli and gui
     $ sudo apt install -y ufw gufw
 
-### gnome
-    $ sudo apt install -y gnome-tweak-tool
+### apps
     # set font scaling to 1.25
+    $ sudo apt install -y gnome-tweak-tool obs-studio gimp
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
 ###### if it fails
     $ sudo apt install -f
 
-### vs code
-    $ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-    $ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-    $ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-    $ sudo apt install apt-transport-https $$ sudo apt update -y
-    $ sudo apt install code
-###### extensions 
-    # Laravel Extension Pack
-    # miguelsolorio.min-theme
-    # vscode-icons
-    # vetur
-    # remote ssh
-###### fix system limits
-    $ sudo nano /etc/sysctl.conf
-    # fs.inotify.max_user_watches = 524288
-    $ sudo sysctl -p --system
-
-### spotify
-    $ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
-    $ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-    $ sudo apt-get update && sudo apt-get install spotify-client
-
-### discord
-    $ cd && cd Downloads && wget 'https://discordapp.com/api/download?platform=linux&format=deb' -O discord.deb && sudo dpkg -i discord.deb
-###### if it fails
-    $ sudo apt install -f
-
 ### if you want to use snaps
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager insomnia discord
-    $ sudo snap install code --classic
+    $ sudo snap install code intellij-idea-community pycharm-community --classic
 
 ### key bindings
     ###   SUPER+F             Home folder
