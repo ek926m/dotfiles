@@ -142,6 +142,11 @@
 ###### if it fails
     $ sudo apt install -f
 
+### if you want to use snaps
+    $ sudo apt install -y snapd
+    $ sudo snap install spotify rpi-imager insomnia discord
+    $ sudo snap install code --classic
+
 ### key bindings
     ###   SUPER+F             Home folder
     ###   SUPER+W             Launch web browser
