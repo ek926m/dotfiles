@@ -51,11 +51,9 @@
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
     ### REBOOT
-###### mariadb
-    $ docker pull mariadb
+###### mariadb && phpmyadmin
+    $ docker pull mariadb phpmyadmin/phpmyadmin
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
-###### phpmyadmin
-    $ docker pull phpmyadmin/phpmyadmin
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
 
 ### apps
