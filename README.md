@@ -58,8 +58,6 @@
     $ docker pull phpmyadmin/phpmyadmin
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
 
-## desktop environment packages
-
 ### apps
     $ sudo apt remove -y mpv
     $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp gufw
