@@ -66,7 +66,7 @@
 
 ### snaps
     $ sudo apt install -y snapd
-    $ sudo snap install spotify rpi-imager insomnia discord beekeeper-studio
+    $ sudo snap install spotify rpi-imager insomnia discord
     $ sudo snap install code --classic
     $ sudo snap install intellij-idea-community --classic
     $ sudo snap install pycharm-community --classic
