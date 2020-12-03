@@ -78,6 +78,7 @@
     $ sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf gnome-shell-extensions numix-icon-theme-circle
     $ cd && mkdir .themes
     # https://www.gnome-look.org/p/1381832/
+    # https://www.opendesktop.org/p/1305429/
     # https://extensions.gnome.org/extension/19/user-themes/
     # download files and copy to .themes
 
