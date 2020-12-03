@@ -118,3 +118,5 @@
 ###### verify sha example
     $ echo "3ef833828009fb69d5c584f3701d6946f89fa304757b7947e792f9491caa270e *ubuntu-20.10-desktop-amd64.iso" | shasum -a 256 --check
     # you should get: ubuntu-20.10-desktop-amd64.iso: OK
+###### lines of code basic laravel project
+    $ cloc app database resources routes
