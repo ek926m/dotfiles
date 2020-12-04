@@ -58,7 +58,7 @@
 
 ### apps
     $ sudo apt remove -y mpv
-    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp gufw virtualbox virtualbox-qt virtualbox-dkms 
+    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp gufw filezilla virtualbox virtualbox-qt virtualbox-dkms 
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
