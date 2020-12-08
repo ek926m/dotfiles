@@ -120,3 +120,8 @@
     # you should get: ubuntu-20.10-desktop-amd64.iso: OK
 ###### lines of code basic laravel project
     $ cloc app database resources routes
+###### run gui over ssh on remote computer
+    $ DISPLAY=:0 lxterminal
+###### run gui oder ssh local
+    $ ssh pi@192.168.7.109 -Y 'lxterminal'
+
