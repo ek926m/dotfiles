@@ -24,7 +24,7 @@
 ### nodejs
     $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     $ sudo apt-get install -y nodejs
-    $ sudo npm install -g eslint nodemon pm2 @vue/cli
+    $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
 
 ### laravel
     $ cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php
