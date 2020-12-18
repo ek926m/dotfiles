@@ -124,4 +124,6 @@
     $ DISPLAY=:0 lxterminal
 ###### run gui oder ssh local
     $ ssh pi@192.168.7.109 -Y 'lxterminal'
-
+###### install ssh server
+    $ sudo apt install openssh-server
+    $ sudo systemctl start ssh && sudo systemctl enable ssh
