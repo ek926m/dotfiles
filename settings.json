@@ -1,14 +1,23 @@
-
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
   "copyOnSelect": false,
   "copyFormatting": false,
   "profiles": {
-    "defaults": 
-    {
+    "defaults": {
     },
     "list": [
+      {
+        "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+        "hidden": false,
+        "name": "Bash",
+        "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
+        "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
+        "startingDirectory": "%USERPROFILE%/Projekte",
+        "scrollbarState": "hidden",
+        "colorScheme": "One Half Light",
+        "fontSize": 12
+      },
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "Windows PowerShell",
@@ -22,7 +31,13 @@
         "hidden": false
       },
       {
-        "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      }
+      /*,{
+        "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2532}",
         "hidden": false,
         "name": "Debian",
         "source": "Windows.Terminal.Wsl",
@@ -31,13 +46,7 @@
         "fontFace": "Droid Sans Mono",
         "fontSize": 12,
         "startingDirectory": "//wsl$/Debian/home/user/projects"
-      },
-      {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": false,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
-      }
+      }*/
     ]
   },
   "schemes": [],
