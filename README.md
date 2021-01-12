@@ -8,11 +8,13 @@
     alias grep='grep --color=auto'
     alias rm='rm -v'
     alias nano='nano -$'
-    alias servertux='ssh root@127.0.0.1'
+    
     git_branch() {
       git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    
+    alias servertux='ssh root@127.0.0.1'
     neofetch
     export PATH=~/.composer/vendor/bin:$PATH
   
