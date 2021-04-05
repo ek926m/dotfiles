@@ -82,8 +82,8 @@
 ### if notebook
     $ sudo apt install tlp
     $ sudo systemctl status tlp
-    $ sudo tlp start 
-    $ sudo tlp-stat -s 
+    $ sudo tlp start
+    $ sudo tlp-stat
 
 ## helpful
 
