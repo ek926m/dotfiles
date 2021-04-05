@@ -61,21 +61,17 @@
 ### xfce4
     $ sudo apt install -y obs-studio vlc gimp gufw filezilla redshift redshift-gtk usb-creator-gtk arc-theme exfat-fuse exfat-utils
     $ sudo apt remove thunderbird parole xfce4-dict sgt-launcher pidgin xfce4-notes sgt-puzzles gnome-sudoku gnome-mines xfburn -y && sudo apt autoremove -y
-##### change dpi inline
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 192
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 96
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
     $ sudo apt install -f
 
+### code
+    download .deb from https://code.visualstudio.com/
+
 ### snaps
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager insomnia discord
-    $ sudo snap install code --classic
-    $ sudo snap install intellij-idea-community --classic
-    $ sudo snap install pycharm-community --classic
-    $ sudo snap install android-studio --classic
 
 ### ruby on rails
     # RUN COMMAND AS A LOGIN SHELL
@@ -95,7 +91,6 @@
     ###   CTRL+ALT+4          Move Window to workspace 4
     ###   CTRL+ALT+S          systemctl suspend
     ###   SUPER+L             Lock screen
-
 
 ###### optional (if no docker): mysql (native)
     $ sudo apt install -y mariadb-server
@@ -138,3 +133,6 @@
 ###### install ssh server
     $ sudo apt install openssh-server -y
     $ sudo systemctl start ssh && sudo systemctl enable ssh
+###### change dpi inline
+    $ xfconf-query -c xsettings -p /Xft/DPI -s 192
+    $ xfconf-query -c xsettings -p /Xft/DPI -s 96
