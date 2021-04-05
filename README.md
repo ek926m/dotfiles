@@ -20,8 +20,7 @@
     $ sudo apt install -y ufw neofetch openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl cloc net-tools
 ###### optional gui packages
     $ sudo apt install -y gufw gnome-tweak-tool obs-studio vlc gimp filezilla virtualbox virtualbox-qt virtualbox-dkms
-    $ sudo apt remove -y mpv
-    $ sudo apt autoremove -y
+    $ sudo apt remove -y mpv && sudo apt autoremove -y
 
 ### nodejs
     $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
