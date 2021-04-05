@@ -71,7 +71,7 @@
 
 ### snaps
     $ sudo apt install -y snapd
-    $ sudo snap install spotify rpi-imager insomnia discord
+    $ sudo snap install spotify rpi-imager postman discord
 
 ### ruby on rails
     # RUN COMMAND AS A LOGIN SHELL
