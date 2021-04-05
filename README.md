@@ -34,7 +34,9 @@
 
 ### docker
     $ sudo apt install -y docker.io docker-compose
-    $ sudo systemctl start docker && sudo systemctl enable docker && sudo groupadd docker && sudo usermod -aG docker ${USER}
+    $ sudo systemctl start docker && sudo systemctl enable docker
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker ${USER}
 ###### mariadb && phpmyadmin
     $ docker pull mariadb 
     $ docker pull phpmyadmin/phpmyadmin
