@@ -57,8 +57,12 @@
     $ docker pull phpmyadmin/phpmyadmin
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
+###### mongodb && mongo-express
     $ docker pull mongo
-    $ docker run --name some-mongo -d mongo:latest --restart=always
+    $ docker pull mongo-express
+    $ docker network create -d bridge some-network-mongo
+    $ docker run --network some-network-mongo --name some-mongo -d mongo:latest --restart=always
+    $ docker run --network some-network-mongo -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
 
 ### xfce4
     $ sudo apt install -y obs-studio vlc gimp gufw filezilla redshift redshift-gtk usb-creator-gtk arc-theme exfat-fuse exfat-utils
