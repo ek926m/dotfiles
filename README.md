@@ -1,4 +1,4 @@
-# common stuff
+## ubuntu based (select minimal install)
 
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
@@ -13,73 +13,14 @@
     export PATH=~/.config/composer/vendor/bin:$PATH
     neofetch
     
-### git
-    $ git config --global user.email "ek926m@gmail.com"
-    $ git config --global user.name "Eugen Kaiser"
-    $ ssh-keygen -t rsa -b 4096
-    $ cat ~/.ssh/id_rsa.pub
-    ### https://github.com/settings/keys
-    $ ssh -T git@github.com
-
-### docker
-###### mariadb && phpmyadmin
-    $ docker pull mariadb 
-    $ docker pull phpmyadmin/phpmyadmin
-    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
-    $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
-###### mongodb && mongo-express
-    $ docker pull mongo
-    $ docker pull mongo-express
-    $ docker network create -d bridge some-network-mongo
-    $ docker run --network some-network-mongo --name some-mongo -d mongo:latest --restart=always
-    $ docker run --network some-network-mongo -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
-
-
-## redhat based
-
-### system packages
-    $ sudo dnf update -y
-    $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-    $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
-
-###### optional packages
-    $ sudo dnf install -y gnome-tweak-tool mediawriter discord gimp transmission youtube-dl vlc firewall-config lpf-spotify-client && lpf-gui && sudo dnf remove -y lpf-spotify-client
-
-### nodejs
-    $ sudo dnf install -y nodejs
-    $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
-
-### laravel
-    $ sudo dnf install composer -y
-    $ composer global require laravel/installer
-
-### docker
-    $ sudo dnf install -y docker docker-compose
-    $ sudo systemctl start docker && sudo systemctl enable docker
-    $ sudo groupadd docker
-    $ sudo usermod -aG docker ${USER}
-
-### chrome
-    $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && sudo dnf install google-chrome-stable_current_x86_64.rpm -y
-
-### vs code
-    $ cd && cd Downloads && sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo' && dnf check-update && sudo dnf install code -y
-
-### if notebook
-    $ sudo dnf install tlp
-    $ sudo systemctl status tlp
-    $ sudo tlp start
-    $ sudo tlp-stat
-
-
-## ubuntu based
-
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
     $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap htop
-    
 ###### optional packages
-    $ sudo apt install -y ufw openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl neofetch cloc net-tools
+    $ sudo apt install -y ufw neofetch openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl cloc net-tools
+###### optional gui packages
+    $ sudo apt install -y gufw gnome-tweak-tool obs-studio vlc gimp filezilla virtualbox virtualbox-qt virtualbox-dkms
+    $ sudo apt remove -y mpv
     $ sudo apt autoremove -y
 
 ### nodejs
@@ -97,7 +38,26 @@
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
-
+###### mariadb && phpmyadmin
+    $ docker pull mariadb 
+    $ docker pull phpmyadmin/phpmyadmin
+    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
+    $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
+###### mongodb && mongo-express
+    $ docker pull mongo
+    $ docker pull mongo-express
+    $ docker network create -d bridge some-network-mongo
+    $ docker run --network some-network-mongo --name some-mongo -d mongo:latest --restart=always
+    $ docker run --network some-network-mongo -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
+    
+### git
+    $ git config --global user.email "ek926m@gmail.com"
+    $ git config --global user.name "Eugen Kaiser"
+    $ ssh-keygen -t rsa -b 4096
+    $ cat ~/.ssh/id_rsa.pub
+    ### https://github.com/settings/keys
+    $ ssh -T git@github.com
+    
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
     $ sudo apt install -f
@@ -115,9 +75,6 @@
     $ sudo systemctl status tlp
     $ sudo tlp start
     $ sudo tlp-stat
-
-
-
 
 
 ## helpful
