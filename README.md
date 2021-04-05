@@ -1,4 +1,4 @@
-## Ubuntu (select minimal install)
+## ubuntu based
 
 ### ~/.bashrc
     alias ls='ls -l --color=auto'
@@ -15,14 +15,20 @@
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     
     neofetch
+    
     export PATH=~/.config/composer/vendor/bin:$PATH
+    
     alias servertux='ssh root@127.0.0.1'
+    
+    alias dpi192='xfconf-query -c xsettings -p /Xft/DPI -s 192'
+    alias dpi96='xfconf-query -c xsettings -p /Xft/DPI -s 96'
   
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
     $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap
-    # optional
-    $ sudo apt install -y openjdk-11-jdk maven ufw ffmpeg cowsay fortune-mod youtube-dl neofetch cloc net-tools
+    
+###### optional packages
+    $ sudo apt install -y ufw openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl neofetch cloc net-tools
     $ sudo apt autoremove -y
 
 ### nodejs
@@ -34,12 +40,6 @@
     $ cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php
     $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
     $ composer global require laravel/installer && rm composer-setup.php
-
-### ruby on rails
-    # RUN COMMAND AS A LOGIN SHELL
-    $ sudo apt install -y gnupg2
-    $ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-    $ \curl -sSL https://get.rvm.io | bash -s stable --rails
 
 ### git
     $ git config --global user.email "ek926m@gmail.com"
@@ -61,9 +61,9 @@
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
     $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
 
-### apps
-    $ sudo apt remove -y mpv
-    $ sudo apt install -y gnome-tweak-tool obs-studio vlc gimp gufw filezilla virtualbox virtualbox-qt virtualbox-dkms 
+### xfce4
+    $ sudo apt install -y obs-studio vlc gimp gufw filezilla redshift redshift-gtk usb-creator-gtk arc-theme exfat-fuse exfat-utils
+    $ sudo apt remove thunderbird parole xfce4-dict sgt-launcher pidgin xfce4-notes sgt-puzzles gnome-sudoku gnome-mines xfburn -y && sudo apt autoremove -y
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -76,6 +76,12 @@
     $ sudo snap install intellij-idea-community --classic
     $ sudo snap install pycharm-community --classic
     $ sudo snap install android-studio --classic
+
+### ruby on rails
+    # RUN COMMAND AS A LOGIN SHELL
+    $ sudo apt install -y gnupg2
+    $ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    $ \curl -sSL https://get.rvm.io | bash -s stable --rails
 
 ## helpful
 
