@@ -1,4 +1,4 @@
-# common install stuff
+# common stuff
 
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
