@@ -15,7 +15,7 @@
     
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
-    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap
+    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap htop
     
 ###### optional packages
     $ sudo apt install -y ufw openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl neofetch cloc net-tools
