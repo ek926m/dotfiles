@@ -20,9 +20,6 @@
     
     alias servertux='ssh root@127.0.0.1'
     
-    alias dpi192='xfconf-query -c xsettings -p /Xft/DPI -s 192'
-    alias dpi96='xfconf-query -c xsettings -p /Xft/DPI -s 96'
-  
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
     $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap
@@ -64,6 +61,9 @@
 ### xfce4
     $ sudo apt install -y obs-studio vlc gimp gufw filezilla redshift redshift-gtk usb-creator-gtk arc-theme exfat-fuse exfat-utils
     $ sudo apt remove thunderbird parole xfce4-dict sgt-launcher pidgin xfce4-notes sgt-puzzles gnome-sudoku gnome-mines xfburn -y && sudo apt autoremove -y
+##### change dpi inline
+    $ xfconf-query -c xsettings -p /Xft/DPI -s 192
+    $ xfconf-query -c xsettings -p /Xft/DPI -s 96
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
