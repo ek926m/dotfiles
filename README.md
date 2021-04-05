@@ -20,7 +20,9 @@
   
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
-    $ sudo apt install -y net-tools git openjdk-11-jdk maven nmap wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip ffmpeg unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline neofetch cowsay fortune-mod youtube-dl cloc ufw
+    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap
+    # optional
+    $ sudo apt install -y openjdk-11-jdk maven ufw ffmpeg cowsay fortune-mod youtube-dl neofetch cloc net-tools
     $ sudo apt autoremove -y
 
 ### nodejs
