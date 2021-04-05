@@ -66,7 +66,8 @@
     $ sudo apt install -f
 
 ### code
-    download .deb from https://code.visualstudio.com/
+    # download .deb from https://code.visualstudio.com/
+    $ sudo dpkg -i code_
 
 ### snaps
     $ sudo apt install -y snapd
