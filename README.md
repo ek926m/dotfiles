@@ -1,4 +1,4 @@
-## ubuntu based
+# common install stuff
 
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
@@ -13,6 +13,67 @@
     export PATH=~/.config/composer/vendor/bin:$PATH
     neofetch
     
+### git
+    $ git config --global user.email "ek926m@gmail.com"
+    $ git config --global user.name "Eugen Kaiser"
+    $ ssh-keygen -t rsa -b 4096
+    $ cat ~/.ssh/id_rsa.pub
+    ### https://github.com/settings/keys
+    $ ssh -T git@github.com
+
+### docker
+###### mariadb && phpmyadmin
+    $ docker pull mariadb 
+    $ docker pull phpmyadmin/phpmyadmin
+    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
+    $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
+###### mongodb && mongo-express
+    $ docker pull mongo
+    $ docker pull mongo-express
+    $ docker network create -d bridge some-network-mongo
+    $ docker run --network some-network-mongo --name some-mongo -d mongo:latest --restart=always
+    $ docker run --network some-network-mongo -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
+
+
+## redhat based
+
+### system packages
+    $ sudo dnf update -y
+    $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+    $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
+
+###### optional packages
+    $ sudo dnf install -y gnome-tweak-tool mediawriter discord gimp transmission youtube-dl vlc firewall-config lpf-spotify-client && lpf-gui && sudo dnf remove -y lpf-spotify-client
+
+### nodejs
+    $ sudo dnf install -y nodejs
+    $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
+
+### laravel
+    $ sudo dnf install composer -y
+    $ composer global require laravel/installer
+
+### docker
+    $ sudo dnf install -y docker docker-compose
+    $ sudo systemctl start docker && sudo systemctl enable docker
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker ${USER}
+
+### chrome
+    $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && sudo dnf install google-chrome-stable_current_x86_64.rpm -y
+
+### vs code
+    $ cd && cd Downloads && sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo' && dnf check-update && sudo dnf install code -y
+
+### if notebook
+    $ sudo dnf install tlp
+    $ sudo systemctl status tlp
+    $ sudo tlp start
+    $ sudo tlp-stat
+
+
+## ubuntu based
+
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
     $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap htop
@@ -31,41 +92,17 @@
     $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
     $ composer global require laravel/installer && rm composer-setup.php
 
-### git
-    $ git config --global user.email "ek926m@gmail.com"
-    $ git config --global user.name "Eugen Kaiser"
-    $ ssh-keygen -t rsa -b 4096
-    $ cat ~/.ssh/id_rsa.pub
-    ### https://github.com/settings/keys
-    $ ssh -T git@github.com
-
 ### docker
     $ sudo apt install -y docker.io docker-compose
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
-    ### REBOOT
-###### mariadb && phpmyadmin
-    $ docker pull mariadb 
-    $ docker pull phpmyadmin/phpmyadmin
-    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
-    $ docker run --name some-phpmyadmin --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin/phpmyadmin
-###### mongodb && mongo-express
-    $ docker pull mongo
-    $ docker pull mongo-express
-    $ docker network create -d bridge some-network-mongo
-    $ docker run --network some-network-mongo --name some-mongo -d mongo:latest --restart=always
-    $ docker run --network some-network-mongo -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
-
-### xfce4
-    $ sudo apt install -y obs-studio vlc gimp gufw filezilla redshift redshift-gtk usb-creator-gtk arc-theme exfat-fuse exfat-utils
-    $ sudo apt remove thunderbird parole xfce4-dict sgt-launcher pidgin xfce4-notes sgt-puzzles gnome-sudoku gnome-mines xfburn -y && sudo apt autoremove -y
 
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
     $ sudo apt install -f
 
-### code
+### vs code
     # download .deb from https://code.visualstudio.com/
     $ sudo dpkg -i code_
 
@@ -73,37 +110,17 @@
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager postman discord
 
-### ruby on rails
-    # RUN COMMAND AS A LOGIN SHELL
-    $ sudo apt install -y gnupg2
-    $ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-    $ \curl -sSL https://get.rvm.io | bash -s stable --rails
-
 ### if notebook
     $ sudo apt install tlp
     $ sudo systemctl status tlp
     $ sudo tlp start
     $ sudo tlp-stat
 
+
+
+
+
 ## helpful
-
-###### key bindings
-    ###   SUPER+F             Home folder
-    ###   SUPER+W             Launch web browser
-    ###   SUPER+T             Launch terminal
-    ###   CTRL+ALT+1          Move Window to workspace 1
-    ###   CTRL+ALT+2          Move Window to workspace 2
-    ###   CTRL+ALT+3          Move Window to workspace 3
-    ###   CTRL+ALT+4          Move Window to workspace 4
-    ###   CTRL+ALT+S          systemctl suspend
-    ###   SUPER+L             Lock screen
-
-###### optional (if no docker): mysql (native)
-    $ sudo apt install -y mariadb-server
-    $ sudo mysql_secure_installation
-    $ sudo mysql -u root -p
-    $ CREATE DATABASE laravel;
-    $ CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'laravel'; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; update mysql.user set plugin='' where user='laravel'; FLUSH PRIVILEGES;
 
 ###### copy host folder x over ssh with user@ip to home folder of remote
     $ rsync -v -r foldername user@12.34.56.78:.
@@ -139,6 +156,5 @@
 ###### install ssh server
     $ sudo apt install openssh-server -y
     $ sudo systemctl start ssh && sudo systemctl enable ssh
-###### change dpi inline
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 192
-    $ xfconf-query -c xsettings -p /Xft/DPI -s 96
+
+
