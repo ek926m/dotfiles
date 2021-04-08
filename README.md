@@ -69,6 +69,13 @@
     $ sudo apt install -y snapd
     $ sudo snap install spotify rpi-imager postman discord
 
+### mariadb without docker
+    $ sudo apt install -y mariadb-server
+    $ sudo mysql_secure_installation
+    $ sudo mysql -u root -p
+    $ CREATE DATABASE laravel;
+    $ CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'laravel'; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; update mysql.user set plugin='' where user='laravel'; FLUSH PRIVILEGES;
+
 ### if notebook
     $ sudo apt install tlp
     $ sudo systemctl status tlp
