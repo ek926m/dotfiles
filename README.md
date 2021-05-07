@@ -155,4 +155,3 @@
     $ brew install --cask google-chrome
     $ brew install --cask firefox
     $ brew install --cask sequel-pro
-    $ brew install --cask visual-studio
