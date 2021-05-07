@@ -123,4 +123,36 @@
     $ sudo apt install openssh-server -y
     $ sudo systemctl start ssh && sudo systemctl enable ssh
 
+## macOS (install xcode via appstore)
 
+### change shell
+    $ chsh -s /bin/bash
+
+### ~/.bash_profile
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+
+    alias ll='ls -lah --color=auto'
+    alias cp='cp -v'
+    alias mv='mv -v'
+    alias rm='rm -v'
+    alias servertux='ssh root@127.0.0.1'
+    git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    
+## homebrew
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    $ brew install bash php@7.4 composer node@14 docker docker-compose
+
+    $ brew install --cask docker
+    $ brew install --cask visual-studio-code
+    $ brew install --cask microsoft-teams
+    $ brew install --cask spotify
+    $ brew install --cask postman
+    $ brew install --cask cyberduck
+    $ brew install --cask discord
+    $ brew install --cask google-chrome
+    $ brew install --cask firefox
+    $ brew install --cask sequel-pro
+    $ brew install --cask visual-studio
