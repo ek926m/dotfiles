@@ -127,11 +127,12 @@
 
 ### change shell
     $ chsh -s /bin/bash
+    $ cd && touch .hushlogin
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
 
-    alias ll='ls -lah --color=auto'
+    alias ll='ls -lah'
     alias cp='cp -v'
     alias mv='mv -v'
     alias rm='rm -v'
@@ -149,7 +150,11 @@
 ## homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    $ brew install bash php@7.4 composer node@14 docker docker-compose
+    $ brew install bash
+    $ brew install php@7.4
+    $ brew install composer
+    $ brew install node@14
+    $ brew install docker docker-compose
 
     $ brew install --cask docker
     $ brew install --cask visual-studio-code
@@ -161,3 +166,4 @@
     $ brew install --cask google-chrome
     $ brew install --cask firefox
     $ brew install --cask sequel-pro
+    $ brew install --cask pycharm-ce
