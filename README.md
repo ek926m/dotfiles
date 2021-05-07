@@ -141,8 +141,14 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     
+    export PATH=/opt/homebrew/bin:$PATH
+    export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+    export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+    export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+    
 ## homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
     $ brew install bash php@7.4 composer node@14 docker docker-compose
 
     $ brew install --cask docker
