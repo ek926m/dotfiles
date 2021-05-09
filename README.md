@@ -147,7 +147,7 @@
     export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
     export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
     
-## homebrew
+### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     $ brew install bash
