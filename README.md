@@ -157,6 +157,7 @@
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     $ brew install bash
+    $ brew install tmux
     $ brew install php@7.4
     $ brew install composer
     $ brew install node@14
