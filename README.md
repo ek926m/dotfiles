@@ -166,8 +166,9 @@
     $ brew install --cask google-chrome
     $ brew install --cask firefox
     $ brew install --cask sequel-pro
+    $ brew install --cask microsoft-office
 
-## windows terminal
+## windows
 ### software
     - chrome
     - spotify
