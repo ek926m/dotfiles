@@ -166,7 +166,6 @@
     $ brew install --cask alfred
     $ brew install --cask docker
     $ brew install --cask spotify
-    $ brew install --cask postman
     $ brew install --cask cyberduck
     $ brew install --cask discord
     $ brew install --cask google-chrome
@@ -221,3 +220,30 @@
             "command": "workbench.action.openEditorAtIndex9"
         },
     ]
+    
+### vscode extensions
+    hookyqr.beautify
+    ms-azuretools.vscode-docker
+    mikestead.dotenv
+    editorconfig.editorconfig
+    jolaleye.horizon-theme-vscode
+    ryannaddy.laravel-artisan
+    onecentlin.laravel-blade
+    onecentlin.laravel-extension-pack
+    amiralizadeh9480.laravel-extra-intellisense
+    codingyu.laravel-goto-view
+    onecentlin.laravel5-snippets
+    stef-k.laravel-goto-controller
+    miguelsolorio.min-theme
+    gaulomatic.vscode-icontheme-nomo-dark-macos
+    felixfbecker.php-debug
+    bmewburn.vscode-intelephense-client
+    ms-vscode-remote.remote-ssh
+    ms-vscode-remote.remote-ssh-edit
+    rangav.vscode-thunder-client
+    octref.vetur
+    
+    
+    
+    
+    
