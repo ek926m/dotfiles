@@ -165,14 +165,14 @@
 
     $ brew install --cask alfred
     $ brew install --cask docker
-    $ brew install --cask visual-studio-code
-    $ brew install --cask microsoft-teams
     $ brew install --cask spotify
     $ brew install --cask postman
     $ brew install --cask cyberduck
     $ brew install --cask discord
     $ brew install --cask google-chrome
     $ brew install --cask firefox
+    $ brew install --cask visual-studio-code
+    $ brew install --cask microsoft-teams
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
