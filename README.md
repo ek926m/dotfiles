@@ -173,7 +173,9 @@
     $ brew install --cask discord
     $ brew install --cask google-chrome
     $ brew install --cask firefox
-    $ brew install --cask microsoft-office
+    $ brew install --cask microsoft-word
+    $ brew install --cask microsoft-excel
+    $ brew install --cask microsoft-powerpoint
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
