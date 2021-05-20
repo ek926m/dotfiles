@@ -173,7 +173,6 @@
     $ brew install --cask discord
     $ brew install --cask google-chrome
     $ brew install --cask firefox
-    $ brew install --cask sequel-pro
     $ brew install --cask microsoft-office
 
 ### vscode keybindings.json
