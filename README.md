@@ -123,7 +123,7 @@
     $ sudo apt install openssh-server -y
     $ sudo systemctl start ssh && sudo systemctl enable ssh
 
-## macOS (install xcode via appstore)
+## macOS (install xcode, magnet, msrdp via appstore)
 
 ### change shell
     $ chsh -s /bin/bash
