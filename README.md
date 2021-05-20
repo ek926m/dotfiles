@@ -142,13 +142,13 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     
-### add to ~/.bash_profile if you are using apple silicon  
+### add to ~/.bash_profile if you are using -> APPLE SILICON 
     export PATH=/opt/homebrew/bin:$PATH
     export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
     export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
     
-### add to ~/.bash_profile if you are using apple intel  
+### add to ~/.bash_profile if you are using -> INTEL CHIP 
     export PATH="/usr/local/opt/php@7.4/bin:$PATH"
     export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
     export PATH="/usr/local/opt/node@14/bin:$PATH"
