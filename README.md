@@ -152,6 +152,7 @@
     export PATH="/usr/local/opt/php@7.4/bin:$PATH"
     export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
     export PATH="/usr/local/opt/node@14/bin:$PATH"
+    export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
     
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -162,6 +163,7 @@
     $ brew install composer
     $ brew install node@14
     $ brew install docker docker-compose
+    $ brew install java11 #sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
     $ brew install --cask alfred
     $ brew install --cask docker
@@ -175,6 +177,8 @@
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
+    $ brew install --cask pycharm-ce
+    $ brew install --cask phpstorm
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
