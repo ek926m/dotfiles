@@ -179,6 +179,7 @@
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask pycharm-ce
     $ brew install --cask phpstorm
+    $ brew install --cask intellij-idea-ce
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
