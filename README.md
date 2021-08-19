@@ -148,7 +148,7 @@
     
     
     
-## macOS (install xcode, magnet, msrdp via appstore)
+## macOS apple silicon (install xcode, magnet, msrdp via appstore)
 
 ### change shell
     $ chsh -s /bin/bash
@@ -167,17 +167,12 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     
-### add to ~/.bash_profile if you are using -> APPLE SILICON 
+### add to ~/.bash_profile
     export PATH=/opt/homebrew/bin:$PATH
     export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
     export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-    
-### add to ~/.bash_profile if you are using -> INTEL CHIP 
-    export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-    export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-    export PATH="/usr/local/opt/node@14/bin:$PATH"
-    export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -188,7 +183,7 @@
     $ brew install composer
     $ brew install node@14
     $ brew install docker docker-compose
-    $ brew install java11 #sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+    $ brew install openjdk
 
     $ brew install --cask alfred
     $ brew install --cask docker
