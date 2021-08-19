@@ -175,8 +175,6 @@
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     
-### android studio fix    
-    Tools -> SDK Manager -> accept and install
     
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -204,7 +202,6 @@
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask pycharm-ce
     $ brew install --cask intellij-idea-ce
-    $ brew install --cask android-studio
     $ brew install --cask gimp
     $ brew install --cask raspberry-pi-imager
 
