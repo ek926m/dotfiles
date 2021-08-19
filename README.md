@@ -205,6 +205,10 @@
     $ brew install --cask gimp
     $ brew install --cask raspberry-pi-imager
 
+### other software
+    - download visual studio and install its dependencies that way 
+    - download android studio and install its dependencies that way 
+
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
     [
