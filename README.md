@@ -188,26 +188,18 @@
     $ brew install openjdk
     $ brew install wget
 
-    $ brew install --cask alfred
     $ brew install --cask docker
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
     $ brew install --cask google-chrome
-    $ brew install --cask firefox
     $ brew install --cask visual-studio-code
     $ brew install --cask microsoft-teams
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
-    $ brew install --cask pycharm-ce
-    $ brew install --cask intellij-idea-ce
     $ brew install --cask gimp
     $ brew install --cask raspberry-pi-imager
-
-### other software
-    - download visual studio and install its dependencies that way 
-    - download android studio and install its dependencies that way 
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
