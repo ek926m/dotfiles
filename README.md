@@ -148,7 +148,7 @@
     
     
     
-## macOS apple silicon (install xcode, magnet, msrdp via appstore)
+## macOS apple silicon (install magnet via appstore)
 
 ### change shell
     $ chsh -s /bin/bash
