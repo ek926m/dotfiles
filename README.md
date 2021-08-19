@@ -188,6 +188,7 @@
     $ brew install node@14
     $ brew install docker docker-compose
     $ brew install openjdk
+    $ brew install wget
 
     $ brew install --cask alfred
     $ brew install --cask docker
