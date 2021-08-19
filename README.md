@@ -173,6 +173,10 @@
     export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
     export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/opt/homebrew/opt/openjdk"
+    
+### android studio fix    
+    Tools -> SDK Manager -> accept and install
     
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -193,13 +197,17 @@
     $ brew install --cask google-chrome
     $ brew install --cask firefox
     $ brew install --cask visual-studio-code
+    $ brew install --cask mono-mdk-for-visual-studio
+    $ brew install --cask visual-studio
     $ brew install --cask microsoft-teams
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask pycharm-ce
-    $ brew install --cask phpstorm
     $ brew install --cask intellij-idea-ce
+    $ brew install --cask android-studio
+    $ brew install --cask gimp
+    $ brew install --cask raspberry-pi-imager
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
