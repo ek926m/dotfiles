@@ -197,8 +197,6 @@
     $ brew install --cask google-chrome
     $ brew install --cask firefox
     $ brew install --cask visual-studio-code
-    $ brew install --cask mono-mdk-for-visual-studio
-    $ brew install --cask visual-studio
     $ brew install --cask microsoft-teams
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
