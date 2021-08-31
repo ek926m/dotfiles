@@ -134,17 +134,15 @@
     - amiralizadeh9480.laravel-extra-intellisense
     - ryannaddy.laravel-artisan
     - onecentlin.laravel-blade
- 
+    - bmewburn.vscode-intelephense-client
+    ms-vscode-remote.remote-ssh
+    - ms-vscode-remote.remote-ssh-edit
     hookyqr.beautify
     ms-azuretools.vscode-docker
     miguelsolorio.min-theme
     gaulomatic.vscode-icontheme-nomo-dark-macos
-    bmewburn.vscode-intelephense-client
-    ms-vscode-remote.remote-ssh
-    ms-vscode-remote.remote-ssh-edit
     rangav.vscode-thunder-client
     octref.vetur
-    
     
     
     
