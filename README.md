@@ -124,21 +124,21 @@
     $ sudo systemctl start ssh && sudo systemctl enable ssh
     
 ### vscode extensions
+    onecentlin.laravel-extension-pack
+    - mikestead.dotenv
+    - editorconfig.editorconfig
+    - codingyu.laravel-goto-view
+    - onecentlin.laravel5-snippets
+    - stef-k.laravel-goto-controller
+    - felixfbecker.php-debug
+    - amiralizadeh9480.laravel-extra-intellisense
+    - ryannaddy.laravel-artisan
+    - onecentlin.laravel-blade
+ 
     hookyqr.beautify
     ms-azuretools.vscode-docker
-    mikestead.dotenv
-    editorconfig.editorconfig
-    jolaleye.horizon-theme-vscode
-    ryannaddy.laravel-artisan
-    onecentlin.laravel-blade
-    onecentlin.laravel-extension-pack
-    amiralizadeh9480.laravel-extra-intellisense
-    codingyu.laravel-goto-view
-    onecentlin.laravel5-snippets
-    stef-k.laravel-goto-controller
     miguelsolorio.min-theme
     gaulomatic.vscode-icontheme-nomo-dark-macos
-    felixfbecker.php-debug
     bmewburn.vscode-intelephense-client
     ms-vscode-remote.remote-ssh
     ms-vscode-remote.remote-ssh-edit
