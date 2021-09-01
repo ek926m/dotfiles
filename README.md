@@ -164,6 +164,7 @@
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    neofetch
     
 ### add to ~/.bash_profile
     export PATH=/opt/homebrew/bin:$PATH
@@ -185,6 +186,7 @@
     $ brew install docker docker-compose
     $ brew install openjdk
     $ brew install wget
+    $ brew install neofetch
 
     $ brew install --cask docker
     $ brew install --cask spotify
