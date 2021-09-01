@@ -250,7 +250,12 @@
         },
     ]
     
-    
-    
+### if the keyboard is broken
+    $ sudo rm /Library/Preferences/com.apple.keyboardtype.plist
+    restart mac
+
+    src: https://github.com/tmk/tmk_keyboard/issues/35
+    src: https://www.mactechnews.de/forum/discussion/MX-Keys-Tasten-vertauscht-340788.html
+
     
     
