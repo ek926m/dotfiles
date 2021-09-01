@@ -198,6 +198,8 @@
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask gimp
     $ brew install --cask raspberry-pi-imager
+    $ brew install --cask intellij-idea-ce
+    $ brew install --cask pycharm-ce
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
