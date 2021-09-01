@@ -202,6 +202,7 @@
     $ brew install --cask raspberry-pi-imager
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
+    $ brew install --cask telegram-desktop
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
