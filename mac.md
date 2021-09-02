@@ -1,4 +1,4 @@
-## macOS apple silicon (install magnet via appstore, laravel-ray via website)
+## macOS apple silicon (install magnet via appstore)
 
 ### change shell
     $ chsh -s /bin/bash
@@ -54,7 +54,6 @@
     $ brew install --cask raspberry-pi-imager
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
-    $ brew install --cask tableplus
 
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
