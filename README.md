@@ -202,7 +202,6 @@
     $ brew install --cask raspberry-pi-imager
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
-    $ brew install --cask telegram-desktop
     $ brew install --cask tableplus
 
 ### vscode keybindings.json
