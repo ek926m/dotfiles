@@ -18,11 +18,12 @@
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     neofetch
     
-### add to ~/.bash_profile
+### add to ~/.bash_profile    
     export PATH=/opt/homebrew/bin:$PATH
     export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
     export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+    export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     
