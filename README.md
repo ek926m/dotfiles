@@ -193,6 +193,7 @@
     $ brew install wget
     $ brew install neofetch
     $ brew install appcleaner
+    $ brew install monitorcontrol
 
     $ brew install --cask docker
     $ brew install --cask spotify
