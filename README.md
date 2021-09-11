@@ -144,8 +144,14 @@
     rangav.vscode-thunder-client
     octref.vetur
     
-## macOS apple silicon (install magnet via appstore)
+## macOS apple silicon
 
+### app store
+    - magnet
+    - noizio
+    - daisydisk
+    - telegram
+    
 ### change shell
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
