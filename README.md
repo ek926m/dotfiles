@@ -143,6 +143,8 @@
     gaulomatic.vscode-icontheme-nomo-dark-macos
     rangav.vscode-thunder-client
     octref.vetur
+    vscode-icons-team.vscode-icons
+    bauke.horizon-vscode
     
 ## macOS apple silicon
 
