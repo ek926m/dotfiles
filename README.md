@@ -190,7 +190,7 @@
     $ brew install php@7.4
     $ brew install composer
     $ brew install node@14
-    $ brew install docker docker-compose
+    $ brew install docker-compose
     $ brew install openjdk
     $ brew install wget
     $ brew install neofetch
