@@ -212,6 +212,15 @@
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
 
+### vscode settings.json
+    {
+        "workbench.startupEditor": "none",
+        "workbench.colorTheme": "Min Light",
+        "workbench.iconTheme": "vscode-icontheme-nomo-dark-macos",
+        "editor.fontSize": 14,
+        "editor.wordWrap": "on"
+    }
+
 ### vscode keybindings.json
     // Place your key bindings in this file to override the defaults
     [
