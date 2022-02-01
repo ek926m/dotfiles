@@ -30,6 +30,15 @@
     $ sudo apt-get install -y nodejs
     $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
 
+###### mongodb
+    $ curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+    $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+    $ sudo apt update -y
+    $ sudo apt install mongodb-org -y
+    $ sudo systemctl start mongod.service
+    $ sudo systemctl enable mongod
+    # mongoose connection string: mongodb://localhost:27017/
+
 ### laravel
     $ cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php
     $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
