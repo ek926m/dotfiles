@@ -57,6 +57,8 @@
 ###### mongodb
     $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+    # OR
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
     
 ### git
     $ git config --global user.email "ek926m@gmail.com"
