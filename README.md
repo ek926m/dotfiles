@@ -219,6 +219,7 @@
     $ brew install --cask raspberry-pi-imager
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
+    $ brew install --cask robo-3t
 
 ### vscode settings.json
     {
