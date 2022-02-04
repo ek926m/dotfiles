@@ -220,6 +220,7 @@
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
     $ brew install --cask robo-3t
+    $ brew install --cask tableplus
 
 ### vscode settings.json
     {
