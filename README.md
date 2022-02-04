@@ -182,9 +182,9 @@
     
 ### add to ~/.bash_profile    
     export PATH=/opt/homebrew/bin:$PATH
-    export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
-    export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
-    export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+    export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
+    export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
+    export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
@@ -195,9 +195,9 @@
 
     $ brew install bash
     $ brew install tmux
-    $ brew install php@7.4
+    $ brew install php@8.0
     $ brew install composer
-    $ brew install node@14
+    $ brew install node@16
     $ brew install docker-compose
     $ brew install openjdk
     $ brew install wget
