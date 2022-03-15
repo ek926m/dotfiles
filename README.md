@@ -159,7 +159,56 @@
     octref.vetur
     vscode-icons-team.vscode-icons
     bauke.horizon-vscode
-    
+
+### vscode keybindings.json
+    // Place your key bindings in this file to override the defaults
+    [
+        {
+            "key": "ctrl+[SEMICOLON]", //ö
+            "command": "workbench.action.terminal.toggleTerminal"
+        },
+        {
+            "key": "shift+ctrl+[SEMICOLON]", //ö
+            "command": "workbench.action.terminal.new"
+        },
+        {
+            "key": "ctrl+1",
+            "command": "workbench.action.openEditorAtIndex1"
+        },
+        {
+            "key": "ctrl+2",
+            "command": "workbench.action.openEditorAtIndex2"
+        },
+        {
+            "key": "ctrl+3",
+            "command": "workbench.action.openEditorAtIndex3"
+        },
+        {
+            "key": "ctrl+4",
+            "command": "workbench.action.openEditorAtIndex4"
+        },
+        {
+            "key": "ctrl+5",
+            "command": "workbench.action.openEditorAtIndex5"
+        },
+        {
+            "key": "ctrl+6",
+            "command": "workbench.action.openEditorAtIndex6"
+        },
+        {
+            "key": "ctrl+7",
+            "command": "workbench.action.openEditorAtIndex7"
+        },
+        {
+            "key": "ctrl+8",
+            "command": "workbench.action.openEditorAtIndex8"
+        },
+        {
+            "key": "ctrl+9",
+            "command": "workbench.action.openEditorAtIndex9"
+        }
+    ]
+
 ## macOS apple silicon
 
 ### app store
@@ -285,13 +334,5 @@
             "command": "workbench.action.openEditorAtIndex9"
         }
     ]
-    
-### if the keyboard is broken
-    $ sudo rm /Library/Preferences/com.apple.keyboardtype.plist
-    restart mac
 
-    src: https://github.com/tmk/tmk_keyboard/issues/35
-    src: https://www.mactechnews.de/forum/discussion/MX-Keys-Tasten-vertauscht-340788.html
-
-    
 
