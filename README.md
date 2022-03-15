@@ -1,4 +1,4 @@
-## ubuntu based (select minimal install)
+## xubuntu based (select minimal install)
 
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
@@ -13,20 +13,26 @@
     export PATH=~/.config/composer/vendor/bin:$PATH
     neofetch
     
+    alias dpifhd='xfconf-query -c xsettings -p /Xft/DPI -s 96'
+    alias dpiuhd='xfconf-query -c xsettings -p /Xft/DPI -s 192'
+    alias dpi2k='xfconf-query -c xsettings -p /Xft/DPI -s 96'
+    alias dpi4k='xfconf-query -c xsettings -p /Xft/DPI -s 192'
+    alias nightshift='redshift -O 4000'
+    alias nightshiftoff='redshift -x'
+
+    
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
-    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline nmap htop
+    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline php-curl nmap htop redshift python3-pip python3-flask
 ###### optional packages
     $ sudo apt install -y ufw neofetch openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl cloc net-tools
 ###### optional gui packages
-    $ sudo apt install -y gufw gnome-tweak-tool obs-studio vlc gimp filezilla virtualbox virtualbox-qt virtualbox-dkms
-    $ sudo apt install -y gnome-shell-extension-autohidetopbar
-    # ALT+F2 -> r
-    # -> Extensions
-    $ sudo apt remove -y mpv && sudo apt autoremove -y
+    $ sudo apt install -y gufw gnome-disk-utility obs-studio vlc gimp filezilla virtualbox virtualbox-qt virtualbox-dkms
+###### remove crap
+    $ sudo apt remove sgt-launcher sgt-puzzles gnome-sudoku gnome-mines -y && sudo apt autoremove -y
 
 ### nodejs
-    $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    $ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
     $ sudo apt-get install -y nodejs
     $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
 
@@ -78,7 +84,7 @@
 
 ### snaps
     $ sudo apt install -y snapd
-    $ sudo snap install spotify rpi-imager postman discord
+    $ sudo snap install spotify rpi-imager discord postman
 
 ### mariadb without docker
     $ sudo apt install -y mariadb-server
