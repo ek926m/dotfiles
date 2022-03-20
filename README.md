@@ -20,29 +20,24 @@
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
     $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
      
-     
- ### optional gui packages
+### optional gui packages
     $ sudo dnf install -y gnome-tweak-tool mediawriter discord gimp transmission youtube-dl vlc firewall-config lpf-spotify-client && lpf-gui && sudo dnf remove -y lpf-spotify-client
-     
-     
- ### git
+       
+### git
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
     ### https://github.com/settings/keys
     $ ssh -T git@github.com
-
-     
+ 
 ### nodejs
     $ sudo dnf install -y nodejs
     $ sudo npm install -g eslint nodemon pm2 @vue/cli lodash
 
-
 ### laravel
     $ sudo dnf install -y composer
     $ composer global require laravel/installer
-
 
 ### docker
     $ sudo dnf install -y docker docker-compose
@@ -62,18 +57,16 @@
     $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
-        
-        
+            
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && sudo dnf install google-chrome-stable_current_x86_64.rpm -y
-
 
 ### vs code
     $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     $ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
     $ dnf check-update
     $ sudo dnf install code
-    
+
 ### vscode extensions
     onecentlin.laravel-extension-pack
     - mikestead.dotenv
