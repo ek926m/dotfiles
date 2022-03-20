@@ -6,6 +6,19 @@
     ### https://github.com/settings/keys
     $ ssh -T git@github.com
 
+## container
+###### mariadb && phpmyadmin
+    $ docker pull mariadb 
+    $ docker pull phpmyadmin
+    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
+    $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
+
+###### mongodb
+    $ docker pull mongo
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+    # OR
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
+
 ## redhat based setup
 
 ### ~/.bashrc
@@ -44,19 +57,7 @@
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
-    
-    ###### mariadb && phpmyadmin
-    $ docker pull mariadb 
-    $ docker pull phpmyadmin
-    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
-    $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
-
-    ###### mongodb
-    $ docker pull mongo
-    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
-    # OR
-    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
-    
+        
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && sudo dnf install google-chrome-stable_current_x86_64.rpm -y
 
@@ -124,18 +125,6 @@
     $ sudo systemctl start docker && sudo systemctl enable docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker ${USER}
-    
-    ###### mariadb && phpmyadmin
-    $ docker pull mariadb 
-    $ docker pull phpmyadmin
-    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
-    $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
-    
-    ###### mongodb
-    $ docker pull mongo
-    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
-    # OR
-    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
     
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -225,15 +214,6 @@
     $ brew install --cask tableplus
 
 
-
-
-
-
-
-
-
-
-
 ## vs code stuff
 
 ### vscode extensions
@@ -256,8 +236,6 @@
     gaulomatic.vscode-icontheme-nomo-dark-macos
     rangav.vscode-thunder-client
     octref.vetur
-    vscode-icons-team.vscode-icons
-    bauke.horizon-vscode
 
 ### vscode keybindings.json for non mac setups
     // Place your key bindings in this file to override the defaults
