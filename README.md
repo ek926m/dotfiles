@@ -1,6 +1,5 @@
 ## redhat based setup
 
-
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
     alias cp='cp -v'
@@ -15,7 +14,6 @@
     #export PATH=~/.composer/vendor/bin:$PATH
     # neofetch
     neofetch --disable gpu --ascii_distro redhat
-
 
 ### system packages
     $ sudo dnf update -y
