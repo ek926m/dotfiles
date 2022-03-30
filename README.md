@@ -65,6 +65,11 @@
 ### ms teams
     $ cd && cd Downloads && wget https://packages.microsoft.com/yumrepos/ms-teams/teams-1.4.00.7556-1.x86_64.rpm && sudo dnf install teams-1.4.00.7556-1.x86_64.rpm -y
 
+### robo mongo
+    $ cd && cd Downloads && wget https://download.studio3t.com/studio-3t/linux/2022.3.0/studio-3t-linux-x64.tar.gz
+    $ tar -xvzf studio-3t-linux-x64.tar.gz
+    $ sh ./studio-3t-linux-x64.sh
+
 ### vs code
     $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     $ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
