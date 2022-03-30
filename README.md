@@ -17,7 +17,7 @@
     $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
      
 ### optional gui packages
-    $ sudo dnf install -y gnome-tweak-tool gnome-extensions-app dnfdragora obs-studio mediawriter gimp transmission youtube-dl firewall-config 
+    $ sudo dnf install -y gnome-tweak-tool gnome-extensions-app dnfdragora obs-studio mediawriter gimp transmission youtube-dl firewall-config filezilla
 
     # spotify
     $ sudo dnf install -y lpf-spotify-client 
