@@ -1,19 +1,15 @@
-## redhat based setup
+## redhat (fedora) based setup
 
 ### ~/.bashrc
     alias ll='ls -lah --color=auto'
     alias cp='cp -v'
     alias mv='mv -v'
     alias rm='rm -v'
-    alias servertux='ssh root@127.0.0.1'
     git_branch() {
       git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     export PATH=~/.config/composer/vendor/bin:$PATH
-    #export PATH=~/.composer/vendor/bin:$PATH
-    # neofetch
-    neofetch --disable gpu --ascii_distro redhat
 
 ### system packages
     $ sudo dnf update -y
@@ -21,7 +17,12 @@
     $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
      
 ### optional gui packages
-    $ sudo dnf install -y gnome-tweak-tool mediawriter discord gimp transmission youtube-dl vlc firewall-config lpf-spotify-client && lpf-gui && sudo dnf remove -y lpf-spotify-client
+    $ sudo dnf install -y gnome-tweak-tool gnome-extensions-app dnfdragora mediawriter discord gimp transmission youtube-dl vlc firewall-config 
+
+    # spotify
+    $ sudo dnf install -y lpf-spotify-client 
+    $ lpf-gui
+    $ sudo dnf remove -y lpf-spotify-client
        
 ### git
     $ git config --global user.email "ek926m@gmail.com"
@@ -137,39 +138,49 @@
         }
     ]
 
-## helpful
+## nvidia
 
-###### copy host folder x over ssh with user@ip to home folder of remote
-    $ rsync -v -r foldername user@12.34.56.78:.
-###### find a file with a name
-    $ find / -name testfile
-###### curl simple web requests
-    $ curl 'http://localhost/test'
-    $ curl -A "test user agent" 'http://localhost/api/helloworld?name=ek&lang=de'
-    $ curl -A "test user agent" -d '{"data1": "0","data2": "0"}' -H "Content-Type: application/json" -X POST http://localhost/api/test
-###### change root password
-    $ passwd
-###### create user
-    $ useradd -m user
-    $ passwd user
-###### add user to groups
-    $ usermod -aG sudo,audio,video user
-###### change shell to bash
-    $ sudo chsh -s /bin/bash user
-###### switch user
-    $ su user
-###### ssh authorized_keys
-    $ cd && mkdir .ssh && touch .ssh/authorized_keys
-    ### ADD YOUR MAIN MACHINE SSH KEY INTO THAT FILE
-###### verify sha example
-    $ echo "3ef833828009fb69d5c584f3701d6946f89fa304757b7947e792f9491caa270e *ubuntu-20.10-desktop-amd64.iso" | shasum -a 256 --check
-    # you should get: ubuntu-20.10-desktop-amd64.iso: OK
-###### lines of code basic laravel project
-    $ cloc app database resources routes
-###### run gui over ssh on remote computer
-    $ DISPLAY=:0 lxterminal
-###### run gui oder ssh local
-    $ ssh pi@192.168.7.109 -Y 'lxterminal'
-###### install ssh server
-    $ sudo apt install openssh-server -y
-    $ sudo systemctl start ssh && sudo systemctl enable ssh
+### find gpu model
+    $ /sbin/lspci | grep -e VGA
+
+### current renderer
+    $ glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+
+### testing performance
+#### intel
+    $ vblank_mode=0 glxgears
+#### nvidia
+    $ __GL_SYNC_TO_VBLANK=0 glxgears
+
+### installation
+disable secureboot and make sure after installation to use x11 instead of wayland
+
+    $ sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
+    $ sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
+
+    $ sudo cp -p /usr/share/X11/xorg.conf.d/nvidia.conf /etc/X11/xorg.conf.d/nvidia.conf
+    $ sudo nano /etc/X11/xorg.conf.d/nvidia.conf
+
+add to file Option "PrimaryGPU" "yes" that it looks like:
+
+    #This file is provided by xorg-x11-drv-nvidia
+    #Do not edit
+
+    Section "OutputClass"
+            Identifier "nvidia"
+            MatchDriver "nvidia-drm"
+            Driver "nvidia"
+            Option "AllowEmptyInitialConfiguration"
+            Option "SLI" "Auto"
+            Option "BaseMosaic" "on"
+            Option "PrimaryGPU" "yes"
+    EndSection
+
+    Section "ServerLayout"
+            Identifier "layout"
+            Option "AllowNVIDIAGPUScreens"
+    EndSection
+
+### sources
+    https://rpmfusion.org/Howto/NVIDIA#Current_GeForce.2FQuadro.2FTesla
+    https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/
