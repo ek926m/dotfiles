@@ -17,7 +17,7 @@
     $ sudo dnf group install 'Development Tools' -y && sudo dnf install -y gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel sqlite-devel php-mysqlnd libyaml-devel python3 python3-pip exfat-utils fuse-exfat ncdu tmux htop neofetch
      
 ### optional gui packages
-    $ sudo dnf install -y gnome-tweak-tool gnome-extensions-app dnfdragora mediawriter discord gimp transmission youtube-dl vlc firewall-config 
+    $ sudo dnf install -y gnome-tweak-tool gnome-extensions-app dnfdragora obs-studio mediawriter gimp transmission youtube-dl firewall-config 
 
     # spotify
     $ sudo dnf install -y lpf-spotify-client 
@@ -61,9 +61,6 @@
             
 ### chrome
     $ cd && cd Downloads && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && sudo dnf install google-chrome-stable_current_x86_64.rpm -y
-
-### ms teams
-    $ cd && cd Downloads && wget https://packages.microsoft.com/yumrepos/ms-teams/teams-1.4.00.7556-1.x86_64.rpm && sudo dnf install teams-1.4.00.7556-1.x86_64.rpm -y
 
 ### robo mongo
     $ cd && cd Downloads && wget https://download.studio3t.com/studio-3t/linux/2022.3.0/studio-3t-linux-x64.tar.gz
