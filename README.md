@@ -30,7 +30,14 @@
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     
-    
+### git
+    $ git config --global user.email "ek926m@gmail.com"
+    $ git config --global user.name "Eugen Kaiser"
+    $ ssh-keygen -t rsa -b 4096
+    $ cat ~/.ssh/id_rsa.pub
+    ### https://github.com/settings/keys
+    $ ssh -T git@github.com
+ 
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     $ brew install --cask docker
@@ -59,6 +66,44 @@
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
     $ brew install --cask tableplus
+    
+    $ npm install -g nodemon @vue/cli pm2
+    $ composer global require laravel/installer
+    
+### docker
+    # mariadb
+    $ docker pull mariadb 
+    $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
+
+    # phpmyadmin
+    $ docker pull phpmyadmin
+    $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
+
+    # mongodb
+    $ docker pull mongo
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
+
+### vscode extensions
+    onecentlin.laravel-extension-pack
+    - mikestead.dotenv
+    - editorconfig.editorconfig
+    - codingyu.laravel-goto-view
+    - onecentlin.laravel5-snippets
+    - stef-k.laravel-goto-controller
+    - felixfbecker.php-debug
+    - amiralizadeh9480.laravel-extra-intellisense
+    - ryannaddy.laravel-artisan
+    - onecentlin.laravel-blade
+    - bmewburn.vscode-intelephense-client
+    ms-vscode-remote.remote-ssh
+    - ms-vscode-remote.remote-ssh-edit
+    hookyqr.beautify
+    ms-azuretools.vscode-docker
+    miguelsolorio.min-theme
+    gaulomatic.vscode-icontheme-nomo-dark-macos
+    rangav.vscode-thunder-client
+    octref.vetur
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
