@@ -4,6 +4,8 @@
     - magnet
     - noizio
     - daisydisk
+    - the unarchiver
+    - microsoft remote desktop
     
 ### from zsh to bash
     $ chsh -s /bin/bash
