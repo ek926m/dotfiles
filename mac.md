@@ -4,7 +4,6 @@
     - magnet
     - noizio
     - daisydisk
-    - telegram
     
 ### change shell
     $ chsh -s /bin/bash
@@ -12,7 +11,6 @@
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
-
     alias ll='ls -lah'
     alias cp='cp -v'
     alias mv='mv -v'
@@ -22,7 +20,6 @@
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
-    neofetch
     
 ### add to ~/.bash_profile    
     export PATH=/opt/homebrew/bin:$PATH
@@ -36,7 +33,7 @@
     
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+    $ brew install --cask docker
     $ brew install bash
     $ brew install tmux
     $ brew install php@8.0
@@ -47,9 +44,7 @@
     $ brew install wget
     $ brew install neofetch
     $ brew install appcleaner
-    $ brew install monitorcontrol
-
-    $ brew install --cask docker
+    $ brew install obs
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
@@ -63,7 +58,6 @@
     $ brew install --cask raspberry-pi-imager
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
-    $ brew install --cask robo-3t
     $ brew install --cask tableplus
 
 ### vscode keybindings.json for mac setups
