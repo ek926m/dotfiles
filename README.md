@@ -68,6 +68,7 @@
     $ brew install --cask intellij-idea-ce
     $ brew install --cask pycharm-ce
     $ brew install --cask tableplus
+    $ brew install --cask postman
     
     $ npm install -g nodemon @vue/cli pm2
     $ composer global require laravel/installer
