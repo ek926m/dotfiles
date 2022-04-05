@@ -5,7 +5,7 @@
     - noizio
     - daisydisk
     
-### change shell
+### from zsh to bash
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
 
