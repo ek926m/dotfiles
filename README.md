@@ -74,7 +74,7 @@
     $ brew install --cask tableplus
     $ brew install --cask postman
     
-    $ npm install -g nodemon @vue/cli pm2
+    $ npm install -g nodemon @vue/cli
     $ composer global require laravel/installer
     
 ### docker
