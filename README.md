@@ -35,6 +35,8 @@
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
     
 ### git
     $ git config --global user.email "ek926m@gmail.com"
@@ -73,7 +75,14 @@
     $ brew install --cask pycharm-ce
     $ brew install --cask tableplus
     $ brew install --cask postman
+    $ brew install rbenv ruby-build sqlite3
     
+    $ rbenv install 3.1.2
+    $ rbenv global 3.1.2
+    $ ruby -v
+    $ gem install rails -v 7.0.2.3
+    $ rbenv rehash
+    $ rails -v
     $ npm install -g nodemon @vue/cli
     $ composer global require laravel/installer
     
