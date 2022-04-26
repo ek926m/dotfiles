@@ -1,5 +1,9 @@
 ## mac based setup (apple silicon)
 
+### system
+    $ sudo softwareupdate --install-rosetta
+    $ sudo scutil --set HostName mac
+    
 ### app store
     - magnet
     - noizio
@@ -33,7 +37,6 @@
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     
 ### git
-    $ sudo scutil --set HostName mac
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
     $ ssh-keygen -t rsa -b 4096
