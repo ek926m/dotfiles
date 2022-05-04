@@ -54,6 +54,7 @@
     $ brew install php@8.0
     $ brew install composer
     $ brew install node@16
+    $ brew install yarn
     $ brew install docker-compose
     $ brew install openjdk
     $ brew install wget
