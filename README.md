@@ -61,6 +61,7 @@
     $ brew install neofetch
     $ brew install appcleaner
     $ brew install obs
+    $ brew install --cask topnotch
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
