@@ -122,6 +122,7 @@
     gaulomatic.vscode-icontheme-nomo-dark-macos
     rangav.vscode-thunder-client
     octref.vetur
+    hsnazar.hyper-term-theme
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
