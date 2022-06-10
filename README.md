@@ -122,7 +122,7 @@
     octref.vetur
     gaulomatic.vscode-icontheme-nomo-dark-macos
     miguelsolorio.min-theme
-    alexandernanberg.horizon-theme-vscode
+    viktorqvarfordt.vscode-pitch-black-theme
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
