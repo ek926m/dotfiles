@@ -118,11 +118,11 @@
     - ms-vscode-remote.remote-ssh-edit
     hookyqr.beautify
     ms-azuretools.vscode-docker
-    miguelsolorio.min-theme
-    gaulomatic.vscode-icontheme-nomo-dark-macos
     rangav.vscode-thunder-client
     octref.vetur
-    hsnazar.hyper-term-theme
+    gaulomatic.vscode-icontheme-nomo-dark-macos
+    miguelsolorio.min-theme
+    alexandernanberg.horizon-theme-vscode
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
