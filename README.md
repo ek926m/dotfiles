@@ -104,25 +104,13 @@
 
 ### vscode extensions
     onecentlin.laravel-extension-pack
-    - mikestead.dotenv
-    - editorconfig.editorconfig
-    - codingyu.laravel-goto-view
-    - onecentlin.laravel5-snippets
-    - stef-k.laravel-goto-controller
-    - felixfbecker.php-debug
-    - amiralizadeh9480.laravel-extra-intellisense
-    - ryannaddy.laravel-artisan
-    - onecentlin.laravel-blade
-    - bmewburn.vscode-intelephense-client
     ms-vscode-remote.remote-ssh
-    - ms-vscode-remote.remote-ssh-edit
-    hookyqr.beautify
     ms-azuretools.vscode-docker
     rangav.vscode-thunder-client
     octref.vetur
     gaulomatic.vscode-icontheme-nomo-dark-macos
     miguelsolorio.min-theme
-    Mohammed.simple-black-theme
+    mcagampan.dark-horizon
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
