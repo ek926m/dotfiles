@@ -34,6 +34,7 @@
     export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+    export PATH="~/Library/Python/3.8/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
