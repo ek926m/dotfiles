@@ -112,6 +112,7 @@
     gaulomatic.vscode-icontheme-nomo-dark-macos
     miguelsolorio.min-theme
     mcagampan.dark-horizon
+    alexandernanberg.horizon-theme-vscode
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
