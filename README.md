@@ -6,9 +6,6 @@
     
 ### app store
     - magnet
-    - noizio
-    - daisydisk
-    - the unarchiver
     - microsoft remote desktop
     
 ### from zsh to bash
@@ -18,10 +15,6 @@
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
     alias ll='ls -lah'
-    alias cp='cp -v'
-    alias mv='mv -v'
-    alias rm='rm -v'
-    alias servertux='ssh root@127.0.0.1'
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
@@ -29,12 +22,14 @@
     
 ### add to ~/.bash_profile    
     export PATH=/opt/homebrew/bin:$PATH
+    
     export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export PATH="~/Library/Python/3.8/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
+    
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
     eval "$(rbenv init -)"
@@ -51,20 +46,8 @@
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     $ brew install --cask docker
-    $ brew install bash
-    $ brew install tmux
-    $ brew install php@8.0
-    $ brew install composer
-    $ brew install nodenv
-    $ brew install yarn
-    $ brew install docker-compose
-    $ brew install openjdk
-    $ brew install wget
-    $ brew install neofetch
-
-    $ brew install appcleaner
-    $ brew install obs
-
+    $ brew install bash tmux php@8.0 composer nodenv rbenv ruby-build sqlite3 yarn docker-compose openjdk wget neofetch
+    
     $ brew install --cask chromedriver
     $ brew install --cask dbeaver-community
     $ brew install --cask google-chrome
@@ -73,18 +56,12 @@
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
-    $ brew install --cask gimp
-    $ brew install --cask raspberry-pi-imager
-    $ brew install --cask intellij-idea-ce
-    $ brew install --cask pycharm-ce
-    $ brew install --cask tableplus
-    $ brew install --cask postman
-    $ brew install --cask topnotch
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install rbenv ruby-build sqlite3
+    $ brew install appcleaner obs
     
+#### install and setup tooling
     $ rbenv install 3.1.2
     $ rbenv global 3.1.2
     $ ruby -v
