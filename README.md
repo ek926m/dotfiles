@@ -65,6 +65,7 @@
     $ brew install appcleaner
     $ brew install obs
 
+    $ brew install --cask chromedriver
     $ brew install --cask dbeaver-community
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
@@ -98,6 +99,10 @@
     $ composer global require laravel/installer
     
 ### docker
+    # redis
+    $ docker pull redis 
+    $ docker run --name some-redis --restart=always -p 6379:6379 redis:latest
+
     # mariadb
     $ docker pull mariadb 
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
