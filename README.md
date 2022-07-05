@@ -59,7 +59,6 @@
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install appcleaner obs
     
 #### install and setup tooling
     $ rbenv install 3.1.2
