@@ -61,8 +61,10 @@
     $ brew install openjdk
     $ brew install wget
     $ brew install neofetch
+
     $ brew install appcleaner
     $ brew install obs
+
     $ brew install --cask topnotch
     $ brew install --cask spotify
     $ brew install --cask cyberduck
@@ -87,9 +89,11 @@
     $ gem install rails -v 7.0.2.3
     $ rbenv rehash
     $ rails -v
+
     $ nodenv install 16.0.0
     $ nodenv global 16.0.0
     $ npm install -g nodemon @vue/cli
+    
     $ composer global require laravel/installer
     
 ### docker
