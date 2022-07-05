@@ -114,7 +114,6 @@
     # mongodb
     $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
-    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 mongo
 
 ### vscode extensions
     onecentlin.laravel-extension-pack
