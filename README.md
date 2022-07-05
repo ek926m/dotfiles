@@ -101,7 +101,7 @@
 ### docker
     # redis
     $ docker pull redis 
-    $ docker run --name some-redis --restart=always -p 6379:6379 redis:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
     # mariadb
     $ docker pull mariadb 
