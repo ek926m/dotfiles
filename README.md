@@ -65,10 +65,7 @@
     $ brew install appcleaner
     $ brew install obs
 
-    $ brew install --cask topnotch
-    $ brew install --cask spotify
-    $ brew install --cask cyberduck
-    $ brew install --cask discord
+    $ brew install --cask dbeaver-community
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
     $ brew install --cask microsoft-teams
@@ -81,6 +78,10 @@
     $ brew install --cask pycharm-ce
     $ brew install --cask tableplus
     $ brew install --cask postman
+    $ brew install --cask topnotch
+    $ brew install --cask spotify
+    $ brew install --cask cyberduck
+    $ brew install --cask discord
     $ brew install rbenv ruby-build sqlite3
     
     $ rbenv install 3.1.2
