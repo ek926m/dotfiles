@@ -31,13 +31,14 @@
     export PATH=/opt/homebrew/bin:$PATH
     export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
-    export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export PATH="~/Library/Python/3.8/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     export PATH="$HOME/.rbenv/bin:$PATH"
+    export PATH="$HOME/.nodenv/bin:$PATH"
     eval "$(rbenv init -)"
+    eval "$(nodenv init -)"
     
 ### git
     $ git config --global user.email "ek926m@gmail.com"
@@ -54,7 +55,8 @@
     $ brew install tmux
     $ brew install php@8.0
     $ brew install composer
-    $ brew install node@16
+    //$ brew install node@16
+    $ brew install nodenv
     $ brew install yarn
     $ brew install docker-compose
     $ brew install openjdk
@@ -86,6 +88,8 @@
     $ gem install rails -v 7.0.2.3
     $ rbenv rehash
     $ rails -v
+    $ nodenv install 16.0.0
+    $ nodenv global 16.0.0
     $ npm install -g nodemon @vue/cli
     $ composer global require laravel/installer
     
