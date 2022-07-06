@@ -46,7 +46,7 @@
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     $ brew install --cask docker
-    $ brew install bash tmux php@8.0 composer nodenv rbenv ruby-build sqlite3 yarn docker-compose openjdk wget neofetch
+    $ brew install bash tmux php@8.0 composer nodenv rbenv ruby-build sqlite3 yarn docker-compose openjdk wget neofetch mysql
     
     $ brew install --cask chromedriver
     $ brew install --cask dbeaver-community
