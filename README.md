@@ -76,14 +76,6 @@
     $ composer global require laravel/installer
     
 ### docker
-    # redis
-    $ docker pull redis 
-    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
-
-    # mysql
-    $ docker pull mysql
-    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
-
     # mariadb
     $ docker pull mariadb 
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
@@ -92,9 +84,17 @@
     $ docker pull phpmyadmin
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
 
+    # redis
+    $ docker pull redis 
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+
     # mongodb
     $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+
+    # mysql
+    $ docker pull mysql
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
 
     # mssql
     $ docker pull mcr.microsoft.com/mssql/server:2022-latest
