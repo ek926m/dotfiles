@@ -6,7 +6,6 @@
     
 ### app store
     - magnet
-    - microsoft remote desktop
     
 ### from zsh to bash
     $ chsh -s /bin/bash
