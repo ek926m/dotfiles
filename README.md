@@ -61,17 +61,17 @@
     $ brew install --cask topnotch
     
 #### install and setup tooling
+##### rbenv
     $ rbenv install 3.1.2
     $ rbenv global 3.1.2
-    $ ruby -v
-    $ gem install rails -v 7.0.2.3
     $ rbenv rehash
-    $ rails -v
-
+##### nodenv
     $ nodenv install 16.0.0
     $ nodenv global 16.0.0
-    $ npm install -g nodemon @vue/cli
-    
+    $ nodenv rehash
+##### rails, npm libs and laravel
+    $ gem install rails -v 7.0.2.3
+    $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
     
 ### docker
