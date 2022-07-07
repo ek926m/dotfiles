@@ -59,6 +59,7 @@
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
+    $ brew install --cask topnotch
     
 #### install and setup tooling
     $ rbenv install 3.1.2
