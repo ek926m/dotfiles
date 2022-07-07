@@ -95,6 +95,10 @@
     $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
 
+    # mssql
+    $ docker pull mcr.microsoft.com/mssql/server:2022-latest
+    $ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=root" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+
 ### vscode extensions
     onecentlin.laravel-extension-pack
     ms-vscode-remote.remote-ssh
