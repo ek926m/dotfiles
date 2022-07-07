@@ -79,6 +79,10 @@
     $ docker pull redis 
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
+    # mysql
+    $ docker pull mysql
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+
     # mariadb
     $ docker pull mariadb 
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
