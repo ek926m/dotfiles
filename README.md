@@ -55,6 +55,7 @@
     $ brew install --cask microsoft-word
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-powerpoint
+    $ brew install --cask microsoft-outlook
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
