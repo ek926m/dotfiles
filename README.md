@@ -45,11 +45,11 @@
     $ ssh -T git@github.com
     
 #### create new project from folder
-    $ git init
+    $ git init -b master
     $ git add .
     $ git commit -am "initial"
-    # get url from github ssh link
     $ git remote add origin git@github.com:ek926m/test.git
+    $ git remote -v
     $ git push -u origin master
  
 ### homebrew
