@@ -85,6 +85,10 @@
     $ nodenv install 16.0.0
     $ nodenv global 16.0.0
     $ nodenv rehash
+##### pyenv
+    $ pyenv install 3.10.5
+    $ pyenv global 3.10.5
+    $ pyenv rehash
 ##### rails, npm libs and laravel
     $ gem install rails -v 7.0.2.3
     $ npm install -g nodemon @vue/cli    
