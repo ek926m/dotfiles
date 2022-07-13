@@ -60,6 +60,7 @@
     $ brew install openjdk
     $ brew install wget
     $ brew install mysql
+    $ brew install openconnect
     $ brew install --cask chromedriver
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
