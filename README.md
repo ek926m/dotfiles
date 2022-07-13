@@ -31,8 +31,10 @@
     
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
+    export PATH="$HOME/.pyenv/bin:$PATH"
     eval "$(rbenv init -)"
     eval "$(nodenv init -)"
+    eval "$(pyenv init -)"
     
 ### git
     $ git config --global user.email "ek926m@gmail.com"
