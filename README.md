@@ -51,7 +51,7 @@
     $ git commit -am "initial"
     $ git remote add origin git@github.com:ek926m/test.git
     $ git remote -v
-    $ git push -u origin master
+    $ git push -u -f origin master
  
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
