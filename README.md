@@ -36,6 +36,7 @@
     eval "$(pyenv init -)"
     
 ### git
+    $ git config --global init.defaultBranch master
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
     $ ssh-keygen -t rsa -b 4096
