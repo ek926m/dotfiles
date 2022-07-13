@@ -43,6 +43,14 @@
     $ cat ~/.ssh/id_rsa.pub
     ### https://github.com/settings/keys
     $ ssh -T git@github.com
+    
+#### create new project from folder
+    $ git init
+    $ git add .
+    $ git commit -am "initial"
+    # get url from github ssh link
+    $ git remote add origin git@github.com:ek926m/test.git
+    $ git push -u origin master
  
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
