@@ -83,6 +83,8 @@
     $ pyenv rehash
 ##### rails, npm libs and laravel
     $ gem install rails -v 7.0.2.3
+    $ gem update bundler
+    $ gem update rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
     
