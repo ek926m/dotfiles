@@ -59,10 +59,8 @@
     $ brew install docker-compose
     $ brew install openjdk
     $ brew install wget
-    $ brew install neofetch
     $ brew install mysql
     $ brew install --cask chromedriver
-    $ brew install --cask dbeaver-community
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
     $ brew install --cask microsoft-teams
@@ -73,7 +71,6 @@
     $ brew install --cask spotify
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install --cask topnotch
     
 #### install and setup tooling
 ##### rbenv
