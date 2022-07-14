@@ -3,6 +3,8 @@
 ### system
     $ sudo softwareupdate --install-rosetta
     $ sudo scutil --set HostName mac
+    $ defaults write com.apple.screencapture type jpg
+    $ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
     
 ### app store
     - magnet
@@ -55,8 +57,7 @@
  
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    $ brew install --cask docker
-    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn docker-compose openjdk wget mysql openconnect
+    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk wget mysql openconnect
     $ brew install --cask chromedriver
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
@@ -91,6 +92,9 @@
     $ composer global require laravel/installer
     
 ### docker
+    $ brew install --cask docker
+    $ brew install docker-compose
+    
     # mariadb
     $ docker pull mariadb 
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
@@ -114,10 +118,6 @@
     # mssql
     $ docker pull mcr.microsoft.com/mssql/server:2022-latest
     $ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=root" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
-
-### mac settings
-    $ defaults write com.apple.screencapture type jpg
-    $ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
 
 ### vscode extensions
     onecentlin.laravel-extension-pack
