@@ -67,6 +67,7 @@
     $ brew install --cask microsoft-outlook
     $ brew install --cask spotify
     $ brew install --cask cyberduck
+    $ brew install --cask tableplus
     $ brew install --cask discord
     
 #### install and setup tooling
