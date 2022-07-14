@@ -93,6 +93,7 @@
     $ gem update rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
+    $ rails new myapp --css tailwind -d mysql
     
 ### docker
     $ brew install --cask docker
