@@ -10,7 +10,6 @@
     - xcode
     - magnet
     - noizio
-    - daisydisk
     
 ### from zsh to bash
     $ chsh -s /bin/bash
