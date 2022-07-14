@@ -62,7 +62,7 @@
  
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk wget mysql mysql@5.7 openconnect
+    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk wget mysql@5.7 openconnect
     $ brew install --cask chromedriver
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
