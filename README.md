@@ -17,26 +17,28 @@
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
-    
     alias ll='ls -lah'
+    alias vpn="sudo openconnect -v --authgroup d.velop -u ekai webvpn.d-velop.de"
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
-    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
-    
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0$
+
     export PATH=/opt/homebrew/bin:$PATH
+    export PATH="/opt/homebrew/sbin:$PATH"
     export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
     export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
+    export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export PATH="~/Library/Python/3.8/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
     export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
-    
+
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
     export PATH="$HOME/.pyenv/bin:$PATH"
-    
+
     eval "$(rbenv init -)"
     eval "$(nodenv init -)"
     eval "$(pyenv init -)"
@@ -61,7 +63,7 @@
  
 ### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk wget mysql@5.7 openconnect
+    $ brew install bash tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk wget mysql@5.7 openssl openconnect
     $ brew install --cask chromedriver
     $ brew install --cask google-chrome
     $ brew install --cask visual-studio-code
