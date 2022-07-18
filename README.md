@@ -125,7 +125,8 @@
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
 
     # mongodb-express
-    $ docker run -d --name some-mongoexpress --restart=always -e ME_CONFIG_MONGODB_SERVER=some-mongo -e ME_CONFIG_MONGODB_AUTH_USERNAME=root -e ME_CONFIG_MONGODB_AUTH_PASSWORD=root -p 8082:8082 mongo-express
+    $ docker network create -d bridge some-network
+    $ docker run -d --name some-mongoexpress --network some-network --restart=always -e ME_CONFIG_MONGODB_SERVER=some-mongo -e ME_CONFIG_MONGODB_AUTH_USERNAME=root -e ME_CONFIG_MONGODB_AUTH_PASSWORD=root -p 8082:8082 mongo-express
 
     # mysql
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
