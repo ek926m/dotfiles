@@ -50,6 +50,10 @@
     eval "$(pyenv init -)"
     
 ### git
+    $ git config --global color.branch auto
+    $ git config --global color.diff auto
+    $ git config --global color.interactive auto
+    $ git config --global color.status auto
     $ git config --global color.ui auto
     $ git config --global init.defaultBranch master
     $ git config --global user.email "ek926m@gmail.com"
