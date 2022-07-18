@@ -121,7 +121,8 @@
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
     
     # rediscommander
-    $ docker run --name some-rediscommander -p 8081:8081 --env REDIS_HOSTS=local:127.0.0.1:6379 --restart always -d rediscommander/redis-commander:latest
+    $ docker inspect some-redis #search for ip like 172.17.0.3
+    $ docker run --name some-rediscommander --platform linux/x86_64 -p 8081:8081 --env REDIS_HOSTS=local:172.17.0.3:6379 --restart always -d rediscommander/redis-commander:latest
 
     # mongodb
     $ docker pull mongo
