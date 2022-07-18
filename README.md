@@ -5,7 +5,7 @@
     $ sudo scutil --set HostName mac
     $ defaults write com.apple.screencapture type jpg
     $ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
-    
+
 ### app store
     - xcode
     - magnet
@@ -14,6 +14,9 @@
 ### from zsh to bash
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
+
+### import terminal theme
+    # download Gruvbox-dark.terminal
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
