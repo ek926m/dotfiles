@@ -33,6 +33,7 @@
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export PATH="~/Library/Python/3.8/bin:$PATH"
     export JAVA_HOME="/opt/homebrew/opt/openjdk"
+    export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
     export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
 
     export PATH="$HOME/.rbenv/bin:$PATH"
