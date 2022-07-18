@@ -109,36 +109,32 @@
     $ brew install docker-compose
     
     # mariadb
-    $ docker pull mariadb 
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
 
     # phpmyadmin for mariadb
-    $ docker pull phpmyadmin
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
 
     # redis
-    $ docker pull redis 
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
     
     # rediscommander
     $ docker inspect some-redis #search for ip like 172.17.0.3
-    $ docker run --name some-rediscommander --platform linux/x86_64 -p 8081:8081 --env REDIS_HOSTS=local:172.17.0.3:6379 --restart always -d rediscommander/redis-commander:latest
+    $ docker run --name some-rediscommander --platform linux/x86_64 -p 8081:8081 -e REDIS_HOSTS=local:172.17.0.3:6379 --restart always -d rediscommander/redis-commander:latest
 
     # mongodb
-    $ docker pull mongo
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
 
+    # mongodb-express
+    $ docker run -d --name some-mongoexpress --restart=always -e ME_CONFIG_MONGODB_SERVER=some-mongo -e ME_CONFIG_MONGODB_AUTH_USERNAME=root -e ME_CONFIG_MONGODB_AUTH_PASSWORD=root -p 8082:8082 mongo-express
+
     # mysql
-    $ docker pull mysql
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-mysql --platform linux/x86_64 --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
     
     # phpmyadmin for mysql
-    $ docker pull phpmyadmin
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mysql:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
     
     # if you really need mssql
-    $ docker pull mcr.microsoft.com/mssql/server:2022-latest
     $ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=root" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 
 ### vscode extensions
