@@ -117,16 +117,12 @@
     # redis
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
     
-    # rediscommander
-    $ docker inspect some-redis #search for ip like 172.17.0.3
+    # rediscommander (search for ip like 172.17.0.3)
+    $ docker inspect some-redis
     $ docker run --name some-rediscommander --platform linux/x86_64 -p 8081:8081 -e REDIS_HOSTS=local:172.17.0.3:6379 --restart always -d rediscommander/redis-commander:latest
 
     # mongodb
     $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
-
-    # mongodb-express
-    $ docker network create -d bridge some-network
-    $ docker run -d --name some-mongoexpress --network some-network --restart=always -e ME_CONFIG_MONGODB_SERVER=some-mongo -e ME_CONFIG_MONGODB_AUTH_USERNAME=root -e ME_CONFIG_MONGODB_AUTH_PASSWORD=root -p 8082:8082 mongo-express
 
     # mysql
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
