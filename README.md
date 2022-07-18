@@ -17,8 +17,12 @@
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
-    alias ll='ls -lah'
     alias vpn="sudo openconnect -v --authgroup d.velop -u ekai webvpn.d-velop.de"
+
+    export CLICOLOR=1
+    alias ls='ls --color=auto'
+    alias ll='ls -lah --color=auto'
+    alias grep='grep --color=auto'
 
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -46,6 +50,7 @@
     eval "$(pyenv init -)"
     
 ### git
+    $ git config --global color.ui auto
     $ git config --global init.defaultBranch master
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
