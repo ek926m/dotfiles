@@ -157,6 +157,7 @@
     $ code --install-extension Gaulomatic.vscode-icontheme-nomo-dark-macos
     $ code --install-extension glitchbl.laravel-create-view
     $ code --install-extension IHunte.laravel-blade-wrapper
+    $ code --install-extension jdinhlife.gruvbox
     $ code --install-extension miguelsolorio.min-theme
     $ code --install-extension mikestead.dotenv
     $ code --install-extension misogi.ruby-rubocop
