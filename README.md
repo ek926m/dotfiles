@@ -149,7 +149,6 @@
 
 ### vscode extensions
     $ code --list-extensions | xargs -L 1 echo code --install-extension
-
     $ code --install-extension 2gua.rainbow-brackets
     $ code --install-extension amiralizadeh9480.laravel-extra-intellisense
     $ code --install-extension bradlc.vscode-tailwindcss
@@ -160,7 +159,6 @@
     $ code --install-extension Gaulomatic.vscode-icontheme-nomo-dark-macos
     $ code --install-extension glitchbl.laravel-create-view
     $ code --install-extension IHunte.laravel-blade-wrapper
-    $ code --install-extension jdinhlife.gruvbox
     $ code --install-extension miguelsolorio.min-theme
     $ code --install-extension mikestead.dotenv
     $ code --install-extension misogi.ruby-rubocop
@@ -176,9 +174,11 @@
     $ code --install-extension rangav.vscode-thunder-client
     $ code --install-extension rebornix.ruby
     $ code --install-extension ryannaddy.laravel-artisan
+    $ code --install-extension sainnhe.gruvbox-material
     $ code --install-extension shufo.vscode-blade-formatter
     $ code --install-extension sianglim.slim
-    $ code --install-extension wingrunr21.vscode-ruby
+    $ code --install-extension wingrunr21.vscode-ruby  
+  
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
