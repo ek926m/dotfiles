@@ -94,6 +94,7 @@
     $ brew install --cask cyberduck
     $ brew install --cask tableplus
     $ brew install --cask discord
+    $ brew install --cask vlc
 
 #### if no docker
     $ brew install mysql@5.7 redis
