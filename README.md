@@ -26,6 +26,8 @@
     alias ls='ls --color=auto'
     alias ll='ls -lah --color=auto'
     alias grep='grep --color=auto'
+    alias campfire='vlc --intf dummy campfire.caf --gain=0.5'
+    alias thunder='vlc --intf dummy thunderstorm.caf --gain=0.5'
 
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
