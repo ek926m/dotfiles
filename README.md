@@ -16,7 +16,7 @@
     $ cd && touch .hushlogin
 
 ### import terminal theme
-    # download Gruvbox-dark.terminal
+    $ wget https://raw.githubusercontent.com/ek926m/.dotfiles/main/Gruvbox-dark.terminal
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
