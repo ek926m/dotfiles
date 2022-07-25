@@ -109,6 +109,7 @@
     $ intelbrew install bash
     $ intelbrew install tmux
     $ intelbrew install curl
+    $ intelbrew install openssl
     $ intelbrew install php@8.0
     $ intelbrew install composer
     $ intelbrew install pyenv
@@ -119,7 +120,6 @@
     $ intelbrew install yarn
     $ intelbrew install openjdk
     $ intelbrew install wget
-    $ intelbrew install openssl
     $ intelbrew install openconnect
  
 ### homebrew TODO
