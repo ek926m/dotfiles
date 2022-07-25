@@ -147,17 +147,11 @@
 
 #### install and setup tooling
 ##### rbenv
-    $ rbenv install 3.1.2
-    $ rbenv global 3.1.2
-    $ rbenv rehash
+    $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
 ##### nodenv
-    $ nodenv install 16.0.0
-    $ nodenv global 16.0.0
-    $ nodenv rehash
+    $ nodenv install 16.0.0 && nodenv global 16.0.0 && nodenv rehash
 ##### pyenv
-    $ pyenv install 3.10.5
-    $ pyenv global 3.10.5
-    $ pyenv rehash
+    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
 ##### rails, npm libs and laravel
     $ gem install rails -v 7.0.2.3
     $ gem update bundler
