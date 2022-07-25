@@ -130,15 +130,11 @@
 ##### pyenv
     $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
 ##### rails, npm libs and laravel
-    $ gem install rails -v 7.0.2.3
-    $ gem update bundler
-    $ gem update rails
+    $ gem install rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
-    $ rails new myapp --css tailwind -d mysql
     
 ### docker
-
 #### mariadb + phpmyadmin
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
