@@ -76,19 +76,21 @@
     $ git push -u -f origin master
  
 ### homebrew
+#### remove old installations
     brew remove --force $(brew list --formula)
     brew remove --cask --force $(brew list)
 
-    # INTEL HOMEBREW
+#### intel homebrew
     arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     arch -x86_64 /usr/local/homebrew/bin/brew
     # alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
 
-    # ARM HOMEBREW
+#### arm homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     /opt/homebrew/bin/brew
     # alias armbrew='/opt/homebrew/bin/brew'
-    
+  
+#### packages
     $ armbrew install --cask docker
     $ armbrew install docker-compose
     $ armbrew install --cask google-chrome
