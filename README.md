@@ -113,6 +113,7 @@
     $ intelbrew install pyenv
     $ intelbrew install nodenv
     $ intelbrew install rbenv
+    $ intelbrew install libyaml
     $ intelbrew install mysql
     $ intelbrew install sqlite3
     $ intelbrew install yarn
