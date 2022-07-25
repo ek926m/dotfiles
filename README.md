@@ -107,7 +107,8 @@
     $ armbrew install --cask vlc
     
     $ intelbrew install bash
-    $ intelbrew install tmux 
+    $ intelbrew install tmux
+    $ intelbrew install curl
     $ intelbrew install php@8.0 
     $ intelbrew install composer 
     $ intelbrew install pyenv 
