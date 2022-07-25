@@ -114,6 +114,7 @@
     $ intelbrew install nodenv
     $ intelbrew install rbenv
     $ intelbrew install libyaml
+    $ intelbrew install ruby-build
     $ intelbrew install mysql
     $ intelbrew install sqlite3
     $ intelbrew install yarn
