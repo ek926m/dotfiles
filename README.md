@@ -77,7 +77,52 @@
     $ git remote -v
     $ git push -u -f origin master
  
-### homebrew
+
+### WTF
+    brew remove --force $(brew list --formula)
+    brew remove --cask --force $(brew list)
+
+    # INTEL HOMEBREW
+    arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent$
+    arch -x86_64 /usr/local/homebrew/bin/brew
+
+    # ARM HOMEBREW
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew$
+    /opt/homebrew/bin/brew
+    
+    alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
+    alias armbrew='/opt/homebrew/bin/brew'
+    
+    $ armbrew install --cask docker
+    $ armbrew install docker-compose
+    $ armbrew install --cask chromedriver
+    $ armbrew install --cask google-chrome
+    $ armbrew install --cask visual-studio-code
+    $ armbrew install --cask microsoft-teams
+    $ armbrew install --cask raspberry-pi-imager
+    $ armbrew install --cask spotify
+    $ armbrew install --cask cyberduck
+    $ armbrew install --cask tableplus
+    $ armbrew install --cask discord
+    $ armbrew install --cask vlc
+    
+    $ intelbrew install bash
+    $ intelbrew install tmux 
+    $ intelbrew install php@8.0 
+    $ intelbrew install composer 
+    $ intelbrew install pyenv 
+    $ intelbrew install nodenv 
+    $ intelbrew install rbenv 
+    $ intelbrew install ruby-build 
+    $ intelbrew install sqlite3 
+    $ intelbrew install yarn 
+    $ intelbrew install openjdk 
+    $ intelbrew install neofetch 
+    $ intelbrew install wget 
+    $ intelbrew install openssl 
+    $ intelbrew install openconnect 
+ 
+### homebrew TODO
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     $ brew install --cask docker
     $ brew install bash docker-compose tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk neofetch wget openssl openconnect coreutils
