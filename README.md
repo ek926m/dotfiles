@@ -95,8 +95,8 @@
     
     $ armbrew install --cask docker
     $ armbrew install docker-compose
-    $ armbrew install --cask chromedriver
     $ armbrew install --cask google-chrome
+    $ armbrew install --cask chromedriver
     $ armbrew install --cask visual-studio-code
     $ armbrew install --cask microsoft-teams
     $ armbrew install --cask raspberry-pi-imager
