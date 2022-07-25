@@ -113,8 +113,8 @@
     $ intelbrew install composer 
     $ intelbrew install pyenv 
     $ intelbrew install nodenv 
-    $ intelbrew install rbenv 
-    $ intelbrew install ruby-build 
+    $ intelbrew install rbenv
+    $ intelbrew install mysql
     $ intelbrew install sqlite3 
     $ intelbrew install yarn 
     $ intelbrew install openjdk 
