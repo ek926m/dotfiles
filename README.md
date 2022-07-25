@@ -81,11 +81,11 @@
     brew remove --cask --force $(brew list)
 
     # INTEL HOMEBREW
-    arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent$
+    arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     arch -x86_64 /usr/local/homebrew/bin/brew
 
     # ARM HOMEBREW
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew$
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     /opt/homebrew/bin/brew
     
     alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
