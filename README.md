@@ -34,22 +34,20 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
+    alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
+    export PATH=/usr/local/Homebrew/bin:$PATH
+    
+    alias armbrew='/opt/homebrew/bin/brew'
     export PATH=/opt/homebrew/bin:$PATH
-    export PATH="/opt/homebrew/sbin:$PATH"
-    export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
-    export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
-    export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+    
+    export PATH="/usr/local/homebrew/opt/php@8.0/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
-    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-    export PATH="~/Library/Python/3.8/bin:$PATH"
-    export JAVA_HOME="/opt/homebrew/opt/openjdk"
-    export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-    export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
-
+    export PATH="/usr/local/homebrew/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/usr/local/homebrew/opt/openjdk"
+    
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
     export PATH="$HOME/.pyenv/bin:$PATH"
-
     eval "$(rbenv init -)"
     eval "$(nodenv init -)"
     eval "$(pyenv init -)"
@@ -78,7 +76,7 @@
     $ git push -u -f origin master
  
 
-### WTF
+### homebrew
     brew remove --force $(brew list --formula)
     brew remove --cask --force $(brew list)
 
@@ -122,28 +120,6 @@
     $ intelbrew install wget
     $ intelbrew install openconnect
  
-### homebrew TODO
-    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    $ brew install --cask docker
-    $ brew install bash docker-compose tmux php@8.0 composer pyenv nodenv rbenv ruby-build sqlite3 yarn openjdk neofetch wget openssl openconnect coreutils
-    $ brew install --cask chromedriver
-    $ brew install --cask google-chrome
-    $ brew install --cask visual-studio-code
-    $ brew install --cask microsoft-teams
-    $ brew install --cask microsoft-word
-    $ brew install --cask microsoft-excel
-    $ brew install --cask microsoft-powerpoint
-    $ brew install --cask microsoft-outlook
-    $ brew install --cask raspberry-pi-imager
-    $ brew install --cask spotify
-    $ brew install --cask cyberduck
-    $ brew install --cask tableplus
-    $ brew install --cask discord
-    $ brew install --cask vlc
-
-#### if no docker
-    $ brew install mysql@5.7 redis
-
 #### install and setup tooling
 ##### rbenv
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
