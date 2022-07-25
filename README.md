@@ -109,19 +109,18 @@
     $ intelbrew install bash
     $ intelbrew install tmux
     $ intelbrew install curl
-    $ intelbrew install php@8.0 
-    $ intelbrew install composer 
-    $ intelbrew install pyenv 
-    $ intelbrew install nodenv 
+    $ intelbrew install php@8.0
+    $ intelbrew install composer
+    $ intelbrew install pyenv
+    $ intelbrew install nodenv
     $ intelbrew install rbenv
     $ intelbrew install mysql
-    $ intelbrew install sqlite3 
-    $ intelbrew install yarn 
-    $ intelbrew install openjdk 
-    $ intelbrew install neofetch 
-    $ intelbrew install wget 
-    $ intelbrew install openssl 
-    $ intelbrew install openconnect 
+    $ intelbrew install sqlite3
+    $ intelbrew install yarn
+    $ intelbrew install openjdk
+    $ intelbrew install wget
+    $ intelbrew install openssl
+    $ intelbrew install openconnect
  
 ### homebrew TODO
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
