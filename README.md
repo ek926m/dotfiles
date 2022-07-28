@@ -61,6 +61,7 @@
 #### git config
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
+    
     $ git config --global init.defaultBranch master
     $ git config --global color.branch auto
     $ git config --global color.diff auto
