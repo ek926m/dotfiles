@@ -26,8 +26,6 @@
     alias ls='ls --color=auto'
     alias ll='ls -lah --color=auto'
     alias grep='grep --color=auto'
-    alias fire='vlc --intf dummy ~/aa_fire.mp3 --gain=0.4'
-    alias thunder='vlc --intf dummy ~/aa_thunder.mp3 --gain=0.15'
 
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -103,9 +101,8 @@
     $ armbrew install --cask raspberry-pi-imager
     $ armbrew install --cask spotify
     $ armbrew install --cask cyberduck
-    $ armbrew install --cask tableplus
+    $ armbrew install --cask dbeaver-community
     $ armbrew install --cask discord
-    $ armbrew install --cask vlc
     
     $ intelbrew install bash
     $ intelbrew install tmux
