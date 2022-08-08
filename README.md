@@ -392,7 +392,7 @@
         - CHECK Pfadleiste
         - CHECK Statusleiste
 - Terminal
-    - Schrift: SF Mono Regular 14
+    - Schrift: SF Mono Regular 12
 - Chrome
     - Entwicklertools
         - Network
