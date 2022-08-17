@@ -8,7 +8,7 @@
 * [mac_homebrew](https://github.com/ek926m/dotfiles/blob/main/mac_homebrew.md)
 * [mac_settings](https://github.com/ek926m/dotfiles/blob/main/mac_settings.md)
 
-## not maintained
+## !maintained
 * [debian_desktop](https://github.com/ek926m/dotfiles/blob/main/debian_desktop.md)
 * [debian_server](https://github.com/ek926m/dotfiles/blob/main/debian_server.md)
 * [redhat_desktop](https://github.com/ek926m/dotfiles/blob/main/redhat_desktop.md)
