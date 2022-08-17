@@ -190,6 +190,17 @@
     $ code --install-extension sianglim.slim
     $ code --install-extension wingrunr21.vscode-ruby  
   
+### vscode user settings.json
+    {
+        "workbench.iconTheme": "vscode-icontheme-nomo-dark-macos",
+        "workbench.colorTheme": "Min Light",
+        "terminal.integrated.fontSize": 14,
+        "editor.wordWrap": "on",
+        "security.workspace.trust.untrustedFiles": "open",
+        "workbench.activityBar.visible": false,
+        "ruby.intellisense": "rubyLocate",
+        "editor.fontSize": 13
+    }
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
@@ -237,6 +248,39 @@
         {
             "key": "cmd+9",
             "command": "workbench.action.openEditorAtIndex9"
+        },
+        {
+            "key": "cmd+0",
+            "command": "workbench.action.zoomReset"
+        },
+        {
+            "key": "cmd+numpad0",
+            "command": "-workbench.action.zoomReset"
+        },
+        {
+            "key": "cmd+g",
+            "command": "-editor.action.nextMatchFindAction",
+            "when": "editorFocus"
+        },
+        {
+            "key": "shift+cmd+g",
+            "command": "-editor.action.previousMatchFindAction",
+            "when": "editorFocus"
+        },
+        {
+            "key": "shift+cmd+g",
+            "command": "-workbench.action.terminal.findPrevious",
+            "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+        },
+        {
+            "key": "shift+cmd+g",
+            "command": "workbench.view.scm",
+            "when": "workbench.scm.active"
+        },
+        {
+            "key": "ctrl+shift+g",
+            "command": "-workbench.view.scm",
+            "when": "workbench.scm.active"
         }
     ]
 
