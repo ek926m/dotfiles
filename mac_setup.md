@@ -2,15 +2,10 @@
 
 ### system
     $ sudo softwareupdate --install-rosetta --agree-to-license
+    $ xcode-select –install
     $ sudo scutil --set HostName mac
     $ defaults write com.apple.screencapture type jpg
     $ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
-    $ zip -er project.zip ./folder_to_zip/
-
-### app store
-    - xcode
-    - magnet
-    - noizio
     
 ### from zsh to bash
     $ chsh -s /bin/bash
@@ -63,6 +58,8 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
     
+#### encrypt and zip a file
+    $ zip -er project.zip ./folder_to_zip/
 
 ### vscode keybindings.json for mac setups
     // Place your key bindings in this file to override the defaults
