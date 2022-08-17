@@ -159,36 +159,27 @@
     $ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=root" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 
 ### vscode extensions
-    $ code --list-extensions | xargs -L 1 echo code --install-extension
-    $ code --install-extension 2gua.rainbow-brackets
-    $ code --install-extension amiralizadeh9480.laravel-extra-intellisense
-    $ code --install-extension bradlc.vscode-tailwindcss
-    $ code --install-extension bung87.vscode-gemfile
-    $ code --install-extension castwide.solargraph
-    $ code --install-extension codingyu.laravel-goto-view
-    $ code --install-extension EditorConfig.EditorConfig
-    $ code --install-extension Gaulomatic.vscode-icontheme-nomo-dark-macos
-    $ code --install-extension glitchbl.laravel-create-view
-    $ code --install-extension IHunte.laravel-blade-wrapper
-    $ code --install-extension miguelsolorio.min-theme
-    $ code --install-extension mikestead.dotenv
-    $ code --install-extension misogi.ruby-rubocop
-    $ code --install-extension ms-azuretools.vscode-docker
-    $ code --install-extension ms-vscode-remote.remote-containers
-    $ code --install-extension ms-vscode-remote.remote-ssh
-    $ code --install-extension ms-vscode-remote.remote-ssh-edit
-    $ code --install-extension naoray.laravel-goto-components
-    $ code --install-extension octref.vetur
-    $ code --install-extension onecentlin.laravel-blade
-    $ code --install-extension onecentlin.laravel-extension-pack
-    $ code --install-extension onecentlin.laravel5-snippets
-    $ code --install-extension rangav.vscode-thunder-client
-    $ code --install-extension rebornix.ruby
-    $ code --install-extension ryannaddy.laravel-artisan
-    $ code --install-extension sainnhe.gruvbox-material
-    $ code --install-extension shufo.vscode-blade-formatter
-    $ code --install-extension sianglim.slim
-    $ code --install-extension wingrunr21.vscode-ruby  
+    code --list-extensions | xargs -L 1 echo code --install-extension
+    code --install-extension amiralizadeh9480.laravel-extra-intellisense
+    code --install-extension bmewburn.vscode-intelephense-client
+    code --install-extension codingyu.laravel-goto-view
+    code --install-extension EditorConfig.EditorConfig
+    code --install-extension Gaulomatic.vscode-icontheme-nomo-dark-macos
+    code --install-extension glitchbl.laravel-create-view
+    code --install-extension IHunte.laravel-blade-wrapper
+    code --install-extension miguelsolorio.min-theme
+    code --install-extension mikestead.dotenv
+    code --install-extension naoray.laravel-goto-components
+    code --install-extension octref.vetur
+    code --install-extension onecentlin.laravel-blade
+    code --install-extension onecentlin.laravel-extension-pack
+    code --install-extension onecentlin.laravel5-snippets
+    code --install-extension rebornix.ruby
+    code --install-extension ryannaddy.laravel-artisan
+    code --install-extension sainnhe.gruvbox-material
+    code --install-extension shufo.vscode-blade-formatter
+    code --install-extension sianglim.slim
+    code --install-extension wingrunr21.vscode-ruby 
   
 ### vscode user settings.json
     {
