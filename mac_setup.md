@@ -11,6 +11,9 @@
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
 
+### import terminal theme
+    $ wget https://raw.githubusercontent.com/ek926m/dotfiles/main/gruvbox-dark.terminal
+
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
     alias vpn="sudo openconnect -v --authgroup d.velop -u ekai webvpn.d-velop.de"
