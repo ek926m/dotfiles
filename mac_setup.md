@@ -51,6 +51,8 @@
     eval "$(pyenv init -)"
  
 #### install and setup tooling
+##### php xdebug
+    $ arch -x86_64 sudo pecl install xdebug
 ##### rbenv
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
 ##### nodenv
