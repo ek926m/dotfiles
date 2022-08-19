@@ -53,6 +53,24 @@
 #### install and setup tooling
 ##### php xdebug
     $ arch -x86_64 sudo pecl install xdebug
+##### add at top (/usr/local/Homebrew/etc/php/8.0/php.ini)
+    zend_extension=xdebug.so
+    xdebug.idekey=PHPSTORM
+    xdebug.mode=debug
+    xdebug.client_host=127.0.0.1
+    xdebug.client_port=9003
+    xdebug.start_with_request=yes
+    xdebug.discover_client_host = 1
+##### phpstorm
+    - Run/Debug Configurations
+        - set IDE Key (PHPSTORM)
+        - Host: 127.0.0.1
+        - Port: 8000
+        - Debugger: Xdebug
+    - CLI Interpreters:
+        - Check if Debugger is: Xdebug 3.x.x
+    - Additional:
+        - Debugger extension: /usr/local/Homebrew/lib/php/pecl/20200930/xdebug.so
 ##### rbenv
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
 ##### nodenv
