@@ -71,6 +71,12 @@
         - Check if Debugger is: Xdebug 3.x.x
     - Additional:
         - Debugger extension: /usr/local/Homebrew/lib/php/pecl/20200930/xdebug.so
+##### phpstorm fix
+    # https://laracasts.com/series/how-to-be-awesome-in-phpstorm/episodes/15
+    $ composer require --dev barryvdh/laravel-ide-helper
+    $ php artisan ide-helper:generate
+    $ php artisan ide-helper:models
+    $ php artisan ide-helper:meta
 ##### rbenv
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
 ##### nodenv
