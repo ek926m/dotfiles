@@ -8,14 +8,6 @@
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
     
-    $ git config --global init.defaultBranch master
-    $ git config --global color.branch auto
-    $ git config --global color.diff auto
-    $ git config --global color.interactive auto
-    $ git config --global color.status auto
-    $ git config --global color.ui auto
-    $ git config --global pull.ff only
-    
 #### create new project from folder
     $ git init -b master
     $ git add .
