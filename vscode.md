@@ -24,11 +24,13 @@
 ### vscode user settings.json
     {
         "workbench.iconTheme": "vscode-icontheme-nomo-dark-macos",
-        "workbench.colorTheme": "Min Light",
-        "terminal.integrated.fontSize": 14,
+        "workbench.colorTheme": "Gruvbox Material Dark",
+        "terminal.integrated.fontSize": 13,
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
-        "workbench.activityBar.visible": false,
         "ruby.intellisense": "rubyLocate",
-        "editor.fontSize": 13
+        "editor.fontSize": 13,
+        "workbench.activityBar.visible": false,
+        "debug.console.fontSize": 13,
+        "markdown.preview.fontSize": 13
     }
