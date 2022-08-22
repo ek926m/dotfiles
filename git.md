@@ -16,3 +16,5 @@
     $ git remote -v
     $ git push -u -f origin master
  
+#### git stash single file
+    $ git checkout HEAD -- file.txt
