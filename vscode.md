@@ -1,5 +1,6 @@
 ### vscode extensions
     code --list-extensions | xargs -L 1 echo code --install-extension
+    
     code --install-extension amiralizadeh9480.laravel-extra-intellisense
     code --install-extension bmewburn.vscode-intelephense-client
     code --install-extension codingyu.laravel-goto-view
