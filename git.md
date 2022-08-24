@@ -1,7 +1,6 @@
 ### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
-    ### https://github.com/settings/keys
     $ ssh -T git@github.com
 
 #### git config
