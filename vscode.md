@@ -5,10 +5,8 @@
     code --install-extension bmewburn.vscode-intelephense-client
     code --install-extension codingyu.laravel-goto-view
     code --install-extension EditorConfig.EditorConfig
-    code --install-extension Gaulomatic.vscode-icontheme-nomo-dark-macos
     code --install-extension glitchbl.laravel-create-view
     code --install-extension IHunte.laravel-blade-wrapper
-    code --install-extension miguelsolorio.min-theme
     code --install-extension mikestead.dotenv
     code --install-extension naoray.laravel-goto-components
     code --install-extension octref.vetur
@@ -20,11 +18,11 @@
     code --install-extension sainnhe.gruvbox-material
     code --install-extension shufo.vscode-blade-formatter
     code --install-extension sianglim.slim
-    code --install-extension wingrunr21.vscode-ruby 
+    code --install-extension vscode-icons-team.vscode-icons
+    code --install-extension wingrunr21.vscode-ruby
   
 ### vscode user settings.json
     {
-        "workbench.iconTheme": "vscode-icontheme-nomo-dark-macos",
         "workbench.colorTheme": "Gruvbox Material Dark",
         "terminal.integrated.fontSize": 13,
         "editor.wordWrap": "on",
@@ -33,5 +31,6 @@
         "editor.fontSize": 13,
         "workbench.activityBar.visible": false,
         "debug.console.fontSize": 13,
-        "markdown.preview.fontSize": 13
+        "markdown.preview.fontSize": 13,
+        "workbench.iconTheme": "vscode-icons"
     }
