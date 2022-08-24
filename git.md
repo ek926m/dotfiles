@@ -5,6 +5,7 @@
     $ ssh -T git@github.com
 
 #### git config
+    $ git config --global color.ui true
     $ git config --global user.email "ek926m@gmail.com"
     $ git config --global user.name "Eugen Kaiser"
     
