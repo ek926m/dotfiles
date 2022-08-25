@@ -23,14 +23,12 @@
   
 ### vscode user settings.json
     {
-        "terminal.integrated.fontSize": 13,
+        "terminal.integrated.fontSize": 14,
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
         "ruby.intellisense": "rubyLocate",
-        "editor.fontSize": 13,
+        "editor.fontSize": 14,
         "workbench.activityBar.visible": false,
-        "debug.console.fontSize": 13,
-        "markdown.preview.fontSize": 13,
         "workbench.iconTheme": "vscode-icons",
         "workbench.colorTheme": "Gruvbox Dark Hard"
     }
