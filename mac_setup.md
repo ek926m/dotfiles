@@ -13,7 +13,10 @@
 
 ### import terminal theme
     $ wget https://raw.githubusercontent.com/ek926m/dotfiles/main/gruvbox.terminal
+    
     $ wget https://raw.githubusercontent.com/ek926m/dotfiles/main/gruvbox.jpg
+    or
+    $ wget https://raw.githubusercontent.com/ek926m/dotfiles/main/000000.jpg
 
 ### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
