@@ -7,7 +7,7 @@
     code --install-extension EditorConfig.EditorConfig
     code --install-extension glitchbl.laravel-create-view
     code --install-extension IHunte.laravel-blade-wrapper
-    code --install-extension jdinhlife.gruvbox
+    code --install-extension miguelsolorio.min-theme
     code --install-extension mikestead.dotenv
     code --install-extension naoray.laravel-goto-components
     code --install-extension octref.vetur
@@ -23,14 +23,13 @@
   
 ### vscode user settings.json
     {
-        "terminal.integrated.fontSize": 14,
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
         "ruby.intellisense": "rubyLocate",
-        "editor.fontSize": 14,
+        "editor.fontSize": 13,
         "workbench.activityBar.visible": false,
         "workbench.iconTheme": "vscode-icons",
-        "workbench.colorTheme": "Gruvbox Dark Hard"
+        "workbench.colorTheme": "Min Light"
     }
 
 ### vscode mac user keybindings.json
