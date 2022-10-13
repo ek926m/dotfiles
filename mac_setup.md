@@ -2,7 +2,7 @@
 
 ### system
     $ sudo softwareupdate --install-rosetta --agree-to-license
-    $ xcode-select –install
+    $ xcode-select –-install
     $ sudo scutil --set HostName mac
     $ defaults write com.apple.screencapture type jpg
     $ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
