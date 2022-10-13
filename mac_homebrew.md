@@ -1,4 +1,4 @@
-### homebrew
+### homebrew (everything supported way)
 #### remove old installations
     brew remove --force $(brew list --formula)
     brew remove --cask --force $(brew list)
