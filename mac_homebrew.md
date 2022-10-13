@@ -3,6 +3,11 @@
     brew remove --force $(brew list --formula)
     brew remove --cask --force $(brew list)
 
+#### fix permissions for x86_64 homebrew install
+    $ sudo chown -R $(whoami) $(brew --prefix)/* 
+    $ sudo chown -R $(whoami) /usr/local/Homebrew/completions/zsh/_brew
+
+
 #### intel homebrew
     arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     arch -x86_64 /usr/local/homebrew/bin/brew
