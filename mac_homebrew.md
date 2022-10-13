@@ -25,7 +25,7 @@
     $ armbrew install --cask chromedriver
     $ armbrew install --cask visual-studio-code
     $ armbrew install --cask microsoft-teams
-    $ armbrew install --cask raspberry-pi-imager
+    $ armbrew install --cask intellij-idea
     $ armbrew install --cask spotify
     $ armbrew install --cask cyberduck
     $ armbrew install --cask dbeaver-community
