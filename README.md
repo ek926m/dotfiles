@@ -7,6 +7,7 @@
 * [mac_setup](https://github.com/ek926m/dotfiles/blob/main/mac_setup.md)
 * [mac_homebrew](https://github.com/ek926m/dotfiles/blob/main/mac_homebrew.md)
 * [mac_settings](https://github.com/ek926m/dotfiles/blob/main/mac_settings.md)
+* [windows_terminal](https://github.com/ek926m/dotfiles/blob/main/windows_terminal.md)
 
 ## !maintained
 * [debian_desktop](https://github.com/ek926m/dotfiles/blob/main/debian_desktop.md)
