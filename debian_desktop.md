@@ -35,9 +35,9 @@
     
 ### system packages
     $ sudo apt update -y && sudo apt upgrade -y
-    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libsqlite3-dev libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline php-curl nmap htop redshift python3-pip python3-flask
+    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux libsqlite3-dev libavcodec-extra python3 python3-pip unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline php-curl nmap htop python3-pip python3-flask
 ###### optional packages
-    $ sudo apt install -y ufw neofetch openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl cloc net-tools
+    $ sudo apt install -y ufw neofetch openjdk-11-jdk maven ffmpeg cowsay fortune-mod youtube-dl cloc net-tools redshift
 ###### optional gui packages
     $ sudo apt install -y gufw gnome-disk-utility obs-studio vlc gimp filezilla virtualbox virtualbox-qt virtualbox-dkms
 ###### remove crap
