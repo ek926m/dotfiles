@@ -58,12 +58,11 @@
 - Tastatur
     - Kurzbefehle
         - Mission Control: (ändern indem man auf den shortcut selber klickt)
-            - Zu Schreibtisch 1 wechseln: alt+1
-            - Zu Schreibtisch 2 wechseln: alt+2
-            - Zu Schreibtisch 3 wechseln: alt+3
-            - Zu Schreibtisch 4 wechseln: alt+4
-            - Zu Schreibtisch 5 wechseln: alt+5
-            - Zu Schreibtisch 6 wechseln: alt+6
+            - Zu Schreibtisch 1 wechseln: alt+0
+            - Zu Schreibtisch 2 wechseln: alt+1
+            - Zu Schreibtisch 3 wechseln: alt+2
+            - Zu Schreibtisch 4 wechseln: alt+3
+            - Zu Schreibtisch 5 wechseln: alt+4
     - Tastatur
         - UNCHECK Tastaturhelligkeit bei schwacher Beleuchtung anpassen 
         - UNCHECK Ausschalten der Hintergrundbeleuchtung für die Tastatur nach 5 SEK Inaktivität 
