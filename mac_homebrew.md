@@ -30,6 +30,8 @@
     $ armbrew install --cask cyberduck
     $ armbrew install --cask dbeaver-community
     $ armbrew install --cask discord
+    $ armbrew install rectangle
+    $ armbrew install keepingyouawake
     
     $ intelbrew install bash
     $ intelbrew install tmux
