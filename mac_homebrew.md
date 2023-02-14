@@ -32,6 +32,7 @@
     $ armbrew install --cask discord
     $ armbrew install rectangle
     $ armbrew install keepingyouawake
+    $ armbrew install --cask topnotch
     
     $ intelbrew install bash
     $ intelbrew install tmux
