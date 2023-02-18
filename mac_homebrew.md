@@ -31,8 +31,10 @@
     $ armbrew install --cask dbeaver-community
     $ armbrew install --cask discord
     $ armbrew install rectangle
-    $ armbrew install keepingyouawake
     $ armbrew install --cask topnotch
+    $ armbrew install --cask 1password
+    $ armbrew install --cask reaper
+    $ armbrew install keepingyouawake
     
     $ intelbrew install bash
     $ intelbrew install tmux
