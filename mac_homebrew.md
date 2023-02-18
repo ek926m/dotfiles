@@ -25,6 +25,9 @@
     $ armbrew install --cask chromedriver
     $ armbrew install --cask visual-studio-code
     $ armbrew install --cask microsoft-teams
+    $ armbrew install --cask microsoft-excel
+    $ armbrew install --cask microsoft-word
+    $ armbrew install --cask microsoft-powerpoint
     $ armbrew install --cask intellij-idea
     $ armbrew install --cask spotify
     $ armbrew install --cask cyberduck
