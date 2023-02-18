@@ -34,6 +34,8 @@
     $ armbrew install --cask topnotch
     $ armbrew install --cask 1password
     $ armbrew install --cask reaper
+    $ armbrew install --cask postman
+    $ armbrew install obs
     $ armbrew install keepingyouawake
     
     $ intelbrew install bash
