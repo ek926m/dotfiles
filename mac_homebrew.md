@@ -35,6 +35,7 @@
     $ armbrew install --cask 1password
     $ armbrew install --cask reaper
     $ armbrew install --cask postman
+    $ armbrew install --cask transmission
     $ armbrew install obs
     $ armbrew install keepingyouawake
     
