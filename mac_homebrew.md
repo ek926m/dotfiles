@@ -33,15 +33,15 @@
     $ armbrew install --cask cyberduck
     $ armbrew install --cask dbeaver-community
     $ armbrew install --cask discord
-    $ armbrew install rectangle
+    $ armbrew install --cask rectangle
     $ armbrew install --cask topnotch
     $ armbrew install --cask 1password
     $ armbrew install --cask reaper
     $ armbrew install --cask postman
     $ armbrew install --cask transmission
     $ armbrew install --cask vlc
-    $ armbrew install obs
-    $ armbrew install keepingyouawake
+    $ armbrew install --cask obs
+    $ armbrew install --cask keepingyouawake
     
     $ intelbrew install bash
     $ intelbrew install tmux
