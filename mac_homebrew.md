@@ -61,3 +61,4 @@
     $ intelbrew install openjdk
     $ intelbrew install wget
     $ intelbrew install openconnect
+    $ intelbrew install bpytop
