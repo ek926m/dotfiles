@@ -42,7 +42,7 @@
     $ armbrew install --cask vlc
     $ armbrew install --cask obs
     $ armbrew install --cask gimp
-    $ armbrew install --cask keepingyouawake
+    $ armbrew install --cask caffeine
     
     $ intelbrew install bash
     $ intelbrew install tmux
