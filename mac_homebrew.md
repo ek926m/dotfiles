@@ -37,6 +37,7 @@
     $ armbrew install --cask 1password
     $ armbrew install --cask reaper
     $ armbrew install --cask postman
+    $ armbrew install --cask displaylink
     
     $ armbrew install --cask vlc
     $ armbrew install --cask transmission
