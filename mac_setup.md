@@ -10,6 +10,20 @@
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
 
+### ~/.bash_profile
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+
+    export CLICOLOR=1
+    alias ls='ls --color=auto'
+    alias ll='ls -lah --color=auto'
+    alias grep='grep --color=auto'
+    
+    git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    
+
 ### import terminal theme
     $ wget https://raw.githubusercontent.com/ek926m/dotfiles/main/gruvbox.terminal
     
