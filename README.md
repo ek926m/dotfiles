@@ -1,13 +1,8 @@
 # README
-
-## maintained
+## content
 * [git](https://github.com/ek926m/dotfiles/blob/main/git.md)
 * [docker](https://github.com/ek926m/dotfiles/blob/main/docker.md)
 * [vscode](https://github.com/ek926m/dotfiles/blob/main/vscode.md)
 * [mac](https://github.com/ek926m/dotfiles/blob/main/mac.md)
 * [dracula theme](https://github.com/ek926m/dotfiles/blob/main/dracula_intellij.terminal)
-
-## not maintained
-* [debian_desktop](https://github.com/ek926m/dotfiles/blob/main/debian_desktop.md)
 * [debian_server](https://github.com/ek926m/dotfiles/blob/main/debian_server.md)
-* [redhat_desktop](https://github.com/ek926m/dotfiles/blob/main/redhat_desktop.md)
