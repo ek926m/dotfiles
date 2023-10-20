@@ -1,25 +1,29 @@
 ### vscode extensions
-    code --list-extensions | xargs -L 1 echo code --install-extension
+    $ code --list-extensions | xargs -L 1 echo code --install-extension
     
-    code --install-extension amiralizadeh9480.laravel-extra-intellisense
-    code --install-extension bmewburn.vscode-intelephense-client
-    code --install-extension codingyu.laravel-goto-view
-    code --install-extension EditorConfig.EditorConfig
-    code --install-extension glitchbl.laravel-create-view
-    code --install-extension IHunte.laravel-blade-wrapper
-    code --install-extension miguelsolorio.min-theme
-    code --install-extension mikestead.dotenv
-    code --install-extension naoray.laravel-goto-components
-    code --install-extension octref.vetur
-    code --install-extension onecentlin.laravel-blade
-    code --install-extension onecentlin.laravel-extension-pack
-    code --install-extension onecentlin.laravel5-snippets
-    code --install-extension rebornix.ruby
-    code --install-extension ryannaddy.laravel-artisan
-    code --install-extension shufo.vscode-blade-formatter
-    code --install-extension sianglim.slim
-    code --install-extension vscode-icons-team.vscode-icons
-    code --install-extension wingrunr21.vscode-ruby
+    $ code --install-extension amiralizadeh9480.laravel-extra-intellisense
+    $ code --install-extension codingyu.laravel-goto-view
+    $ code --install-extension danields761.dracula-theme-from-intellij-pythoned
+    $ code --install-extension EditorConfig.EditorConfig
+    $ code --install-extension GitHub.copilot
+    $ code --install-extension GitHub.copilot-chat
+    $ code --install-extension glitchbl.laravel-create-view
+    $ code --install-extension IHunte.laravel-blade-wrapper
+    $ code --install-extension magicstack.MagicPython
+    $ code --install-extension miguelsolorio.min-theme
+    $ code --install-extension mikestead.dotenv
+    $ code --install-extension ms-azuretools.vscode-docker
+    $ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+    $ code --install-extension naoray.laravel-goto-components
+    $ code --install-extension octref.vetur
+    $ code --install-extension onecentlin.laravel-blade
+    $ code --install-extension onecentlin.laravel-extension-pack
+    $ code --install-extension onecentlin.laravel5-snippets
+    $ code --install-extension pgl.laravel-jump-controller
+    $ code --install-extension redhat.vscode-yaml
+    $ code --install-extension ryannaddy.laravel-artisan
+    $ code --install-extension shufo.vscode-blade-formatter
+    $ code --install-extension vscode-icons-team.vscode-icons
   
 ### vscode user settings.json
     {
