@@ -1,6 +1,6 @@
 ### homebrew (arm only)
 
-### edit ~/.bash_profile and add
+#### edit ~/.bash_profile and add
     export PATH=/opt/homebrew/bin:$PATH
     
     export PATH="/usr/local/homebrew/opt/php/bin:$PATH"
