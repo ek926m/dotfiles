@@ -5,7 +5,6 @@
 * [docker](https://github.com/ek926m/dotfiles/blob/main/docker.md)
 * [vscode](https://github.com/ek926m/dotfiles/blob/main/vscode.md)
 * [mac_setup](https://github.com/ek926m/dotfiles/blob/main/mac_setup.md)
-* [windows_terminal](https://github.com/ek926m/dotfiles/blob/main/windows_terminal.md)
 
 ## not maintained
 * [debian_desktop](https://github.com/ek926m/dotfiles/blob/main/debian_desktop.md)
