@@ -5,8 +5,8 @@
 
 #### git config
     $ git config --global color.ui true
-    $ git config --global user.email "ek926m@gmail.com"
-    $ git config --global user.name "Eugen Kaiser"
+    $ git config --global user.email "your@mail.com"
+    $ git config --global user.name "Your Name"
     
 #### create new project from folder
     $ git init -b master
