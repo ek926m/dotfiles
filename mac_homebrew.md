@@ -1,4 +1,32 @@
 ### homebrew (arm only)
+
+### ~/.bash_profile
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+
+    export CLICOLOR=1
+    alias ls='ls --color=auto'
+    alias ll='ls -lah --color=auto'
+    alias grep='grep --color=auto'
+    
+    git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    
+    export PATH=/opt/homebrew/bin:$PATH
+    
+    export PATH="/usr/local/homebrew/opt/php/bin:$PATH"
+    export PATH="~/.composer/vendor/bin:$PATH"
+    export PATH="/usr/local/homebrew/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/usr/local/homebrew/opt/openjdk"
+    
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    export PATH="$HOME/.nodenv/bin:$PATH"
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(rbenv init -)"
+    eval "$(nodenv init -)"
+    eval "$(pyenv init -)"
+
 #### packages
     $ brew install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
     $ brew install --cask cyberduck
@@ -23,6 +51,38 @@
 
 
 ### homebrew (old, everything supported way)
+
+#### ~/.bash_profile
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+
+    export CLICOLOR=1
+    alias ls='ls --color=auto'
+    alias ll='ls -lah --color=auto'
+    alias grep='grep --color=auto'
+    
+    git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+
+    alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
+    export PATH=/usr/local/Homebrew/bin:$PATH
+    
+    alias armbrew='/opt/homebrew/bin/brew'
+    export PATH=/opt/homebrew/bin:$PATH
+    
+    export PATH="/usr/local/homebrew/opt/php@8.0/bin:$PATH"
+    export PATH="~/.composer/vendor/bin:$PATH"
+    export PATH="/usr/local/homebrew/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/usr/local/homebrew/opt/openjdk"
+    
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    export PATH="$HOME/.nodenv/bin:$PATH"
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(rbenv init -)"
+    eval "$(nodenv init -)"
+    eval "$(pyenv init -)"
+
 #### remove old installations
     brew remove --force $(brew list --formula)
     brew remove --cask --force $(brew list)
