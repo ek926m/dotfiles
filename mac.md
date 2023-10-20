@@ -23,7 +23,7 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
     
-### install and setup tooling
+### install and setup tooling (use homebrew part below to install)
 
 #### ruby, node, python
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
