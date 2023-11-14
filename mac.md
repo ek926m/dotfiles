@@ -84,6 +84,7 @@
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-word
+    $ brew install --cask alt-tab
 
 
 ## homebrew (old, everything supported way)
