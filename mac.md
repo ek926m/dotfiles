@@ -77,6 +77,8 @@
     $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask switchresx
+    $ brew install --cask alt-tab
+    $ brew install --cask monitorcontrol
     $ brew install --cask intellij-idea
     $ brew install --cask nvidia-geforce-now
     $ brew install --cask visual-studio-code
@@ -84,8 +86,6 @@
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-word
-    $ brew install --cask alt-tab
-
 
 ## homebrew (old, everything supported way)
 
