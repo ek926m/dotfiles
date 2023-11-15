@@ -79,6 +79,7 @@
     $ brew install --cask switchresx
     $ brew install --cask alt-tab
     $ brew install --cask monitorcontrol
+    $ brew install --cask flux
     $ brew install --cask intellij-idea
     $ brew install --cask nvidia-geforce-now
     $ brew install --cask visual-studio-code
