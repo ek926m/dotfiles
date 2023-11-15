@@ -67,6 +67,10 @@
 
 ### packages
     $ brew install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
+
+    $ brew install --cask intellij-idea
+    $ brew install --cask nvidia-geforce-now
+    $ brew install --cask visual-studio-code
     $ brew install --cask cyberduck
     $ brew install --cask rectangle
     $ brew install --cask parsec
@@ -76,13 +80,13 @@
     $ brew install --cask docker
     $ brew install --cask spotify
     $ brew install --cask google-chrome
+    $ brew install --cask whatsapp
+
     $ brew install --cask switchresx
     $ brew install --cask alt-tab
     $ brew install --cask monitorcontrol
     $ brew install --cask flux
-    $ brew install --cask intellij-idea
-    $ brew install --cask nvidia-geforce-now
-    $ brew install --cask visual-studio-code
+
     $ brew install --cask microsoft-teams
     $ brew install --cask microsoft-powerpoint
     $ brew install --cask microsoft-excel
