@@ -51,12 +51,17 @@
 ## homebrew (arm only)
 
 ### edit ~/.bash_profile and add
-    export PATH=/opt/homebrew/bin:$PATH
+
+    export PATH="/opt/homebrew/bin:$PATH"
     
-    export PATH="/usr/local/homebrew/opt/php/bin:$PATH"
+    export PATH="/opt/homebrew/opt/php/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
-    export PATH="/usr/local/homebrew/opt/openjdk/bin:$PATH"
-    export JAVA_HOME="/usr/local/homebrew/opt/openjdk"
+    
+    export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+    export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
+    
+    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/opt/homebrew/opt/openjdk"
     
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
