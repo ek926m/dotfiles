@@ -97,45 +97,6 @@
     $ brew install --cask microsoft-excel
     $ brew install --cask microsoft-word
 
-## homebrew (old, everything supported way)
-
-### edit ~/.bash_profile and add
-    alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
-    export PATH=/usr/local/Homebrew/bin:$PATH
-    
-    alias armbrew='/opt/homebrew/bin/brew'
-    export PATH=/opt/homebrew/bin:$PATH
-    
-    export PATH="/usr/local/homebrew/opt/php@8.0/bin:$PATH"
-    export PATH="~/.composer/vendor/bin:$PATH"
-    export PATH="/usr/local/homebrew/opt/openjdk/bin:$PATH"
-    export JAVA_HOME="/usr/local/homebrew/opt/openjdk"
-    
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    export PATH="$HOME/.nodenv/bin:$PATH"
-    export PATH="$HOME/.pyenv/bin:$PATH"
-    eval "$(rbenv init -)"
-    eval "$(nodenv init -)"
-    eval "$(pyenv init -)"
-
-### remove old installations
-    brew remove --force $(brew list --formula)
-    brew remove --cask --force $(brew list)
-
-### fix permissions for x86_64 homebrew install
-    $ sudo chown -R $(whoami) $(brew --prefix)/* 
-    $ sudo chown -R $(whoami) /usr/local/Homebrew/completions/zsh/_brew
-
-### intel homebrew
-    arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    arch -x86_64 /usr/local/homebrew/bin/brew
-    # alias intelbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
-
-### arm homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    /opt/homebrew/bin/brew
-    # alias armbrew='/opt/homebrew/bin/brew'
-
 ## system settings (pre ventura)
     - Apple-ID
         - alles UNCHECK außer 'Meinen Mac suchen'
