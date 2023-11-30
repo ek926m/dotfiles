@@ -84,7 +84,7 @@
     $ brew install --cask docker
     $ brew install --cask spotify
     $ brew install --cask google-chrome
-    $ brew install --cask whatsapp
+    $ brew install --cask redisinsight
 
 ## system settings (pre ventura)
     - Apple-ID
