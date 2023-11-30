@@ -48,7 +48,7 @@
 #### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
 
-## homebrew (arm only)
+## homebrew
 
 ### edit ~/.bash_profile and add
 
