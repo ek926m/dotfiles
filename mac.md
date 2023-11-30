@@ -85,6 +85,8 @@
     $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask redisinsight
+    $ brew install --cask switchresx
+    $ brew install --cask reaper # I need a new license
 
 ## system settings (pre ventura)
     - Apple-ID
