@@ -86,8 +86,9 @@
     $ brew install --cask google-chrome
     $ brew install --cask redisinsight
     $ brew install --cask aldente
-    $ brew install --cask switchresx
     $ brew install --cask alt-tab
+    
+    $ brew install --cask switchresx # currently not needed
     $ brew install --cask reaper # I need a new license
 
 ### system settings (pre ventura)
