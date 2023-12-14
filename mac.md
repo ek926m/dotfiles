@@ -86,10 +86,10 @@
     $ brew install --cask google-chrome
     $ brew install --cask redisinsight
     $ brew install --cask aldente
-    $ brew install --cask alt-tab
     
-    $ brew install --cask switchresx # currently not needed
-    $ brew install --cask reaper # I need a new license
+    $ brew install --cask alt-tab
+    $ brew install --cask switchresx
+    $ brew install --cask reaper
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
