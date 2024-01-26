@@ -24,6 +24,14 @@
     $ code --install-extension ryannaddy.laravel-artisan
     $ code --install-extension shufo.vscode-blade-formatter
     $ code --install-extension vscode-icons-team.vscode-icons
+
+    $ code --install-extension garytyler.darcula-pycharm
+    $ code --install-extension GitHub.copilot
+    $ code --install-extension GitHub.copilot-chat
+    $ code --install-extension magicstack.MagicPython
+    $ code --install-extension miguelsolorio.min-theme
+    $ code --install-extension sainnhe.gruvbox-material
+    $ code --install-extension vscode-icons-team.vscode-icons
   
 ### vscode user settings.json
     {
