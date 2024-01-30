@@ -84,7 +84,6 @@
     $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask redisinsight
-    $ brew install --cask betterdisplay
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
