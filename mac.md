@@ -81,7 +81,8 @@
     $ brew install --cask docker
     $ brew install --cask spotify
     $ brew install --cask google-chrome
-    
+
+    $ brew install --cask redisinsight
     $ brew install --cask tableplus
     
     $ brew install --cask intellij-idea
