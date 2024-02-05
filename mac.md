@@ -84,10 +84,11 @@
 
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
-    
+
+    $ brew install --cask sequel-pro
     $ brew install --cask redisinsight
-    $ brew install --cask dbeaver-community
     $ brew install --cask mongodb-compass
+    $ brew install --cask dbeaver-community
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
