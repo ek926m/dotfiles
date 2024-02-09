@@ -74,13 +74,12 @@
     $ brew install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
     $ brew install --cask visual-studio-code
-    $ brew install --cask cyberduck
     $ brew install --cask rectangle
     $ brew install --cask postman
     $ brew install --cask discord
     $ brew install --cask docker
-    $ brew install --cask spotify
     $ brew install --cask google-chrome
+    $ brew install --cask cyberduck
 
     $ brew install --cask redisinsight
     $ brew install --cask dbeaver-community
