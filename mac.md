@@ -75,6 +75,7 @@
 
     $ brew install --cask visual-studio-code
     $ brew install --cask rectangle
+    $ brew install --cask betterdisplay
     $ brew install --cask postman
     $ brew install --cask discord
     $ brew install --cask docker
