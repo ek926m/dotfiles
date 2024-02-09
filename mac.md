@@ -83,7 +83,8 @@
     $ brew install --cask google-chrome
 
     $ brew install --cask redisinsight
-    $ brew install --cask tableplus
+    $ brew install --cask dbeaver-community
+    $ brew install --cask mongodb-compass
     
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
