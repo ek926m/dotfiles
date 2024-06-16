@@ -128,4 +128,6 @@
     $ wget https://downloads.mongodb.com/compass/mongodb-compass-1.43.0.x86_64.rpm
     $ sudo rpm -ivh mongodb-compass-*
 
+# firewall
+![firewalld config](https://github.com/ek926m/dotfiles/edit/main/firewalld.png)
 
