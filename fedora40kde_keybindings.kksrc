@@ -9,20 +9,20 @@ Switch to Next Keyboard Layout=
 AboutApp=
 AboutKDE=
 Activate Next Tab=Ctrl+PgDown; Ctrl+]
-Activate Previous Tab=Ctrl+PgUp; Ctrl+[
+Activate Previous Tab=Ctrl+[; Ctrl+PgUp
 ActualSize=
 AddBookmark=Ctrl+B
-Back=Back; Alt+Left
+Back=Alt+Left; Back
 BackwardWord=Ctrl+Left
 Begin=Ctrl+Home
 BeginningOfLine=Home
 Clear=
-Close=Ctrl+W; Ctrl+Esc
+Close=Ctrl+Esc; Ctrl+W
 ConfigureNotifications=
 ConfigureToolbars=
 Copy=Ctrl+C; Ctrl+Ins
 CreateFolder=Ctrl+Shift+N
-Cut=Ctrl+X; Shift+Del
+Cut=Shift+Del; Ctrl+X
 DeleteFile=Shift+Del
 DeleteWordBack=Ctrl+Backspace
 DeleteWordForward=Ctrl+Del
@@ -46,7 +46,7 @@ Goto=
 GotoLine=Ctrl+G
 GotoPage=
 Help=
-Home=Home Page; Alt+Home
+Home=Alt+Home; Home Page
 KeyBindings=
 Mail=
 MoveToTrash=Del
@@ -57,7 +57,7 @@ Open=Ctrl+O
 OpenContextMenu=Menu
 OpenMainMenu=
 OpenRecent=
-Paste=Shift+Ins; Ctrl+V
+Paste=Ctrl+V; Shift+Ins
 Paste Selection=Ctrl+Shift+Ins
 Preferences=
 PrevCompletion=
@@ -88,7 +88,7 @@ Undo=Ctrl+Z
 Up=Alt+Up
 WhatsThis=
 Zoom=
-ZoomIn=Ctrl++; Ctrl+=
+ZoomIn=Ctrl+=; Ctrl++
 ZoomOut=Ctrl+-
 
 [google-chrome.desktop][Global Shortcuts]
@@ -111,12 +111,12 @@ decrease_volume_small=Shift+Volume Down
 increase_microphone_volume=Microphone Volume Up
 increase_volume=Volume Up
 increase_volume_small=Shift+Volume Up
-mic_mute=Meta+Volume Mute; Microphone Mute
+mic_mute=Microphone Mute; Meta+Volume Mute
 mute=Volume Mute
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=
-Lock Session=Screensaver; Meta+L
+Lock Session=Meta+L; Screensaver
 Log Out=
 Log Out Without Confirmation=
 Reboot=
@@ -207,12 +207,12 @@ Window Fullscreen=
 Window Grow Horizontal=
 Window Grow Vertical=
 Window Lower=
-Window Maximize=Meta+Return; Meta+Up
+Window Maximize=Meta+Ctrl+Return; Meta+Return
 Window Maximize Horizontal=
 Window Maximize Vertical=
-Window Minimize=Meta+PgDown
+Window Minimize=
 Window Move=
-Window Move Center=
+Window Move Center=Meta+Ctrl+C
 Window No Border=
 Window On All Desktops=
 Window One Desktop Down=
@@ -231,8 +231,8 @@ Window Pack Up=
 Window Quick Tile Bottom=
 Window Quick Tile Bottom Left=
 Window Quick Tile Bottom Right=
-Window Quick Tile Left=Meta+Left
-Window Quick Tile Right=Meta+Right
+Window Quick Tile Left=Meta+Ctrl+Left; Meta+Left
+Window Quick Tile Right=Meta+Ctrl+Right; Meta+Right
 Window Quick Tile Top=
 Window Quick Tile Top Left=
 Window Quick Tile Top Right=
@@ -288,7 +288,7 @@ previousmedia=Media Previous
 stopmedia=Media Stop
 
 [org.kde.dolphin.desktop][Global Shortcuts]
-_launch=Meta+E; Ctrl+Alt+E
+_launch=Ctrl+Alt+E; Meta+E
 
 [org.kde.kcalc.desktop][Global Shortcuts]
 _launch=
