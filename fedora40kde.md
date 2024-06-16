@@ -32,8 +32,6 @@
     alias ll='ls -lah --color=auto'
     alias grep='grep --color=auto'
 
-    alias myports='sudo lsof -i -P -n | grep LISTEN'
-
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
