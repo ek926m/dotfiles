@@ -128,6 +128,10 @@
     $ wget https://downloads.mongodb.com/compass/mongodb-compass-1.43.0.x86_64.rpm
     $ sudo rpm -ivh mongodb-compass-*
 
-# firewall
-![firewalld config](https://github.com/ek926m/dotfiles/edit/main/firewalld.png)
+# firewalld
+    - select your wifi left
+    - select "block" zone
+    - set dropdown to permanent
+    
+    ![firewalld config](https://github.com/ek926m/dotfiles/blob/main/firewalld.png?raw=true)
 
