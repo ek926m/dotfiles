@@ -13,10 +13,9 @@
     $ sudo dnf install google-chrome-stable
 
 # discover
-
-    - enable flathub source
-        - install moonlight flatpak
-        - install spotify flatpak
+- enable flathub source
+    - install moonlight flatpak
+    - install spotify flatpak
 
 # .bashrc
 
