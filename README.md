@@ -6,3 +6,5 @@
 * [debian server](https://github.com/ek926m/dotfiles/blob/main/debian.md)
 * [fedora workstation](https://github.com/ek926m/dotfiles/blob/main/fedora40kde.md)
 * [fedora workstation keybindings](https://github.com/ek926m/dotfiles/blob/main/fedora40kde_keybindings.kksrc)
+
+![fedora kde rice](https://github.com/ek926m/dotfiles/blob/main/fedora.png?raw=true)
