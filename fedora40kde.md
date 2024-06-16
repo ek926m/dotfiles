@@ -133,5 +133,5 @@
     - select "block" zone
     - set dropdown to permanent
     
-    ![firewalld config](https://github.com/ek926m/dotfiles/blob/main/firewalld.png?raw=true)
+![firewalld config](https://github.com/ek926m/dotfiles/blob/main/firewalld.png?raw=true)
 
