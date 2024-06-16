@@ -56,7 +56,8 @@
 # dnf packages
 
     $ sudo dnf -y groupinstall "Development Tools"
-    $ sudo dnf install git rbenv gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk filezilla htop obs-studio mediawriter gimp transmission
+    $ sudo dnf install git rbenv gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk filezilla htop obs-studio mediawriter gimp transmission gcc-c++ nano autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel  exfat-utils fuse-exfat ncdu tmux
+
 
 # docker
 
