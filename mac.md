@@ -89,5 +89,8 @@
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
 
+    $ brew tap hashicorp/tap
+    $ brew install hashicorp/tap/terraform
+
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
