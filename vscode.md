@@ -1,47 +1,24 @@
 ### vscode extensions
-    $ code --list-extensions | xargs -L 1 echo code --install-extension
-    
-    $ code --install-extension amiralizadeh9480.laravel-extra-intellisense
-    $ code --install-extension codingyu.laravel-goto-view
-    $ code --install-extension danields761.dracula-theme-from-intellij-pythoned
-    $ code --install-extension EditorConfig.EditorConfig
-    $ code --install-extension GitHub.copilot
-    $ code --install-extension GitHub.copilot-chat
-    $ code --install-extension glitchbl.laravel-create-view
-    $ code --install-extension IHunte.laravel-blade-wrapper
-    $ code --install-extension magicstack.MagicPython
-    $ code --install-extension miguelsolorio.min-theme
-    $ code --install-extension mikestead.dotenv
-    $ code --install-extension ms-azuretools.vscode-docker
-    $ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
-    $ code --install-extension naoray.laravel-goto-components
-    $ code --install-extension octref.vetur
-    $ code --install-extension onecentlin.laravel-blade
-    $ code --install-extension onecentlin.laravel-extension-pack
-    $ code --install-extension onecentlin.laravel5-snippets
-    $ code --install-extension pgl.laravel-jump-controller
-    $ code --install-extension redhat.vscode-yaml
-    $ code --install-extension ryannaddy.laravel-artisan
-    $ code --install-extension shufo.vscode-blade-formatter
-    $ code --install-extension vscode-icons-team.vscode-icons
-
-    $ code --install-extension garytyler.darcula-pycharm
-    $ code --install-extension GitHub.copilot
-    $ code --install-extension GitHub.copilot-chat
-    $ code --install-extension magicstack.MagicPython
-    $ code --install-extension miguelsolorio.min-theme
-    $ code --install-extension sainnhe.gruvbox-material
-    $ code --install-extension vscode-icons-team.vscode-icons
+- azemoh.one-monokai
+- castwide.solargraph
+- eamodio.gitlens
+- github.copilot
+- github.copilot-chat
+- jdinhlife.gruvbox
+- miguelsolorio.min-theme
+- octref.vetur
+- vscode-icons-team.vscode-icons
   
 ### vscode user settings.json
     {
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
-        "ruby.intellisense": "rubyLocate",
-        "editor.fontSize": 13,
-        "workbench.activityBar.visible": false,
         "workbench.iconTheme": "vscode-icons",
-        "workbench.colorTheme": "Min Light"
+        "markdown.preview.fontSize": 12,
+        "scm.inputFontSize": 12,
+        "workbench.startupEditor": "none",
+        "workbench.activityBar.location": "top",
+        "workbench.colorTheme": "One Monokai"
     }
 
 ### vscode mac user keybindings.json
