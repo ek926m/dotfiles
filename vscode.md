@@ -8,6 +8,7 @@
 - miguelsolorio.min-theme
 - octref.vetur
 - vscode-icons-team.vscode-icons
+- miguelsolorio.min-theme
   
 ### vscode user settings.json
     {
