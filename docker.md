@@ -20,3 +20,7 @@
 
 #### openstreetmap germany
     $ docker run -it --name openstreetmap_germany --restart=always --memory=20g --shm-size=2g -e PBF_URL=https://download.geofabrik.de/europe/germany-latest.osm.pbf -e REPLICATION_URL=https://download.geofabrik.de/europe/germany-updates/ -e IMPORT_WIKIPEDIA=false -e NOMINATIM_PASSWORD=this_is_a_password -v nominatim-data:/nominatim -v nominatim-data-sql:/var/lib/postgresql/14/main -p 3001:8080 --name nominatim mediagis/nominatim:4.2
+
+### dev
+    $ docker run --name some-mysql --platform linux/x86_64 --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:5.0.6
