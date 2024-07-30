@@ -26,38 +26,13 @@
 
 # wsl
     $ wsl --install
-    
+
 ## ubuntu
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
     $ cd && touch .bash_profile
     $ sudo apt update
     $ sudo apt install -y git wget gcc g++ build-essential cmake ncdu curl nano tmux
-
-### ruby version manager
-    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    $ ~/.rbenv/bin/rbenv init
-    $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-    # restart shell
-    $ rbenv install 3.2.5 && rbenv global 3.2.5 && rbenv rehash
-
-### node version manager https://github.com/nvm-sh/nvm
-    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-    export NVM_DIR="$HOME/.nvm"
-    # restart shell
-    $ nvm install --lts
-    $ nvm use --lts
-
-### python version manager https://github.com/pyenv/pyenv
-    $ curl https://pyenv.run | bash
-    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
-#### add to .bash_profile
-    export PYENV_ROOT="$HOME/.pyenv"
-    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-#### restart shell
-
-# MAC: $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
 ### .bash_profile
     export CLICOLOR=1
@@ -70,24 +45,6 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
-    export PATH="/opt/homebrew/bin:$PATH"
-    
-    export PATH="/opt/homebrew/opt/php/bin:$PATH"
-    export PATH="~/.composer/vendor/bin:$PATH"
-    
-    export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-    export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
-    
-    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-    export JAVA_HOME="/opt/homebrew/opt/openjdk"
-    
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    export PATH="$HOME/.nodenv/bin:$PATH"
-    export PATH="$HOME/.pyenv/bin:$PATH"
-    eval "$(rbenv init -)"
-    eval "$(nodenv init -)"
-    eval "$(pyenv init -)"
-    
 ### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
@@ -97,15 +54,52 @@
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-#### ruby, node, python
-    $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
-    $ nodenv install 16.0.0 && nodenv global 16.0.0 && nodenv rehash
-    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
-
-#### rails, npm libs, laravel
+### ruby version manager
+    $ sudo apt install -y ruby-dev
+    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    $ ~/.rbenv/bin/rbenv init
+    $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+#### add to .bash_profile
+    export GEM_HOME=~/.ruby/
+    export PATH="$PATH:~/.ruby/bin"
+    # restart shell
+    $ rbenv install 3.1.6 && rbenv global 3.1.6 && rbenv rehash
     $ gem install rails
-    $ npm install -g nodemon @vue/cli    
+    
+### node version manager https://github.com/nvm-sh/nvm
+    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+#### add to .bash_profile
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+#### restart shell
+    $ nvm install --lts
+    $ nvm use --lts
+    $ npm install -g nodemon @vue/cli  
+
+### python version manager https://github.com/pyenv/pyenv
+    $ curl https://pyenv.run | bash
+    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
+#### add to .bash_profile
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+#### restart shell
+
+### php version manager
+    $ sudo apt install -y pkg-config libbz2-dev sqlite3 libsqlite3-dev libssl-dev libcurl4-openssl-dev libjpeg-dev libonig-dev libreadline-dev libtidy-dev libxslt-dev libzip-dev libpng-dev composer
+    $ git clone https://github.com/phpenv/phpenv.git ~/.phpenv
+    $ echo 'export PATH="$HOME/.phpenv/bin:$PATH"' >> ~/.bash_profile
+    $ echo 'eval "$(phpenv init -)"' >> ~/.bash_profile
+#### restart shell
+    $ git clone https://github.com/php-build/php-build $(phpenv root)/plugins/php-build
+    $ phpenv install 8.1.29 && phpenv global 8.1.29 && phpenv rehash
     $ composer global require laravel/installer
+
+
+# MAC: $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
+
+
+
 
 
 
