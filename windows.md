@@ -5,6 +5,7 @@
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
     $ winget install --id Microsoft.VisualStudio.2022.Community -e --source winget
     $ winget install --id Microsoft.VisualStudioCode -e --source winget
+    $ winget install --id Microsoft.Office -e --source winget
     $ winget install --id dbeaver.dbeaver -e --source winget
     $ winget install --id WinSCP.WinSCP -e --source winget
     $ winget install --id Google.Chrome -e --source winget
@@ -13,16 +14,19 @@
     $ winget install --id Spotify.Spotify -e --source winget
 
 ### optional
-    $ winget install --id Microsoft.Office -e --source winget
     $ winget install --id MoonlightGameStreamingProject.Moonlight -e --source winget
-    $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
     $ winget install --id VideoLAN.VLC -e --source winget
     $ winget install --id Plex.Plex -e --source winget
+    $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
     $ winget install --id RubyInstallerTeam.Ruby.3.2 -e --source winget
     $ winget install --id Python.Python.3.12 -e --source winget
     $ winget install --id OpenJS.NodeJS.LTS -e --source winget
     $ winget install --id MongoDB.Compass.Community -e --source winget
     $ winget install --id Postman.Postman -e --source winget
+    $ winget install --id Overwolf.CurseForge -e --source winget
+    $ winget install --id LizardByte.Sunshine -e --source winget
+    $ winget install --id Valve.Steam -e --source winget
+    $ winget install --id OBSProject.OBSStudio -e --source winget
 
 # wsl
     $ wsl --install
