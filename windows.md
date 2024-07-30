@@ -90,6 +90,7 @@
     $ git clone https://github.com/phpenv/phpenv.git ~/.phpenv
     $ echo 'export PATH="$HOME/.phpenv/bin:$PATH"' >> ~/.bash_profile
     $ echo 'eval "$(phpenv init -)"' >> ~/.bash_profile
+    $ echo 'export PATH=~/.config/composer/vendor/bin:$PATH' >> ~/.bash_profile
 #### restart shell
     $ git clone https://github.com/php-build/php-build $(phpenv root)/plugins/php-build
     $ phpenv install 8.1.29 && phpenv global 8.1.29 && phpenv rehash
