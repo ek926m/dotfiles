@@ -62,7 +62,7 @@
 #### add to .bash_profile
     export GEM_HOME=~/.ruby/
     export PATH="$PATH:~/.ruby/bin"
-    # restart shell
+#### restart shell
     $ rbenv install 3.1.6 && rbenv global 3.1.6 && rbenv rehash
     $ gem install rails
     
