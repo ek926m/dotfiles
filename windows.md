@@ -11,6 +11,6 @@
     $ winget install --id VideoLAN.VLC -e --source winget
     $ winget install --id Plex.Plex -e --source winget
     $ winget install --id Mozilla.Firefox -e --source winget
-  
+    $ winget install --id Microsoft.WindowsTerminal -e --source winget
 
 
