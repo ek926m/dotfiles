@@ -28,14 +28,38 @@
     $ wsl --install
     
 ## ubuntu
-    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux
-    
+    $ chsh -s /bin/bash
+    $ cd && touch .hushlogin
+    $ cd && touch .bash_profile
+    $ sudo apt update
+    $ sudo apt install -y git wget gcc g++ build-essential cmake ncdu curl nano tmux
+
+### ruby version manager
+    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    $ ~/.rbenv/bin/rbenv init
+    $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+    # restart shell
+    $ rbenv install 3.2.5 && rbenv global 3.2.5 && rbenv rehash
+
+### node version manager https://github.com/nvm-sh/nvm
+    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    # restart shell
+    $ nvm install --lts
+    $ nvm use --lts
+
+### python version manager https://github.com/pyenv/pyenv
+    $ curl https://pyenv.run | bash
+    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
+#### add to .bash_profile
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+#### restart shell
 
 # MAC: $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
-### bash
-    export BASH_SILENCE_DEPRECATION_WARNING=1
-    
+### .bash_profile
     export CLICOLOR=1
     alias ls='ls --color=auto'
     alias ll='ls -lah --color=auto'
@@ -63,7 +87,7 @@
     eval "$(rbenv init -)"
     eval "$(nodenv init -)"
     eval "$(pyenv init -)"
-
+    
 ### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
