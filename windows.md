@@ -28,7 +28,10 @@
     $ wsl --install
     
 ## ubuntu
-    $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
+    $ sudo apt install -y git wget gcc g++ build-essential cmake curl ncdu nano tmux
+    
+
+# MAC: $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
 ### bash
     export BASH_SILENCE_DEPRECATION_WARNING=1
