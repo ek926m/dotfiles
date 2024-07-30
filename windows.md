@@ -54,7 +54,7 @@
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-### ruby version manager
+### ruby version manager https://github.com/rbenv/rbenv
     $ sudo apt install -y ruby-dev
     $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
     $ ~/.rbenv/bin/rbenv init
@@ -85,7 +85,7 @@
     eval "$(pyenv init -)"
 #### restart shell
 
-### php version manager
+### php version manager https://github.com/phpenv/phpenv
     $ sudo apt install -y pkg-config libbz2-dev sqlite3 libsqlite3-dev libssl-dev libcurl4-openssl-dev libjpeg-dev libonig-dev libreadline-dev libtidy-dev libxslt-dev libzip-dev libpng-dev composer
     $ git clone https://github.com/phpenv/phpenv.git ~/.phpenv
     $ echo 'export PATH="$HOME/.phpenv/bin:$PATH"' >> ~/.bash_profile
