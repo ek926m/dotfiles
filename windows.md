@@ -69,7 +69,7 @@
     $ git config --global user.name "Your Name"
 
 ### ruby version manager https://github.com/rbenv/rbenv
-    $ sudo apt install -y ruby-dev
+    $ sudo apt install -y ruby-dev libyaml-dev ruby-build
     $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
     $ ~/.rbenv/bin/rbenv init
     $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
@@ -110,8 +110,6 @@
     $ phpenv install 8.1.29 && phpenv global 8.1.29 && phpenv rehash
     $ composer global require laravel/installer
 
-
-# MAC: $ sudo apt install git mysql ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
 
 
