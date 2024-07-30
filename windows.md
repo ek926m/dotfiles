@@ -31,8 +31,22 @@
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
     $ cd && touch .bash_profile
+    
+### basic packages
     $ sudo apt update
     $ sudo apt install -y git wget gcc g++ build-essential cmake ncdu curl nano tmux openjdk-21-jre-headless
+
+### docker
+    $ sudo apt install -y docker.io docker-compose
+    $ sudo systemctl start docker && sudo systemctl enable docker
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker ${USER}
+
+#### some basic container
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+    $ docker run -d  --name some-mongo --restart=always -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+
 
 ### .bash_profile
     export CLICOLOR=1
