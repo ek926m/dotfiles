@@ -40,7 +40,7 @@
     $ nodenv install 16.0.0 && nodenv global 16.0.0 && nodenv rehash
     $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
     
-#### rails, npm libs and laravel
+#### rails, npm libs, laravel
     $ gem install rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
