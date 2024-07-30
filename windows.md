@@ -30,6 +30,7 @@
     $ winget install --id Valve.Steam -e --source winget
     $ winget install --id OBSProject.OBSStudio -e --source winget
     $ winget install --id GIMP.GIMP -e --source winget
+    $ winget install --id Cockos.REAPER -e --source winget
 
 # wsl
     $ wsl --install
