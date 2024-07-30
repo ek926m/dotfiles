@@ -1,4 +1,4 @@
-# winget
+# winget via powershell
 
     $ winget install --id Git.Git -e --source winget
     $ winget install --id Discord.Discord -e --source winget
@@ -12,5 +12,6 @@
     $ winget install --id Plex.Plex -e --source winget
     $ winget install --id Mozilla.Firefox -e --source winget
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
-
+    $ winget install --id Microsoft.VisualStudio.2022.Community -e --source winget
+    $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
 
