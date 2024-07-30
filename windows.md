@@ -32,7 +32,7 @@
     $ cd && touch .hushlogin
     $ cd && touch .bash_profile
     $ sudo apt update
-    $ sudo apt install -y git wget gcc g++ build-essential cmake ncdu curl nano tmux
+    $ sudo apt install -y git wget gcc g++ build-essential cmake ncdu curl nano tmux openjdk-21-jre-headless
 
 ### .bash_profile
     export CLICOLOR=1
