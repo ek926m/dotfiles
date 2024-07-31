@@ -97,21 +97,22 @@
 
 ### python version manager https://github.com/pyenv/pyenv
     $ curl https://pyenv.run | bash
-    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
 #### add to .bash_profile
     export PYENV_ROOT="$HOME/.pyenv"
     [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 #### restart shell
+    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
 
 ### php version manager https://github.com/phpenv/phpenv
     $ sudo apt install -y pkg-config libbz2-dev sqlite3 libsqlite3-dev libssl-dev libcurl4-openssl-dev libjpeg-dev libonig-dev libreadline-dev libtidy-dev libxslt-dev libzip-dev libpng-dev composer unzip php php-cli php-common php-mbstring php-xml php-ldap php-mysql php-sqlite3 php-zip php-json php-opcache php-readline php-curl  
     $ git clone https://github.com/phpenv/phpenv.git ~/.phpenv
-    $ echo 'export PATH="$HOME/.phpenv/bin:$PATH"' >> ~/.bash_profile
-    $ echo 'eval "$(phpenv init -)"' >> ~/.bash_profile
-    $ echo 'export PATH=~/.config/composer/vendor/bin:$PATH' >> ~/.bash_profile
-#### restart shell
     $ git clone https://github.com/php-build/php-build $(phpenv root)/plugins/php-build
+#### add to .bash_profile
+    $ export PATH="$HOME/.phpenv/bin:$PATH"
+    $ eval "$(phpenv init -)"
+    $ export PATH=~/.config/composer/vendor/bin:$PATH
+#### restart shell
     $ phpenv install 8.1.29 && phpenv global 8.1.29 && phpenv rehash
     $ composer global require laravel/installer
 
