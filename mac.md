@@ -71,7 +71,7 @@
     eval "$(pyenv init -)"
 
 ### packages
-    $ brew install git mysql redis awscli ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
+    $ brew install git mysql redis awscli saml2aws ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
 
     $ brew install --cask visual-studio-code
     $ brew install --cask rectangle
