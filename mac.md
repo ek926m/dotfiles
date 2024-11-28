@@ -71,25 +71,34 @@
     eval "$(pyenv init -)"
 
 ### packages
-    $ brew install git mysql redis awscli saml2aws ruby-build sqlite3 nodenv tmux bash openjdk openssl wget composer curl php yarn docker-compose pyenv rbenv libyaml
+    $ brew install git mysql redis 
+    $ brew install tmux bash openssl wget curl yarn
+    $ btew install libyaml ruby-build sqlite3 openjdk
+    $ brew install nodenv pyenv rbenv
+    $ brew install php composer
+    
+    $ brew install awscli saml2aws
 
     $ brew install --cask visual-studio-code
     $ brew install --cask rectangle
     $ brew install --cask google-chrome
-    $ brew install --cask redisinsight
     $ brew install --cask dbeaver-community
+    $ brew install --cask alfred
     
     $ brew install --cask cyberduck
     $ brew install --cask postman
     $ brew install --cask discord
+
     $ brew install --cask docker
-    
+    $ brew install docker-compose
+    $ brew install --cask betterdisplay
+
+    $ brew install --cask redisinsight
     $ brew install --cask mongodb-compass
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
-    $ brew install --cask betterdisplay
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
