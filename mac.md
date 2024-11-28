@@ -79,8 +79,6 @@
     $ brew install nodenv pyenv rbenv
     $ brew install php composer
     
-    $ brew install awscli saml2aws
-
     $ brew install --cask visual-studio-code
     $ brew install --cask rectangle
     $ brew install --cask google-chrome
@@ -90,6 +88,9 @@
     $ brew install --cask cyberduck
     $ brew install --cask postman
     $ brew install --cask discord
+
+### optional packages
+    $ brew install awscli saml2aws openjdk@11
 
     $ brew install --cask docker
     $ brew install docker-compose
@@ -101,6 +102,7 @@
     $ brew install --cask datagrip
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
+
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
