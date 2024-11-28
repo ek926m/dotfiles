@@ -60,12 +60,11 @@
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
     export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
     
-    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-    export JAVA_HOME="/opt/homebrew/opt/openjdk"
-    
+    export PATH="$HOME/.jenv/bin:$PATH"
     export PATH="$HOME/.rbenv/bin:$PATH"
     export PATH="$HOME/.nodenv/bin:$PATH"
     export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(jenv init -)"
     eval "$(rbenv init -)"
     eval "$(nodenv init -)"
     eval "$(pyenv init -)"
@@ -75,8 +74,8 @@
 ### packages
     $ brew install git mysql redis 
     $ brew install tmux bash openssl wget curl yarn
-    $ btew install libyaml ruby-build sqlite3 openjdk
-    $ brew install nodenv pyenv rbenv
+    $ btew install libyaml ruby-build sqlite3 
+    $ brew install nodenv pyenv rbenv jenv
     $ brew install php composer
     
     $ brew install --cask visual-studio-code
@@ -90,7 +89,7 @@
     $ brew install --cask discord
 
 ### optional packages
-    $ brew install awscli saml2aws openjdk@11
+    $ brew install awscli saml2aws
 
     $ brew install --cask docker
     $ brew install docker-compose
