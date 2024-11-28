@@ -35,7 +35,11 @@
 
 ### install and setup tooling (use homebrew part below to install)
 
-#### ruby, node, python
+#### jenv, ruby, node, python
+    $ jenv enable-plugin export
+    $ jenv add /opt/homebrew/opt/openjdk
+    $ jenv add /opt/homebrew/opt/openjdk@11
+    $ jenv local 11.0.25 && jenv global 11.0.25
     $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
     $ nodenv install 16.0.0 && nodenv global 16.0.0 && nodenv rehash
     $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
@@ -73,7 +77,7 @@
 
 ### packages
     $ brew install git mysql redis 
-    $ brew install tmux bash openssl wget curl yarn
+    $ brew install tmux bash openssl wget curl yarn openjdk
     $ btew install libyaml ruby-build sqlite3 
     $ brew install nodenv pyenv rbenv jenv
     $ brew install php composer
@@ -89,7 +93,7 @@
     $ brew install --cask discord
 
 ### optional packages
-    $ brew install awscli saml2aws
+    $ brew install awscli saml2aws openjdk@11
 
     $ brew install --cask docker
     $ brew install docker-compose
