@@ -70,6 +70,8 @@
     eval "$(nodenv init -)"
     eval "$(pyenv init -)"
 
+    export PATH="/Users/$USER/.local/bin:$PATH"
+
 ### packages
     $ brew install git mysql redis 
     $ brew install tmux bash openssl wget curl yarn
