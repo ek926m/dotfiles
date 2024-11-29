@@ -81,14 +81,13 @@
     $ btew install libyaml ruby-build sqlite3 
     $ brew install nodenv pyenv rbenv jenv
     $ brew install php composer
-    
+
+    $ brew install --cask alfred
+    $ brew install --cask rectangle-pro
     $ brew install --cask visual-studio-code
-    $ brew install --cask rectangle
     $ brew install --cask spotify
     $ brew install --cask google-chrome
-    $ brew install --cask dbeaver-community
-    $ brew install --cask alfred
-    
+    $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask postman
     $ brew install --cask discord
