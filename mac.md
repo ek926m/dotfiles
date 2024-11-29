@@ -84,6 +84,7 @@
     
     $ brew install --cask visual-studio-code
     $ brew install --cask rectangle
+    $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community
     $ brew install --cask alfred
