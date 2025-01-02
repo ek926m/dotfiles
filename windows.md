@@ -1,5 +1,8 @@
 # windows 11 dev installation
 ## winget
+
+winget install --id=AutoHotkey.AutoHotkey  -e
+
 ### main
     $ winget install --id Git.Git -e --source winget
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
