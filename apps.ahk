@@ -1,3 +1,22 @@
+; Function to find an executable in common installation directories
+FindExecutable(executableName, commonPaths) {
+    Loop, % commonPaths.MaxIndex()
+    {
+        Loop, % commonPaths[A_Index] "\" executableName, 1, 1
+        {
+            return A_LoopFileFullPath
+        }
+    }
+    return ""
+}
+
+; Define common installation directories
+commonPaths := [
+    "C:\Program Files",
+    "C:\Program Files (x86)",
+    "C:\Users\" A_UserName "\AppData\Local"
+]
+
 ; Alt + W to open or switch to Chrome
 !w::
 IfWinExist, ahk_class Chrome_WidgetWin_1
@@ -26,7 +45,15 @@ IfWinExist, ahk_class SpotifyMainWindow
 }
 else
 {
-    Run, spotify.exe
+    spotifyPath := FindExecutable("Spotify.exe", commonPaths)
+    if (spotifyPath != "")
+    {
+        Run, %spotifyPath%
+    }
+    else
+    {
+        MsgBox, Spotify executable not found.
+    }
 }
 return
 
@@ -41,12 +68,28 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
     }
     else
     {
-        Run, "C:\Program Files\Microsoft VS Code\Code.exe"
+        vscodePath := FindExecutable("Code.exe", commonPaths)
+        if (vscodePath != "")
+        {
+            Run, %vscodePath%
+        }
+        else
+        {
+            MsgBox, Visual Studio Code executable not found.
+        }
     }
 }
 else
 {
-    Run, "C:\Program Files\Microsoft VS Code\Code.exe"
+    vscodePath := FindExecutable("Code.exe", commonPaths)
+    if (vscodePath != "")
+    {
+        Run, %vscodePath%
+    }
+    else
+    {
+        MsgBox, Visual Studio Code executable not found.
+    }
 }
 return
 
@@ -73,12 +116,28 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
     }
     else
     {
-        Run, "C:\Users\%USERNAME%\AppData\Local\Discord\app-1.0.9003\Discord.exe"
+        discordPath := FindExecutable("Discord.exe", commonPaths)
+        if (discordPath != "")
+        {
+            Run, %discordPath%
+        }
+        else
+        {
+            MsgBox, Discord executable not found.
+        }
     }
 }
 else
 {
-    Run, "C:\Users\%USERNAME%\AppData\Local\Discord\app-1.0.9003\Discord.exe"
+    discordPath := FindExecutable("Discord.exe", commonPaths)
+    if (discordPath != "")
+    {
+        Run, %discordPath%
+    }
+    else
+    {
+        MsgBox, Discord executable not found.
+    }
 }
 return
 
@@ -102,7 +161,15 @@ IfWinExist, ahk_class SunAwtFrame
 }
 else
 {
-    Run, "C:\Program Files\DBeaver\dbeaver.exe"
+    dbeaverPath := FindExecutable("dbeaver.exe", commonPaths)
+    if (dbeaverPath != "")
+    {
+        Run, %dbeaverPath%
+    }
+    else
+    {
+        MsgBox, DBeaver executable not found.
+    }
 }
 return
 
