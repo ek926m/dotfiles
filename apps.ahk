@@ -51,7 +51,6 @@ else
     spotifyPath := FindExecutable("Spotify.exe", commonPaths)
     if (spotifyPath != "")
     {
-        MsgBox, Found Spotify at %spotifyPath%
         Run, %spotifyPath%
     }
     else
@@ -75,7 +74,6 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
         vscodePath := FindExecutable("Code.exe", commonPaths)
         if (vscodePath != "")
         {
-            MsgBox, Found VS Code at %vscodePath%
             Run, %vscodePath%
         }
         else
@@ -89,7 +87,6 @@ else
     vscodePath := FindExecutable("Code.exe", commonPaths)
     if (vscodePath != "")
     {
-        MsgBox, Found VS Code at %vscodePath%
         Run, %vscodePath%
     }
     else
@@ -125,7 +122,6 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
         discordPath := FindExecutable("Discord.exe", commonPaths)
         if (discordPath != "")
         {
-            MsgBox, Found Discord at %discordPath%
             Run, %discordPath%
         }
         else
@@ -139,7 +135,6 @@ else
     discordPath := FindExecutable("Discord.exe", commonPaths)
     if (discordPath != "")
     {
-        MsgBox, Found Discord at %discordPath%
         Run, %discordPath%
     }
     else
@@ -172,7 +167,6 @@ else
     dbeaverPath := FindExecutable("dbeaver.exe", commonPaths)
     if (dbeaverPath != "")
     {
-        MsgBox, Found DBeaver at %dbeaverPath%
         Run, %dbeaverPath%
     }
     else
