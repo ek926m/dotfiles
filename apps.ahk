@@ -2,15 +2,7 @@
 !w::
 IfWinExist, ahk_class Chrome_WidgetWin_1
 {
-    ; Check for a specific window title to ensure it's Chrome
-    IfWinExist, Google Chrome
-    {
-        WinActivate
-    }
-    else
-    {
-        Run, chrome.exe
-    }
+    WinActivate
 }
 else
 {
@@ -34,15 +26,7 @@ return
 !e::
 IfWinExist, ahk_class Chrome_WidgetWin_1
 {
-    ; Check for a specific window title to ensure it's VS Code
-    IfWinExist, Visual Studio Code
-    {
-        WinActivate
-    }
-    else
-    {
-        Run, "C:\Program Files\Microsoft VS Code\Code.exe"
-    }
+    WinActivate
 }
 else
 {
@@ -66,15 +50,7 @@ return
 !c::
 IfWinExist, ahk_class Chrome_WidgetWin_1
 {
-    ; Check for a specific window title to ensure it's Discord
-    IfWinExist, Discord
-    {
-        WinActivate
-    }
-    else
-    {
-        Run, "C:\Users\%USERNAME%\AppData\Local\Discord\app-1.0.9003\Discord.exe"
-    }
+    WinActivate
 }
 else
 {
