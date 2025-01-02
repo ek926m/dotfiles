@@ -1,8 +1,8 @@
 ; Function to find an executable in common installation directories
-FindExecutable(executableName, commonPaths) {
+FindExecutable(executablePattern, commonPaths) {
     Loop, % commonPaths.MaxIndex()
     {
-        Loop, % commonPaths[A_Index] "\" executableName, 1, 1
+        Loop, % commonPaths[A_Index] "\" executablePattern, 1, 1
         {
             return A_LoopFileFullPath
         }
@@ -48,7 +48,7 @@ IfWinExist, ahk_class SpotifyMainWindow
 }
 else
 {
-    spotifyPath := FindExecutable("Spotify.exe", commonPaths)
+    spotifyPath := FindExecutable("%Spotify.exe%", commonPaths)
     if (spotifyPath != "")
     {
         Run, %spotifyPath%
@@ -71,7 +71,7 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
     }
     else
     {
-        vscodePath := FindExecutable("Code.exe", commonPaths)
+        vscodePath := FindExecutable("%Code.exe%", commonPaths)
         if (vscodePath != "")
         {
             Run, %vscodePath%
@@ -84,7 +84,7 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
 }
 else
 {
-    vscodePath := FindExecutable("Code.exe", commonPaths)
+    vscodePath := FindExecutable("%Code.exe%", commonPaths)
     if (vscodePath != "")
     {
         Run, %vscodePath%
@@ -119,7 +119,7 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
     }
     else
     {
-        discordPath := FindExecutable("Discord.exe", commonPaths)
+        discordPath := FindExecutable("%Discord.exe%", commonPaths)
         if (discordPath != "")
         {
             Run, %discordPath%
@@ -132,7 +132,7 @@ IfWinExist, ahk_class Chrome_WidgetWin_1
 }
 else
 {
-    discordPath := FindExecutable("Discord.exe", commonPaths)
+    discordPath := FindExecutable("%Discord.exe%", commonPaths)
     if (discordPath != "")
     {
         Run, %discordPath%
@@ -164,7 +164,7 @@ IfWinExist, ahk_class SunAwtFrame
 }
 else
 {
-    dbeaverPath := FindExecutable("dbeaver.exe", commonPaths)
+    dbeaverPath := FindExecutable("%dbeaver.exe%", commonPaths)
     if (dbeaverPath != "")
     {
         Run, %dbeaverPath%
