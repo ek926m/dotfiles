@@ -2,6 +2,7 @@
 ## winget
 
 winget install --id=AutoHotkey.AutoHotkey  -e
+https://superuser.com/questions/1604626/easy-way-to-switch-between-two-windows-of-the-same-app-in-windows-10
 
 ### main
     $ winget install --id Git.Git -e --source winget
