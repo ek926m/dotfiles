@@ -1,9 +1,6 @@
 # windows 11 dev installation
 ## winget
 
-winget install --id=AutoHotkey.AutoHotkey  -e
-https://superuser.com/questions/1604626/easy-way-to-switch-between-two-windows-of-the-same-app-in-windows-10
-
 ### main
     $ winget install --id Git.Git -e --source winget
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
@@ -16,21 +13,13 @@ https://superuser.com/questions/1604626/easy-way-to-switch-between-two-windows-o
     $ winget install --id Mozilla.Firefox -e --source winget
     $ winget install --id Discord.Discord -e --source winget
     $ winget install --id Spotify.Spotify -e --source winget
-
-### optional
-    $ winget install --id MoonlightGameStreamingProject.Moonlight -e --source winget
-    $ winget install --id VideoLAN.VLC -e --source winget
     $ winget install --id 7zip.7zip -e --source winget
-    $ winget install --id Plex.Plex -e --source winget
     $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
     $ winget install --id RubyInstallerTeam.Ruby.3.2 -e --source winget
     $ winget install --id Python.Python.3.12 -e --source winget
     $ winget install --id OpenJS.NodeJS.LTS -e --source winget
     $ winget install --id MongoDB.Compass.Community -e --source winget
     $ winget install --id Postman.Postman -e --source winget
-    $ winget install --id Insomnia.Insomnia -e --source winget
-    $ winget install --id Overwolf.CurseForge -e --source winget
-    $ winget install --id LizardByte.Sunshine -e --source winget
     $ winget install --id Valve.Steam -e --source winget
     $ winget install --id OBSProject.OBSStudio -e --source winget
     $ winget install --id GIMP.GIMP -e --source winget
