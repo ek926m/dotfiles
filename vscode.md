@@ -1,9 +1,9 @@
 ### vscode extensions
-- azemoh.one-monokai
+- monokai.theme-monokai-pro-vscode
 - github.copilot
 - github.copilot-chat
-- miguelsolorio.min-theme
 - Vue.volar
+- castwide.solargraph
 - vscode-icons-team.vscode-icons
 - adpyke.vscode-sql-formatter
 - Shopify.ruby-extensions-pack
@@ -20,7 +20,7 @@
         "terminal.integrated.fontSize": 14,
         "chat.editor.fontSize": 14,
         "workbench.startupEditor": "none",
-        "workbench.colorTheme": "Quiet Light",
+        "workbench.colorTheme": "Monokai Pro Light",
         "github.copilot.editor.enableAutoCompletions": true,
         "github.copilot.enable": {
             "*": false,
@@ -34,4 +34,5 @@
         "editor.fontSize": 14,
         "window.commandCenter": false,
         "workbench.layoutControl.enabled": false,
+        //"workbench.activityBar.location": "hidden",
     }
