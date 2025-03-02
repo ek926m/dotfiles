@@ -1,5 +1,5 @@
 ### vscode extensions
-- monokai.theme-monokai-pro-vscode
+- miguelsolorio.min-theme
 - github.copilot
 - github.copilot-chat
 - Vue.volar
@@ -20,7 +20,6 @@
         "terminal.integrated.fontSize": 14,
         "chat.editor.fontSize": 14,
         "workbench.startupEditor": "none",
-        "workbench.colorTheme": "Monokai Pro Light",
         "github.copilot.editor.enableAutoCompletions": true,
         "github.copilot.enable": {
             "*": false,
@@ -34,5 +33,6 @@
         "editor.fontSize": 14,
         "window.commandCenter": false,
         "workbench.layoutControl.enabled": false,
+        "workbench.colorTheme": "Min Light",
         //"workbench.activityBar.location": "hidden",
     }
