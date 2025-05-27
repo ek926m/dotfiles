@@ -47,7 +47,7 @@
     $ asdf plugin add java
     $ asdf plugin add python
 
-    $ brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv
+    $ brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c
     
     $ asdf plugin list --urls
     $ asdf install nodejs latest
