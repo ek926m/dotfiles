@@ -78,15 +78,11 @@
 ### edit ~/.bash_profile and add
 
     export PATH="/opt/homebrew/bin:$PATH"
-    
-    export PATH="/opt/homebrew/opt/php/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
-    
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
     export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
-    
     export PATH="/Users/$USER/.local/bin:$PATH"
-
+    
 ### packages
     brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 
     
