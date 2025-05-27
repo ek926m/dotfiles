@@ -89,7 +89,6 @@
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
-    $ brew install --cask postman
     $ brew install --cask discord
 
 ### optional packages
