@@ -82,7 +82,10 @@
     $ brew install git mysql redis tmux bash openssl wget curl 
     $ brew install libyaml ruby-build sqlite3 
     $ brew install gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
+    
     $ brew install awscli saml2aws
+    $ brew tap hashicorp/tap
+    $ brew install hashicorp/tap/terraform
 
     $ brew install --cask alfred
     $ brew install --cask rectangle-pro
@@ -92,8 +95,6 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew tap hashicorp/tap
-    $ brew install hashicorp/tap/terraform
     $ brew install --cask docker
     $ brew install docker-compose
 
