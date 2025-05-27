@@ -37,7 +37,6 @@
 
 ### asdf (install other brew packages first)
     $ brew install asdf
-
     # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
     
     $ asdf plugin add nodejs
@@ -71,7 +70,6 @@
 ## homebrew
 
 ### edit ~/.bash_profile and add
-
     export PATH="/opt/homebrew/bin:$PATH"
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
@@ -94,19 +92,18 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-
-### optional packages
+    $ brew tap hashicorp/tap
+    $ brew install hashicorp/tap/terraform
     $ brew install --cask docker
     $ brew install docker-compose
+
+### optional packages
     $ brew install --cask betterdisplay
     $ brew install --cask postman
     $ brew install --cask redisinsight
     $ brew install --cask mongodb-compass
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
-    $ brew tap hashicorp/tap
-    $ brew install hashicorp/tap/terraform
-
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
