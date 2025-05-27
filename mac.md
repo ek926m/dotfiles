@@ -35,10 +35,9 @@
 
 ### install and setup tooling (use homebrew part below to install)
 
-### asdf
+### asdf (install other brew packages first)
     $ brew install asdf
 
-    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
     
     $ asdf plugin add nodejs
@@ -46,10 +45,6 @@
     $ asdf plugin add php
     $ asdf plugin add python
     $ asdf plugin add java
-
-    $ brew install git tmux bash openssl wget curl 
-    $ brew install libyaml ruby-build sqlite3 
-    $ brew install gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
     
     $ asdf plugin list --urls
     $ asdf install nodejs latest
@@ -82,17 +77,14 @@
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
     export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
     export PATH="/Users/$USER/.local/bin:$PATH"
+
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     
 ### packages
-    brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 
-    
-
-
-    $ brew install git mysql redis 
-    $ brew install tmux bash openssl wget curl yarn openjdk
+    $ brew install git mysql redis tmux bash openssl wget curl 
     $ brew install libyaml ruby-build sqlite3 
-    $ brew install nodenv pyenv rbenv jenv
-    $ brew install php composer
+    $ brew install gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
+    $ brew install awscli saml2aws
 
     $ brew install --cask alfred
     $ brew install --cask rectangle-pro
@@ -104,8 +96,6 @@
     $ brew install --cask discord
 
 ### optional packages
-    $ brew install awscli saml2aws openjdk@11
-
     $ brew install --cask docker
     $ brew install docker-compose
     $ brew install --cask betterdisplay
