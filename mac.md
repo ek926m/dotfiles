@@ -44,8 +44,8 @@
     $ asdf plugin add nodejs
     $ asdf plugin add ruby
     $ asdf plugin add php
-    $ asdf plugin add java
     $ asdf plugin add python
+    $ asdf plugin add java
 
     $ brew install git tmux bash openssl wget curl 
     $ brew install libyaml ruby-build sqlite3 
@@ -55,14 +55,15 @@
     $ asdf install nodejs latest
     $ asdf install ruby latest
     $ asdf install php latest
-    $ asdf install java latest
     $ asdf install python latest
+    $ asdf list all java
+    $ asdf install java adoptopenjdk-24.0.1+9
 
     $ asdf set nodejs latest
     $ asdf set ruby latest
     $ asdf set php latest
-    $ asdf set java latest
     $ asdf set python latest
+    $ asdf set java adoptopenjdk-24.0.1+9
 
 #### rails, npm libs, laravel
     $ gem install rails
