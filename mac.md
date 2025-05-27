@@ -35,15 +35,33 @@
 
 ### install and setup tooling (use homebrew part below to install)
 
-#### jenv, ruby, node, python
-    $ jenv enable-plugin export
-    $ jenv add /opt/homebrew/opt/openjdk
-    $ jenv add /opt/homebrew/opt/openjdk@11
-    $ jenv local 11.0.25 && jenv global 11.0.25
-    $ rbenv install 3.1.2 && rbenv global 3.1.2 && rbenv rehash
-    $ nodenv install 16.0.0 && nodenv global 16.0.0 && nodenv rehash
-    $ pyenv install 3.10.5 && pyenv global 3.10.5 && pyenv rehash
+### asdf
+    $ brew install asdf
+
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
     
+    $ asdf plugin add nodejs
+    $ asdf plugin add ruby
+    $ asdf plugin add php
+    $ asdf plugin add java
+    $ asdf plugin add python
+
+    $ brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv
+    
+    $ asdf plugin list --urls
+    $ asdf install nodejs latest
+    $ asdf install ruby latest
+    $ asdf install php latest
+    $ asdf install java latest
+    $ asdf install python latest
+
+    $ asdf set nodejs latest
+    $ asdf set ruby latest
+    $ asdf set php latest
+    $ asdf set java latest
+    $ asdf set python latest
+
 #### rails, npm libs, laravel
     $ gem install rails
     $ npm install -g nodemon @vue/cli    
@@ -64,21 +82,16 @@
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
     export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
     
-    export PATH="$HOME/.jenv/bin:$PATH"
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    export PATH="$HOME/.nodenv/bin:$PATH"
-    export PATH="$HOME/.pyenv/bin:$PATH"
-    eval "$(jenv init -)"
-    eval "$(rbenv init -)"
-    eval "$(nodenv init -)"
-    eval "$(pyenv init -)"
-
     export PATH="/Users/$USER/.local/bin:$PATH"
 
 ### packages
+    brew install git tmux bash openssl wget curl libyaml ruby-build sqlite3 
+    
+
+
     $ brew install git mysql redis 
     $ brew install tmux bash openssl wget curl yarn openjdk
-    $ btew install libyaml ruby-build sqlite3 
+    $ brew install libyaml ruby-build sqlite3 
     $ brew install nodenv pyenv rbenv jenv
     $ brew install php composer
 
