@@ -97,7 +97,7 @@
     $ brew install --cask docker
     $ brew install docker-compose
     $ brew install --cask betterdisplay
-
+    $ brew install --cask postman
     $ brew install --cask redisinsight
     $ brew install --cask mongodb-compass
     $ brew install --cask intellij-idea
