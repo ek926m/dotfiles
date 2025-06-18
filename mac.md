@@ -77,6 +77,8 @@
     export PATH="/Users/$USER/.local/bin:$PATH"
 
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    . ~/.asdf/plugins/java/set-java-home.bash
+    # https://github.com/halcyon/asdf-java?tab=readme-ov-file#java_home
     
 ### packages
     $ brew install git mysql redis tmux bash openssl wget curl 
