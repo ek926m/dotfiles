@@ -35,7 +35,7 @@
 
 ### install and setup tooling (use homebrew part below to install)
 
-### asdf (install other brew packages first)
+### asdf (install other brew packages first and SET PATH first)
     $ brew install asdf
     # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
     
@@ -78,7 +78,6 @@
 
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     . ~/.asdf/plugins/java/set-java-home.bash
-    # https://github.com/halcyon/asdf-java?tab=readme-ov-file#java_home
     
 ### packages
     $ brew install git mysql redis tmux bash openssl wget curl 
