@@ -1,4 +1,22 @@
 # windows 11 dev installation
+
+## no cloud account, use local user account
+### new: 
+![unnamed](https://github.com/user-attachments/assets/05a14327-d620-4798-9359-f407109d2b97)
+![unnamed (1)](https://github.com/user-attachments/assets/b5561840-5e3d-48bf-ae0a-fc49ff0d6c30)
+
+### old:
+You can press SHIFT+F10 keys 
+to open Command Prompt.  Execute 
+
+`OOBE\BYPASSNRO`
+
+
+## autologin if you have a living room tv pc with no data
+![unnamed (2)](https://github.com/user-attachments/assets/b73bbb16-7132-4e53-b2fd-cceb84d09690)
+![unnamed (3)](https://github.com/user-attachments/assets/ad9449a4-b433-4d06-8e9c-c9ec808f074b)
+
+
 ## winget
 
 ### main
