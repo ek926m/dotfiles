@@ -71,9 +71,9 @@
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
 
-### install and setup tooling (use homebrew part below to install)
+### install and setup tooling
 
-### asdf (install other brew packages first and SET PATH first)
+### asdf
     $ brew install asdf
     # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
     
