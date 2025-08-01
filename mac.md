@@ -33,40 +33,6 @@
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-### install and setup tooling (use homebrew part below to install)
-
-### asdf (install other brew packages first and SET PATH first)
-    $ brew install asdf
-    # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
-    
-    $ asdf plugin add nodejs
-    $ asdf plugin add ruby
-    $ asdf plugin add php
-    $ asdf plugin add python
-    $ asdf plugin add java
-    
-    $ asdf plugin list --urls
-    $ asdf install nodejs latest
-    $ asdf install ruby latest
-    $ asdf install php latest
-    $ asdf install python latest
-    $ asdf list all java
-    $ asdf install java adoptopenjdk-24.0.1+9
-
-    $ asdf set nodejs latest
-    $ asdf set ruby latest
-    $ asdf set php latest
-    $ asdf set python latest
-    $ asdf set java adoptopenjdk-24.0.1+9
-
-#### rails, npm libs, laravel
-    $ gem install rails
-    $ npm install -g nodemon @vue/cli    
-    $ composer global require laravel/installer
-    
-#### encrypt and zip a file
-    $ zip -er project.zip ./folder_to_zip/
-
 ## homebrew
 
 ### edit ~/.bash_profile and add
@@ -104,6 +70,40 @@
     $ brew install --cask mongodb-compass
     $ brew install --cask intellij-idea
     $ brew install --cask datagrip
+
+### install and setup tooling (use homebrew part below to install)
+
+### asdf (install other brew packages first and SET PATH first)
+    $ brew install asdf
+    # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
+    
+    $ asdf plugin add nodejs
+    $ asdf plugin add ruby
+    $ asdf plugin add php
+    $ asdf plugin add python
+    $ asdf plugin add java
+    
+    $ asdf plugin list --urls
+    $ asdf install nodejs latest
+    $ asdf install ruby latest
+    $ asdf install php latest
+    $ asdf install python latest
+    $ asdf list all java
+    $ asdf install java adoptopenjdk-24.0.1+9
+
+    $ asdf set nodejs latest
+    $ asdf set ruby latest
+    $ asdf set php latest
+    $ asdf set python latest
+    $ asdf set java adoptopenjdk-24.0.1+9
+
+#### rails, npm libs, laravel
+    $ gem install rails
+    $ npm install -g nodemon @vue/cli    
+    $ composer global require laravel/installer
+    
+#### encrypt and zip a file
+    $ zip -er project.zip ./folder_to_zip/
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
