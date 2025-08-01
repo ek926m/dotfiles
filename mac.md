@@ -107,3 +107,16 @@
 
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
+
+### mac os font smoothing
+
+#### Disable font smoothing:
+
+`defaults -currentHost write -g AppleFontSmoothing -int 0`
+
+#### Reset to default font smoothing level (medium):
+
+`defaults -currentHost delete -g AppleFontSmoothing`
+
+You will need to log off or restart your Mac for any changes to take effect.
+
