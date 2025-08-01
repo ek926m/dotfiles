@@ -80,9 +80,7 @@
     . ~/.asdf/plugins/java/set-java-home.bash
     
 ### packages
-    $ brew install git mysql redis tmux bash openssl wget curl 
-    $ brew install libyaml ruby-build sqlite3 
-    $ brew install gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
+    $ brew install git mysql redis tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
     
     $ brew install awscli saml2aws
     $ brew tap hashicorp/tap
@@ -96,11 +94,11 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
+    $ brew install --cask nvidia-geforce-now
     $ brew install --cask docker
     $ brew install docker-compose
 
 ### optional packages
-    $ brew install --cask betterdisplay
     $ brew install --cask postman
     $ brew install --cask redisinsight
     $ brew install --cask mongodb-compass
