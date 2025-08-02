@@ -89,13 +89,20 @@
     $ asdf install php latest
     $ asdf install python latest
     $ asdf list all java
-    $ asdf install java adoptopenjdk-24.0.1+9
+    $ asdf install java openjdk-24.0.2
 
     $ asdf set nodejs latest
     $ asdf set ruby latest
     $ asdf set php latest
     $ asdf set python latest
-    $ asdf set java adoptopenjdk-24.0.1+9
+    $ asdf set java openjdk-24.0.2
+
+### .tool-versions
+    ruby 3.4.5
+    nodejs 24.5.0
+    php 8.4.11
+    python 3.13.5t
+    java openjdk-24.0.2
 
 #### rails, npm libs, laravel
     $ gem install rails
