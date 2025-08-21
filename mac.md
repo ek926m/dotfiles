@@ -64,6 +64,13 @@
     $ brew install --cask docker
     $ brew install docker-compose
 
+    $ brew install --cask rubymine
+    $ brew install --cask datagrip
+    $ brew install --cask clion
+    $ brew install --cask rider
+    $ brew install --cask intellij-idea
+    $ brew install --cask pycharm
+
 ### optional packages
     $ brew install --cask postman
     $ brew install --cask redisinsight
