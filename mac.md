@@ -104,7 +104,9 @@
     $ asdf set python latest
     $ asdf set java openjdk-24.0.2
 
-### .tool-versions
+    $ asdf plugin update --all
+
+### create a .tool-versions file in home path
     ruby 3.4.5
     nodejs 24.5.0
     php 8.4.11
