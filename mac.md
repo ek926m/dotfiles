@@ -61,7 +61,7 @@
     $ brew install --cask cyberduck
     $ brew install --cask discord
     $ brew install --cask nvidia-geforce-now
-    $ brew install --cask docker
+    $ brew install --cask docker # alternative: brew install --cask rancher
     $ brew install docker-compose
 
     $ brew install --cask rubymine
