@@ -17,6 +17,7 @@
     
 #### mssql (if you really need it)
     $ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=root" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+    $ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password123,." -p 1433:1433 --platform linux/x86_64 -d mcr.microsoft.com/mssql/server:2019-latest
 
 #### openstreetmap germany
     $ docker run -it --name openstreetmap_germany --restart=always --memory=20g --shm-size=2g -e PBF_URL=https://download.geofabrik.de/europe/germany-latest.osm.pbf -e REPLICATION_URL=https://download.geofabrik.de/europe/germany-updates/ -e IMPORT_WIKIPEDIA=false -e NOMINATIM_PASSWORD=this_is_a_password -v nominatim-data:/nominatim -v nominatim-data-sql:/var/lib/postgresql/14/main -p 3001:8080 --name nominatim mediagis/nominatim:4.2
