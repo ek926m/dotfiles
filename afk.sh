@@ -7,3 +7,5 @@ do
    #echo "refreshed"
    sleep 290
 done
+
+# alias afk='/Users/ekai/afk.sh'
