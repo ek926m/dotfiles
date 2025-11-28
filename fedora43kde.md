@@ -1,19 +1,19 @@
 # fedora 43 kde notes
 
-  sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-  
-  sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-  
-  sudo dnf install google-chrome-stable vlc kdenlive  obs-studio ffmpeg steam
-  flatpaks: discord, parsec
-  other: alderon launcher
-  
-  sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-  sudo dnf swap obs-studio obs-studio --allowerasing
-  
-  sudo dnf remove kmahjongg kmines kpat
-  
-  sudo dnf autoremove
+    sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    
+    sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+    
+    sudo dnf install google-chrome-stable vlc kdenlive  obs-studio ffmpeg steam
+    flatpaks: discord, parsec
+    other: alderon launcher
+    
+    sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+    sudo dnf swap obs-studio obs-studio --allowerasing
+    
+    sudo dnf remove kmahjongg kmines kpat
+    
+    sudo dnf autoremove
 
 ## disable swap
   sudo swapoff /dev/zram0
