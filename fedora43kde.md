@@ -91,8 +91,8 @@ this is the files content:
       run-or-raise DBeaver dbeaver
       run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
 
-### use mac keyboard mode on mx keys mini
-### befehl oder script:
+      ### use mac keyboard mode on mx keys mini
+      befehl oder script:
       CMD + OPTION + W = run-or-raise google-chrome google-chrome-stable
       CMD + OPTION + F = run-or-raise dolphin dolphin
       CMD + OPTION + T = run-or-raise konsole konsole
