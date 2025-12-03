@@ -149,9 +149,9 @@ If this doesn't solve it, you can try manually resetting the settings file:
 
 
 
-brew install git mysql redis tmux bash yarn openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip awscli saml2aws
-brew tap hashicorp/tap
-brew install hashicorp/tap/terraform
+    brew install git mysql redis tmux bash yarn openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip awscli saml2aws
+    brew tap hashicorp/tap
+    brew install hashicorp/tap/terraform
 
 
     ## asdf setup
