@@ -174,3 +174,26 @@ brew install hashicorp/tap/terraform
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     . ~/.asdf/plugins/java/set-java-home.bash
     export SI_ENABLE_BUILTIN_AUTHENTICATION=1
+
+
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+export CLICOLOR=1
+alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
+alias grep='grep --color=auto'
+
+git_branch() {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
+export PATH="/Users/$USER/.local/bin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+. ~/.asdf/plugins/java/set-java-home.bash
