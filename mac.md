@@ -144,3 +144,33 @@ If this doesn't solve it, you can try manually resetting the settings file:
 2.	Restart
 3.	When the keyboard assistent pops up. press the key like it says and select ISO (European)
 
+
+
+
+
+
+brew install git mysql redis tmux bash yarn openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip awscli saml2aws
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+
+
+    ## asdf setup
+    brew install asdf
+
+    asdf plugin add nodejs
+    asdf plugin add ruby
+    asdf plugin add java
+
+
+
+
+
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+    export PATH="/opt/homebrew/bin:$PATH"
+    export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+    export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
+    export PATH="/Users/$USER/.local/bin:$PATH"
+    export ASDF_NODEJS_AUTO_ENABLE_COREPACK=true
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    . ~/.asdf/plugins/java/set-java-home.bash
+    export SI_ENABLE_BUILTIN_AUTHENTICATION=1
