@@ -124,29 +124,6 @@
 ### system settings (pre ventura)
 * [settings](https://github.com/ek926m/dotfiles/blob/main/settings.md)
 
-### mac os font smoothing
-
-#### Disable font smoothing:
-
-`defaults -currentHost write -g AppleFontSmoothing -int 0`
-
-#### Reset to default font smoothing level (medium):
-
-`defaults -currentHost delete -g AppleFontSmoothing`
-
-You will need to log off or restart your Mac for any changes to take effect.
-
-### keyboard issue <^
-
-If this doesn't solve it, you can try manually resetting the settings file:
-
-1.	Delete /Library/Preferences/com.apple.keyboardtype.plist
-2.	Restart
-3.	When the keyboard assistent pops up. press the key like it says and select ISO (European)
-
-
-
-
 
 # brew blaa
 
@@ -195,3 +172,31 @@ If this doesn't solve it, you can try manually resetting the settings file:
     export PATH="~/.composer/vendor/bin:$PATH"
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     . ~/.asdf/plugins/java/set-java-home.bash
+
+
+
+
+-----
+
+### mac os font smoothing
+
+#### Disable font smoothing:
+
+`defaults -currentHost write -g AppleFontSmoothing -int 0`
+
+#### Reset to default font smoothing level (medium):
+
+`defaults -currentHost delete -g AppleFontSmoothing`
+
+You will need to log off or restart your Mac for any changes to take effect.
+
+### keyboard issue <^
+
+If this doesn't solve it, you can try manually resetting the settings file:
+
+1.	Delete /Library/Preferences/com.apple.keyboardtype.plist
+2.	Restart
+3.	When the keyboard assistent pops up. press the key like it says and select ISO (European)
+
+
+----- 
