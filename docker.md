@@ -25,3 +25,13 @@
 ### dev
     $ docker run --name some-mysql --platform linux/x86_64 --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:5.0.6
+
+### tmp
+    $ docker run --name si-mysql8 --restart=always -p 4000:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8
+    $ docker run --name si-redis5 --restart=always -p 6379:6379 -d redis:latest
+
+### container
+    $ docker volume create container-mysql-data
+    $ docker volume create container-redis-data
+    $ docker run --name container-mysql --restart=always -p 4000:3306 -e MYSQL_ROOT_PASSWORD=root -v mysql-data:/var/lib/mysql -d mysql:8
+    $ docker run --name container-redis --restart=always -p 6379:6379 -v redis-data:/data -d redis:5.04
