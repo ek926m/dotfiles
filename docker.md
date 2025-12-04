@@ -34,4 +34,4 @@
     $ docker volume create container-mysql-data
     $ docker volume create container-redis-data
     $ docker run --name container-mysql --restart=always -p 4000:3306 -e MYSQL_ROOT_PASSWORD=root -v container-mysql-data:/var/lib/mysql -d mysql:8
-    $ docker run --name container-redis --restart=always -p 4001:6379 -v container-redis-data:/data -d redis:5.04
+    $ docker run --name container-redis --restart=always -p 4001:6379 -v container-redis-data:/data -d redis:5
