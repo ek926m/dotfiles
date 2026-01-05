@@ -1,5 +1,5 @@
 # fedora 43 kde (default is wayland)
-
+## basic packages
     $ sudo dnf update
     $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     # enable flatpak in software center ui (button)
@@ -27,17 +27,14 @@
     $ wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
     $ sudo dnf install ./dbeaver-ce-latest-stable.x86_64.rpm
 
-## ALFRED ALTERNATIVE
-    
+## mac alfred alternative
     $ sudo dnf install kdotool
 
 ### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
-
-    mkdir -p ~/.local/bin
-    nano ~/.local/bin/run-or-raise
+    $ mkdir -p ~/.local/bin
+    $ nano ~/.local/bin/run-or-raise
 
 ### this is the files content:
-
     #!/bin/bash
     ## Usage: run-or-raise <window-class> <command-to-launch>
     
@@ -57,12 +54,9 @@
     fi
 
 ### make it runnable and test it
-
-    chmod +x ~/.local/bin/run-or-raise
-    
-    run-or-raise firefox firefox
-    
-    kdotool search --class "name"
+    $ chmod +x ~/.local/bin/run-or-raise
+    $ run-or-raise firefox firefox
+    $ kdotool search --class "name"
 
 ## my commands (keyboard -> shortcuts)
 
@@ -93,39 +87,38 @@
     $ sudo tuned-adm profile throughput-performance
     $ sudo tuned-adm verify
 
-# custom notices for gaming (wow)
-    ek@fedora:~$ setxkbmap de nodeadkeys
-    WARNING: Running setxkbmap against an Xwayland server
-    ek@fedora:~$ setxkbmap -v
+## custom keymap for games
+    $ setxkbmap de nodeadkeys
+    $ setxkbmap -v
     
-    set 105 generic instead of 104 in keyboard settings
-    set german no dead keys in keyboard settings
-    
-    nano keyboard_layout.sh
+    # set 105 generic instead of 104 in keyboard settings
+    # set german no dead keys in keyboard settings
+
+### keymap script
+    $ nano keyboard_layout.sh
     
     #!/bin/bash
     setxkbmap de nodeadkeys
+
+### test changes
+    # go to the kde autostart settings and use this script
+    # and make it runnable
+    # verify it after pc restart:
     
-    go to the kde autostart settings and use this script
-    and make it runnable
+    $ setxkbmap -v
     
-    verify it:
-    
-    ek@fedora:~$ setxkbmap -v
-    WARNING: Running setxkbmap against an Xwayland server
-    Trying to build keymap using the following components:
-    keycodes:   evdev+aliases(qwertz)
-    types:      complete
-    compat:     complete
-    symbols:    pc+de(nodeadkeys)+inet(evdev)
-    geometry:   pc(pc105)
+        WARNING: Running setxkbmap against an Xwayland server
+        Trying to build keymap using the following components:
+        keycodes:   evdev+aliases(qwertz)
+        types:      complete
+        compat:     complete
+        symbols:    pc+de(nodeadkeys)+inet(evdev)
+        geometry:   pc(pc105)
     
     
-    wow midnight beta:
-    
+## wow midnight beta:
     add following flag in settings:
     -d3d11
-    
     then it will launch and not crash
 
 
