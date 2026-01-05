@@ -74,14 +74,7 @@ this is the files content:
 
 ## my commands (keyboard -> shortcuts)
 
-    run-or-raise google-chrome google-chrome-stable
-    run-or-raise dolphin dolphin
-    run-or-raise konsole konsole
-    run-or-raise Code code
-    run-or-raise DBeaver dbeaver
-    run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
-
-    add command or script:
+### add command or script
     META + W = run-or-raise google-chrome google-chrome-stable
     META + F = run-or-raise dolphin dolphin
     META + T = run-or-raise konsole konsole
@@ -89,40 +82,18 @@ this is the files content:
     META + D = run-or-raise DBeaver dbeaver
     META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"    
 
-    window management:
+### window management
     ALT + ^ = Walk Through Windows of Current Application
-    
-
-
-    ### OLD FROM HERE ###
-    ### use mac keyboard mode on mx keys mini
-    befehl oder script:
-    CMD + OPTION + W = run-or-raise google-chrome google-chrome-stable
-    CMD + OPTION + F = run-or-raise dolphin dolphin
-    CMD + OPTION + T = run-or-raise konsole konsole
-    CMD + OPTION + E = run-or-raise Code code
-    CMD + OPTION + D = run-or-raise DBeaver dbeaver
-    CMD + OPTION + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
-
-    ### use mac keyboard mode on mx keys mini
-    Kurzbefehle -> Fensterverwaltung:
-    CTRL + ALT + LEFT = Fenster am linken Bildschirmrand
-    CTRL + ALT + RIGHT = Fenster am rechten Bildschirmrand
-    CTRL + ALT + TOP = Fenster am oberen Bildschirmrand
-    CTRL + ALT + BOTTOM = Fenster am unteren Bildschirmrand
-    CTRL + ALT + ENTER = Fenster maximieren
-    CMD + Q = Fenster schließen
-    CTRL + ALT + C = Fenster zentrieren
-    CMD + ^ = Zwischen Fenstern der aktuellen Anwendung wechseln
-    ALT (META) + TAB = Zwischen Fenstern wechseln
-    SHIFT + ALT (META) + TAB = Zwischen Fenstern wechseln (reverse)
-    CMD + C = Kopieren
-    CMD + V = Einfügen
-    CMD + X = Ausschneiden
-    ### OLD END HERE ###
-
-
-
+    SHIFT + ALT + ^ = Walk Through Windows of Current Application (Reverse)
+    ALT + TAB = Walk Through Windows
+    SHIFT + ALT + TAB = Walk Through Windows (Reverse)
+    META + ARROW_LEFT = Quick Tile Window to the Left
+    META + ARROW_RIGHT = Quick Tile Window to the Right
+    META + ARROW_TOP =  Quick Tile Window to the Top
+    META + ARROW_BOTTOM = Quick Tile Window to the Bottom
+    META + ENTER = Maximize Window
+    META + Q = Close Window
+    META + ??? = Move Window to the Center
 
 # custom notices    
     ek@fedora:~$ setxkbmap de nodeadkeys
