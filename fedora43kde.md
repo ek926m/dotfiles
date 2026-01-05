@@ -80,7 +80,21 @@ this is the files content:
     run-or-raise Code code
     run-or-raise DBeaver dbeaver
     run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
+
+    add command or script:
+    META + W = run-or-raise google-chrome google-chrome-stable
+    META + F = run-or-raise dolphin dolphin
+    META + T = run-or-raise konsole konsole
+    META + E = run-or-raise Code code
+    META + D = run-or-raise DBeaver dbeaver
+    META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"    
+
+    window management:
+    ALT + ^ = Walk Through Windows of Current Application
     
+
+
+    ### OLD FROM HERE ###
     ### use mac keyboard mode on mx keys mini
     befehl oder script:
     CMD + OPTION + W = run-or-raise google-chrome google-chrome-stable
@@ -89,7 +103,8 @@ this is the files content:
     CMD + OPTION + E = run-or-raise Code code
     CMD + OPTION + D = run-or-raise DBeaver dbeaver
     CMD + OPTION + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
-    
+
+    ### use mac keyboard mode on mx keys mini
     Kurzbefehle -> Fensterverwaltung:
     CTRL + ALT + LEFT = Fenster am linken Bildschirmrand
     CTRL + ALT + RIGHT = Fenster am rechten Bildschirmrand
@@ -104,6 +119,7 @@ this is the files content:
     CMD + C = Kopieren
     CMD + V = Einfügen
     CMD + X = Ausschneiden
+    ### OLD END HERE ###
 
 
 
