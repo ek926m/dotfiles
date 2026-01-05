@@ -1,54 +1,43 @@
 # fedora 43 kde notes
 
-    sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-        
-    sudo dnf install google-chrome-stable vlc kdenlive  obs-studio ffmpeg steam
-    flatpaks: discord, parsec
-    other: alderon launcher
-    
-    sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-    sudo dnf swap obs-studio obs-studio --allowerasing
-    
-    sudo dnf remove kmahjongg kmines kpat
-    
-    sudo dnf autoremove
+    $ sudo dnf update
+    $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-## disable swap
-    sudo swapoff /dev/zram0
-    sudo zramctl --reset /dev/zram0
-    sudo touch /etc/systemd/zram-generator.conf
-    sudo dnf remove zram-generator-defaults
+    # enable flatpak in software center ui (button)
+    # enable google-chrome in software center ui (checkbox)
+    $ sudo dnf install google-chrome-stable vlc kdenlive obs-studio ffmpeg steam gnome-disk-utility
+    # install flatpaks with software center ui: discord, parsec
+    $ sudo dnf -y copr enable faugus/faugus-launcher
+    $ sudo dnf -y install faugus-launcher
     
-    tuned-adm active
-    tuned-adm list
-    sudo tuned-adm profile throughput-performance
-    sudo tuned-adm verify
+    $ sudo dnf remove kmahjongg kmines kpat
+    $ sudo dnf autoremove
 
+## optional: disable swap
+    $ sudo swapoff /dev/zram0
+    $ sudo zramctl --reset /dev/zram0
+    $ sudo touch /etc/systemd/zram-generator.conf
+    $ sudo dnf remove zram-generator-defaults
 
-## change gpu driver
-    sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld 
-    sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-## revert gpu driver
-    sudo dnf swap mesa-va-drivers-freeworld mesa-va-drivers 
-    sudo dnf swap mesa-vdpau-drivers-freeworld mesa-vdpau-drivers
-
+## optional: tweak energy profile
+    $ tuned-adm active
+    $ tuned-adm list
+    $ sudo tuned-adm profile throughput-performance
+    $ sudo tuned-adm verify
 
 ## vscode
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-    
-    dnf check-update
-    sudo dnf install code
-
-
+    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    $ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+    $ dnf check-update
+    $ sudo dnf install code
 
 ## dbeaver
-    wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
-    sudo dnf install ./dbeaver-ce-latest-stable.x86_64.rpm
+    $ wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
+    $ sudo dnf install ./dbeaver-ce-latest-stable.x86_64.rpm
 
 ## ALFRED ALTERNATIVE
     
-    sudo dnf install kdotool
+    $ sudo dnf install kdotool
 
 Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
 
