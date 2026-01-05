@@ -11,17 +11,11 @@
     $ sudo dnf remove kmahjongg kmines kpat
     $ sudo dnf autoremove
 
-## optional: disable swap
+## disable swap
     $ sudo swapoff /dev/zram0
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
     $ sudo dnf remove zram-generator-defaults
-
-## optional: tweak energy profile
-    $ tuned-adm active
-    $ tuned-adm list
-    $ sudo tuned-adm profile throughput-performance
-    $ sudo tuned-adm verify
 
 ## vscode
     $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -93,7 +87,13 @@
     META + Q = Close Window
     META + ??? = Move Window to the Center
 
-# custom notices    
+## optional: tweak energy profile
+    $ tuned-adm active
+    $ tuned-adm list
+    $ sudo tuned-adm profile throughput-performance
+    $ sudo tuned-adm verify
+
+# custom notices for gaming (wow)
     ek@fedora:~$ setxkbmap de nodeadkeys
     WARNING: Running setxkbmap against an Xwayland server
     ek@fedora:~$ setxkbmap -v
