@@ -1,4 +1,4 @@
-# fedora 43 kde notes
+# fedora 43 kde (wayland)
 
     $ sudo dnf update
     $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
