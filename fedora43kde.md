@@ -26,7 +26,8 @@
 
 
 ## change gpu driver
-      sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+      sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld 
+      sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ## revert gpu driver
       sudo dnf swap mesa-va-drivers-freeworld mesa-va-drivers 
       sudo dnf swap mesa-vdpau-drivers-freeworld mesa-vdpau-drivers
