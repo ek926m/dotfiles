@@ -108,15 +108,7 @@ this is the files content:
 
 
 
-# custom notices
-
-    enable flatpak in software center
-    enable google-chrome in software center
-    
-    steam
-    lutris
-    
-    
+# custom notices    
     ek@fedora:~$ setxkbmap de nodeadkeys
     WARNING: Running setxkbmap against an Xwayland server
     ek@fedora:~$ setxkbmap -v
