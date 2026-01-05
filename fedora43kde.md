@@ -2,14 +2,12 @@
 
     $ sudo dnf update
     $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
     # enable flatpak in software center ui (button)
     # enable google-chrome in software center ui (checkbox)
     $ sudo dnf install google-chrome-stable vlc kdenlive obs-studio ffmpeg steam gnome-disk-utility
     # install flatpaks with software center ui: discord, parsec
     $ sudo dnf -y copr enable faugus/faugus-launcher
     $ sudo dnf -y install faugus-launcher
-    
     $ sudo dnf remove kmahjongg kmines kpat
     $ sudo dnf autoremove
 
@@ -39,12 +37,12 @@
     
     $ sudo dnf install kdotool
 
-Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
+### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
 
     mkdir -p ~/.local/bin
     nano ~/.local/bin/run-or-raise
 
-this is the files content:
+### this is the files content:
 
     #!/bin/bash
     ## Usage: run-or-raise <window-class> <command-to-launch>
