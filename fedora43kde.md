@@ -4,7 +4,7 @@
     $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     # enable flatpak in software center ui (button)
     # enable google-chrome in software center ui (checkbox)
-    $ sudo dnf install google-chrome-stable vlc kdenlive obs-studio ffmpeg steam gnome-disk-utility
+    $ sudo dnf install google-chrome-stable vlc kdenlive obs-studio ffmpeg-free steam gnome-disk-utility
     # install flatpaks with software center ui: discord, parsec
     $ sudo dnf -y copr enable faugus/faugus-launcher
     $ sudo dnf -y install faugus-launcher
