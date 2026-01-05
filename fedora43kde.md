@@ -1,9 +1,7 @@
 # fedora 43 kde notes
 
     sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-    
-    sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-    
+        
     sudo dnf install google-chrome-stable vlc kdenlive  obs-studio ffmpeg steam
     flatpaks: discord, parsec
     other: alderon launcher
@@ -27,7 +25,9 @@
       sudo tuned-adm verify
 
 
-## revert gpu
+## change gpu driver
+      sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+## revert gpu driver
       sudo dnf swap mesa-va-drivers-freeworld mesa-va-drivers 
       sudo dnf swap mesa-vdpau-drivers-freeworld mesa-vdpau-drivers
 
@@ -117,6 +117,50 @@ this is the files content:
 
 
 
+
+# custom notices
+
+
+enable flatpak in software center
+enable google-chrome in software center
+
+steam
+lutris
+
+
+ek@fedora:~$ setxkbmap de nodeadkeys
+WARNING: Running setxkbmap against an Xwayland server
+ek@fedora:~$ setxkbmap -v
+
+set 105 generic instead of 104 in keyboard settings
+set german no dead keys in keyboard settings
+
+nano keyboard_layout.sh
+
+#!/bin/bash
+setxkbmap de nodeadkeys
+
+go to the kde autostart settings and use this script
+and make it runnable
+
+verify it:
+
+ek@fedora:~$ setxkbmap -v
+WARNING: Running setxkbmap against an Xwayland server
+Trying to build keymap using the following components:
+keycodes:   evdev+aliases(qwertz)
+types:      complete
+compat:     complete
+symbols:    pc+de(nodeadkeys)+inet(evdev)
+geometry:   pc(pc105)
+
+
+wow midnight beta:
+
+add following flag in settings:
+-d3d11
+
+then it will launch and not crash
 
 
 
