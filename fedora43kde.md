@@ -72,7 +72,7 @@ this is the files content:
     
     kdotool search --class "name"
 
-## my commands
+## my commands (keyboard -> shortcuts)
 
     run-or-raise google-chrome google-chrome-stable
     run-or-raise dolphin dolphin
