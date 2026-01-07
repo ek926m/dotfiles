@@ -87,6 +87,14 @@
     $ sudo tuned-adm profile throughput-performance
     $ sudo tuned-adm verify
 
+## optional: play tft on android via pc remote connection
+    $ sudo dnf copr enable zeno/scrcpy
+    $ sudo dnf install scrcpy
+    # enable developer options
+    # enable usb debugging
+    # allow android and pc handshake
+    $ scrcpy
+
 ## custom keymap for games
     $ setxkbmap de nodeadkeys
     $ setxkbmap -v
