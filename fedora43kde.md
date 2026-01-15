@@ -82,6 +82,8 @@
     META + Q = Close Window
     META + ??? = Move Window to the Center
 
+---
+
 #### optional: tweak energy profile
     $ tuned-adm active
     $ tuned-adm list
