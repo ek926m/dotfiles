@@ -66,7 +66,8 @@
     META + T = run-or-raise konsole konsole
     META + E = run-or-raise Code code
     META + D = run-or-raise DBeaver dbeaver
-    META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"    
+    META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
+    META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
 
 ### window management
     ALT + ^ = Walk Through Windows of Current Application
