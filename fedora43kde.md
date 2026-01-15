@@ -82,13 +82,13 @@
     META + Q = Close Window
     META + ??? = Move Window to the Center
 
-## optional: tweak energy profile
+#### optional: tweak energy profile
     $ tuned-adm active
     $ tuned-adm list
     $ sudo tuned-adm profile throughput-performance
     $ sudo tuned-adm verify
 
-## optional: play tft on android via pc remote connection
+#### optional: play tft on android via pc remote connection
     $ sudo dnf copr enable zeno/scrcpy
     $ sudo dnf install scrcpy
     # enable developer options
@@ -96,20 +96,20 @@
     # allow android and pc handshake
     $ scrcpy
 
-## custom keymap for games
+#### optional: custom keymap for games
     $ setxkbmap de nodeadkeys
     $ setxkbmap -v
     
     # set 105 generic instead of 104 in keyboard settings
     # set german no dead keys in keyboard settings
 
-### keymap script
+#### optional: keymap script
     $ nano keyboard_layout.sh
     
     #!/bin/bash
     setxkbmap de nodeadkeys
 
-### test changes
+#### optional: test changes
     # go to the kde autostart settings and use this script
     # and make it runnable
     # verify it after pc restart:
@@ -125,7 +125,7 @@
         geometry:   pc(pc105)
     
     
-## wow midnight beta:
+#### optional: wow midnight beta:
     add following flag in settings:
     -d3d11
     then it will launch and not crash
