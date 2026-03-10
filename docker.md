@@ -1,4 +1,9 @@
 ### docker
+
+#### mysql + redis
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+
 #### mariadb + phpmyadmin
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
