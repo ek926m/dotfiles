@@ -4,6 +4,16 @@
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
+#### mssql + redis
+    # $ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=asdfgh1234,." -p 1433:1433 --platform linux/x86_64 -d mcr.microsoft.com/mssql/server:2019-latest 
+
+    $ docker volume create redis-mssql-data
+    $ docker run --name redis-mssql --restart=always -p 4003:6379 -v redis-mssql-data:/data -d redis:5
+
+    $ docker volume create mssql-data
+    $ docker run --name mssql --restart=always -p 4002:1433 -e ACCEPT_EULA=Y --platform linux/x86_64 -e SA_PASSWORD=asdfgh1234,. -v mssql-data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-latest
+
+
 #### mariadb + phpmyadmin
     $ docker run --name some-mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest
     $ docker run --name some-phpmyadmin -e UPLOAD_LIMIT=9999M --restart=always -d --link some-mariadb:db -e MYSQL_ROOT_PASSWORD=root -p 8080:80 phpmyadmin
