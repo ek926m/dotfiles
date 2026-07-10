@@ -108,6 +108,19 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
+## keyboard shortcuts
+### map these to different work spaces
+    Super+W  -  Web Browser
+    Super+E  -  Code Editor
+    Super+T  -  Terminal
+    Super+F  -  File Browser
+    Super+D  -  Database Browser
+    Super+C  -  Communication
+    Super+S  -  Spotify
 
+    Super+K  -  Calendar
+    Super+N  -  Notes
+    Super+M  -  Mail
+    Super+V  -  Viewer
 
 
