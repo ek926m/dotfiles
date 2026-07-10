@@ -60,7 +60,7 @@
     $ sudo systemctl enable --now docker
 
 ### spin up a container
-$ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
 
 ## asdf installation
     # https://asdf-vm.com/guide/getting-started.html
