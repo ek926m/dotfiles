@@ -7,36 +7,37 @@
     $ sudo dnf update -y
 
 ## enable rpm fusion
+### free repo
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+### nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-## enable google-chrome-stable
+## google-chrome-stable
     $ sudo dnf install fedora-workstation-repositories
     $ sudo dnf config-manager setopt google-chrome.enabled=1
     $ sudo dnf install google-chrome-stable
 
-## enable flatpak
+## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-## install flatpak's
     $ flatpak install flathub com.spotify.Client
     $ flatpak install flathub com.discordapp.Discord
     $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
 
-## enable and install visual code repo
+## visual code
     $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
     echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
     
     $ dnf check-update && sudo dnf install code
 
-## install some packages
+## system packages
     $ sudo dnf install steam
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
 
 ## remove old packages
-$ sudo dnf autoremove
+    $ sudo dnf autoremove
 
 ## edit .bashrc
     export CLICOLOR=1
