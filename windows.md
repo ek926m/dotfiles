@@ -26,9 +26,6 @@
     $ winget install --id GIMP.GIMP -e --source winget
     $ winget install --id Cockos.REAPER -e --source winget
     $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
-    $ winget install --id RubyInstallerTeam.Ruby.3.2 -e --source winget
-    $ winget install --id Python.Python.3.12 -e --source winget
-    $ winget install --id OpenJS.NodeJS.LTS -e --source winget
     $ winget install --id MongoDB.Compass.Community -e --source winget
     $ winget install --id Microsoft.VisualStudio.2022.Community -e --source winget
     $ winget install --id Mozilla.Firefox -e --source winget
