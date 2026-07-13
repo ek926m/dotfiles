@@ -123,4 +123,118 @@
     Super+M  -  Mail
     Super+V  -  Viewer
 
+----
+
+## old notes
+
+### disable swap
+    $ sudo swapoff /dev/zram0
+    $ sudo zramctl --reset /dev/zram0
+    $ sudo touch /etc/systemd/zram-generator.conf
+    $ sudo dnf remove zram-generator-defaults
+
+### mac alfred alternative
+    $ sudo dnf install kdotool
+
+#### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
+    $ mkdir -p ~/.local/bin
+    $ nano ~/.local/bin/run-or-raise
+
+#### this is the files content:
+    #!/bin/bash
+    ## Usage: run-or-raise <window-class> <command-to-launch>
+    
+    CLASS=$1
+    CMD=$2
+    
+    ## Search for the window by class name
+    PID=$(kdotool search --class "$CLASS" | head -n 1)
+    
+    if [ -n "$PID" ]; then
+      # If found, activate (focus) it
+      kdotool windowactivate "$PID"
+    else
+      # If not found, launch it
+      # detach the process so it doesn't close with the script
+      nohup $CMD >/dev/null 2>&1 &
+    fi
+
+#### make it runnable and test it
+    $ chmod +x ~/.local/bin/run-or-raise
+    $ run-or-raise firefox firefox
+    $ kdotool search --class "name"
+
+### my commands (keyboard -> shortcuts)
+
+#### add command or script
+    META + W = run-or-raise google-chrome google-chrome-stable
+    META + F = run-or-raise dolphin dolphin
+    META + T = run-or-raise konsole konsole
+    META + E = run-or-raise Code code
+    META + D = run-or-raise DBeaver dbeaver
+    META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
+    META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
+
+#### window management
+    ALT + ^ = Walk Through Windows of Current Application
+    SHIFT + ALT + ^ = Walk Through Windows of Current Application (Reverse)
+    ALT + TAB = Walk Through Windows
+    SHIFT + ALT + TAB = Walk Through Windows (Reverse)
+    META + ARROW_LEFT = Quick Tile Window to the Left
+    META + ARROW_RIGHT = Quick Tile Window to the Right
+    META + ARROW_TOP =  Quick Tile Window to the Top
+    META + ARROW_BOTTOM = Quick Tile Window to the Bottom
+    META + ENTER = Maximize Window
+    META + Q = Close Window
+    META + ??? = Move Window to the Center
+
+----
+
+#### optional: tweak energy profile
+    $ tuned-adm active
+    $ tuned-adm list
+    $ sudo tuned-adm profile throughput-performance
+    $ sudo tuned-adm verify
+
+#### optional: play tft on android via pc remote connection
+    $ sudo dnf copr enable zeno/scrcpy
+    $ sudo dnf install scrcpy
+    # enable developer options
+    # enable usb debugging
+    # allow android and pc handshake
+    $ scrcpy
+
+#### optional: custom keymap for games
+    $ setxkbmap de nodeadkeys
+    $ setxkbmap -v
+    
+    # set 105 generic instead of 104 in keyboard settings
+    # set german no dead keys in keyboard settings
+
+#### optional: keymap script
+    $ nano keyboard_layout.sh
+    
+    #!/bin/bash
+    setxkbmap de nodeadkeys
+
+#### optional: test changes
+    # go to the kde autostart settings and use this script
+    # and make it runnable
+    # verify it after pc restart:
+    
+    $ setxkbmap -v
+    
+        WARNING: Running setxkbmap against an Xwayland server
+        Trying to build keymap using the following components:
+        keycodes:   evdev+aliases(qwertz)
+        types:      complete
+        compat:     complete
+        symbols:    pc+de(nodeadkeys)+inet(evdev)
+        geometry:   pc(pc105)
+    
+    
+#### optional: wow midnight beta:
+    add following flag in settings:
+    -d3d11
+    then it will launch and not crash
 
