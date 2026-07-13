@@ -54,14 +54,14 @@
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    . ~/.asdf/plugins/java/set-java-home.bash
+    
+
 ### asdf installation
     # https://asdf-vm.com/guide/getting-started.html
     # https://github.com/asdf-vm/asdf/releases
     $ cd && cd Downloads && wget https://github.com/asdf-vm/asdf/releases/download/v0.20.0/asdf-v0.20.0-linux-amd64.tar.gz && tar -xvzf asdf-v0.20.0-linux-amd64.tar.gz && sudo mv asdf /usr/bin/asdf
-
-### add to .bashrc
-    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-    . ~/.asdf/plugins/java/set-java-home.bash
 
 ### asdf setup
     $ asdf plugin add nodejs
