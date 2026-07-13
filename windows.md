@@ -5,7 +5,7 @@
 
     $ winget install --id Git.Git -e --source winget
     $ winget install --id Microsoft.VisualStudioCode -e --source winget
-    $ winget install --id dbeaver.dbeaver -e --source winget
+    $ winget install --id DBeaver.DBeaver.Community -e --source winget
     $ winget install --id WinSCP.WinSCP -e --source winget
     $ winget install --id Google.Chrome -e --source winget
     $ winget install --id Discord.Discord -e --source winget
@@ -15,8 +15,8 @@
     $ winget install --id Valve.Steam -e --source winget
 
 ### streaming
-    $ winget install --id MoonlightGameStreamingProject.Moonlight
-    $ winget install --id LizardByte.Sunshine
+    $ winget install --id MoonlightGameStreamingProject.Moonlight --source winget
+    $ winget install --id LizardByte.Sunshine --source winget
 
 ### optional
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
