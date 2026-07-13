@@ -1,4 +1,4 @@
-# fedora 44 cinnamon
+# fedora 44
 
 ## rename pc
     $ sudo hostnamectl set-hostname --static tux
