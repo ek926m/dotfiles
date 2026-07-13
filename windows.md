@@ -33,7 +33,10 @@
     $ winget install --id Mozilla.Firefox -e --source winget
         
 # wsl
-    $ wsl --install
+    $ wsl --install --distribution FedoraLinux-44
+    $ wsl --update
+    $ wsl --set-default FedoraLinux-44
+    $ wsl --set-default-version 2
 
 
 
