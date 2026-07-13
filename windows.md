@@ -18,6 +18,7 @@
     $ winget install --id LizardByte.Sunshine --source winget
 
 ### optional
+    $ winget install --id Rufus.Rufus -e --source winget
     $ winget install --id Postman.Postman -e --source winget
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
     $ winget install --id Microsoft.Office -e --source winget
