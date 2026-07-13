@@ -13,6 +13,7 @@
     $ winget install --id 7zip.7zip -e --source winget
 
 ### streaming
+    $ winget install --id Nvidia.GeForceNow -e --source winget
     $ winget install --id Valve.Steam -e --source winget
     $ winget install --id MoonlightGameStreamingProject.Moonlight --source winget
     $ winget install --id LizardByte.Sunshine --source winget
