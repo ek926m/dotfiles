@@ -11,14 +11,15 @@
     $ winget install --id Discord.Discord -e --source winget
     $ winget install --id Spotify.Spotify -e --source winget
     $ winget install --id 7zip.7zip -e --source winget
-    $ winget install --id Postman.Postman -e --source winget
-    $ winget install --id Valve.Steam -e --source winget
+    $ winget install --id Rufus.Rufus -e --source winget
 
 ### streaming
+    $ winget install --id Valve.Steam -e --source winget
     $ winget install --id MoonlightGameStreamingProject.Moonlight --source winget
     $ winget install --id LizardByte.Sunshine --source winget
 
 ### optional
+    $ winget install --id Postman.Postman -e --source winget
     $ winget install --id Microsoft.WindowsTerminal -e --source winget
     $ winget install --id Microsoft.Office -e --source winget
     $ winget install --id OBSProject.OBSStudio -e --source winget
