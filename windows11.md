@@ -15,11 +15,13 @@
     $ winget install -e --source winget --id Spotify.Spotify
     $ winget install -e --source winget --id 7zip.7zip
 
-### optional tools
+### gaming tools
     $ winget install -e --source winget --id Nvidia.GeForceNow
     $ winget install -e --source winget --id Valve.Steam
     $ winget install -e --source winget --id MoonlightGameStreamingProject.Moonlight
     $ winget install -e --source winget --id LizardByte.Sunshine
+
+### optional tools
     $ winget install -e --source winget --id Microsoft.Office
     $ winget install -e --source winget --id Postman.Postman
     $ winget install -e --source winget --id OBSProject.OBSStudio
