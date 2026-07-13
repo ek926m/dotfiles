@@ -1,4 +1,4 @@
-## mac based setup (apple silicon)
+# macos (apple silicon)
 
 ### system
     $ sudo softwareupdate --install-rosetta --agree-to-license
