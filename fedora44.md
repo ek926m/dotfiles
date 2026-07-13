@@ -124,6 +124,11 @@
     Super+V  -  Viewer
 
 ----
+----
+----
+----
+----
+----
 
 ## old notes
 
@@ -188,6 +193,8 @@
     META + Q = Close Window
     META + ??? = Move Window to the Center
 
+----
+----
 ----
 
 #### optional: tweak energy profile
