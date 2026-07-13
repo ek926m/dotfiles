@@ -11,7 +11,6 @@
     $ winget install --id Discord.Discord -e --source winget
     $ winget install --id Spotify.Spotify -e --source winget
     $ winget install --id 7zip.7zip -e --source winget
-    $ winget install --id Rufus.Rufus -e --source winget
 
 ### streaming
     $ winget install --id Valve.Steam -e --source winget
