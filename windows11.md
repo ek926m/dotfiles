@@ -1,37 +1,35 @@
-# windows 11 dev installation
+# windows 11 pro
+
 ## winget
 
-### main
+### main tools
+    $ winget install -e --source winget --id Git.Git
+    $ winget install -e --source winget --id Microsoft.WindowsTerminal
+    $ winget install -e --source winget --id Microsoft.VisualStudio.2022.Community
+    $ winget install -e --source winget --id Microsoft.VisualStudioCode
+    $ winget install -e --source winget --id DBeaver.DBeaver.Community
+    $ winget install -e --source winget --id RedisInsight.RedisInsight
+    $ winget install -e --source winget --id WinSCP.WinSCP
+    $ winget install -e --source winget --id Google.Chrome
+    $ winget install -e --source winget --id Discord.Discord
+    $ winget install -e --source winget --id Spotify.Spotify
+    $ winget install -e --source winget --id 7zip.7zip
 
-    $ winget install --id Git.Git -e --source winget
-    $ winget install --id Microsoft.VisualStudioCode -e --source winget
-    $ winget install --id DBeaver.DBeaver.Community -e --source winget
-    $ winget install --id WinSCP.WinSCP -e --source winget
-    $ winget install --id Google.Chrome -e --source winget
-    $ winget install --id Discord.Discord -e --source winget
-    $ winget install --id Spotify.Spotify -e --source winget
-    $ winget install --id 7zip.7zip -e --source winget
-
-### streaming
-    $ winget install --id Nvidia.GeForceNow -e --source winget
-    $ winget install --id Valve.Steam -e --source winget
-    $ winget install --id MoonlightGameStreamingProject.Moonlight --source winget
-    $ winget install --id LizardByte.Sunshine --source winget
-
-### optional
-    $ winget install --id Rufus.Rufus -e --source winget
-    $ winget install --id Postman.Postman -e --source winget
-    $ winget install --id Microsoft.WindowsTerminal -e --source winget
-    $ winget install --id Microsoft.Office -e --source winget
-    $ winget install --id OBSProject.OBSStudio -e --source winget
-    $ winget install --id GIMP.GIMP -e --source winget
-    $ winget install --id Cockos.REAPER -e --source winget
-    $ winget install --id ApacheFriends.Xampp.8.2 -e --source winget
-    $ winget install --id MongoDB.Compass.Community -e --source winget
-    $ winget install --id Microsoft.VisualStudio.2022.Community -e --source winget
-    $ winget install --id Mozilla.Firefox -e --source winget
+### optional tools
+    $ winget install -e --source winget --id Nvidia.GeForceNow
+    $ winget install -e --source winget --id Valve.Steam
+    $ winget install -e --source winget --id MoonlightGameStreamingProject.Moonlight
+    $ winget install -e --source winget --id LizardByte.Sunshine
+    $ winget install -e --source winget --id Microsoft.Office
+    $ winget install -e --source winget --id Postman.Postman
+    $ winget install -e --source winget --id OBSProject.OBSStudio
+    $ winget install -e --source winget --id GIMP.GIMP
+    $ winget install -e --source winget --id Cockos.REAPER
+    $ winget install -e --source winget --id ApacheFriends.Xampp.8.2
+    $ winget install -e --source winget --id MongoDB.Compass.Community
+    $ winget install -e --source winget --id Mozilla.Firefox
         
-## wsl
+## wsl2
     $ wsl --install --distribution FedoraLinux-44
     $ wsl --update
     $ wsl --set-default FedoraLinux-44
