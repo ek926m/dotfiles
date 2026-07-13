@@ -36,6 +36,7 @@
     $ wsl --install --distribution FedoraLinux-44
     $ wsl --update
     $ wsl --set-default FedoraLinux-44
+    $ wsl --list --verbose
     $ wsl --set-default-version 2
 
 
