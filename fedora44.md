@@ -129,6 +129,30 @@
 ----
 ----
 ----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
 
 ## old notes
 
@@ -192,10 +216,6 @@
     META + ENTER = Maximize Window
     META + Q = Close Window
     META + ??? = Move Window to the Center
-
-----
-----
-----
 
 #### optional: tweak energy profile
     $ tuned-adm active
