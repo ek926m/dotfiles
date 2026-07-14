@@ -46,37 +46,28 @@
     . ~/.asdf/plugins/java/set-java-home.bash
     
 ### packages
-    $ brew install git mysql redis tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
-    
-    $ brew install awscli saml2aws
-    $ brew tap hashicorp/tap
-    $ brew install hashicorp/tap/terraform
+    $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
 
     $ brew install --cask alfred
-    $ brew install --cask rectangle-pro
+    $ brew install --cask rectangle
     $ brew install --cask visual-studio-code
     $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install --cask nvidia-geforce-now
-    $ brew install --cask docker # alternative: brew install --cask rancher
+    $ brew install --cask docker
     $ brew install docker-compose
 
-    $ brew install --cask rubymine
-    $ brew install --cask datagrip
-    $ brew install --cask clion
-    $ brew install --cask rider
-    $ brew install --cask intellij-idea
-    $ brew install --cask pycharm
-
-### optional packages
+    $ brew tap hashicorp/tap
+    $ brew install hashicorp/tap/terraform
+    
+    $ brew install --cask lm-studio
+    $ brew install --cask redis-insight
     $ brew install --cask postman
-    $ brew install --cask redisinsight
     $ brew install --cask mongodb-compass
-    $ brew install --cask intellij-idea
-    $ brew install --cask datagrip
+    $ brew install --cask nvidia-geforce-now
+
 
 ### install and setup tooling
 
