@@ -14,6 +14,7 @@
     $ winget install -e --source winget --id Discord.Discord
     $ winget install -e --source winget --id Spotify.Spotify
     $ winget install -e --source winget --id 7zip.7zip
+    $ winget install -e --source winget --id Docker.DockerDesktop
 
 ### gaming tools
     $ winget install -e --source winget --id Nvidia.GeForceNow
