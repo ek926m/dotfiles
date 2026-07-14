@@ -23,6 +23,7 @@
     $ winget install -e --source winget --id LizardByte.Sunshine
 
 ### optional tools
+    $ winget install -e --source winget --id ElementLabs.LMStudio
     $ winget install -e --source winget --id Microsoft.Office
     $ winget install -e --source winget --id Postman.Postman
     $ winget install -e --source winget --id OBSProject.OBSStudio
