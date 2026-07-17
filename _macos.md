@@ -115,9 +115,3 @@
     $ zip -er project.zip ./folder_to_zip/
 
 
-
-
-3.	When the keyboard assistent pops up. press the key like it says and select ISO (European)
-
-
------ 
