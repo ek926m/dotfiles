@@ -65,6 +65,7 @@
     $ brew install --cask lm-studio
     $ brew install --cask redis-insight
     $ brew install --cask postman
+    $ brew install --cask obsidian
     $ brew install --cask mongodb-compass
     $ brew install --cask nvidia-geforce-now
 
