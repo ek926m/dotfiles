@@ -77,6 +77,7 @@
     $ asdf install php latest
     $ asdf install python latest
     $ asdf list all java
+    $ asdf latest java openjdk
     $ asdf install java openjdk-24.0.2
     
     $ asdf set nodejs latest
