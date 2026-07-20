@@ -114,60 +114,6 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
-## keyboard shortcuts
-### map these to different work spaces
-    Super+W  -  Web Browser
-    Super+E  -  Code Editor
-    Super+T  -  Terminal
-    Super+F  -  File Browser
-    Super+D  -  Database Browser
-    Super+C  -  Communication
-    Super+S  -  Spotify
-
-    Super+K  -  Calendar
-    Super+N  -  Notes
-    Super+M  -  Mail
-    Super+V  -  Viewer
-
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-
-## old notes
-
-### disable swap
-    $ sudo swapoff /dev/zram0
-    $ sudo zramctl --reset /dev/zram0
-    $ sudo touch /etc/systemd/zram-generator.conf
-    $ sudo dnf remove zram-generator-defaults
-
 ### mac alfred alternative
     $ sudo dnf install kdotool
 
@@ -210,6 +156,21 @@
     META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
     META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
 
+## keyboard shortcuts
+### map these to different work spaces
+    Super+W  -  Web Browser
+    Super+E  -  Code Editor
+    Super+T  -  Terminal
+    Super+F  -  File Browser
+    Super+D  -  Database Browser
+    Super+C  -  Communication
+    Super+S  -  Spotify
+
+    Super+K  -  Calendar
+    Super+N  -  Notes
+    Super+M  -  Mail
+    Super+V  -  Viewer
+
 #### window management
     ALT + ^ = Walk Through Windows of Current Application
     SHIFT + ALT + ^ = Walk Through Windows of Current Application (Reverse)
@@ -222,6 +183,45 @@
     META + ENTER = Maximize Window
     META + Q = Close Window
     META + ??? = Move Window to the Center
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+## old notes
+
+### disable swap
+    $ sudo swapoff /dev/zram0
+    $ sudo zramctl --reset /dev/zram0
+    $ sudo touch /etc/systemd/zram-generator.conf
+    $ sudo dnf remove zram-generator-defaults
 
 #### optional: tweak energy profile
     $ tuned-adm active
