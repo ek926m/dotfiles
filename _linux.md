@@ -26,6 +26,7 @@
     $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
+    $ flatpak install com.redis.RedisInsight
 
 ## system packages
     $ sudo dnf install steam
