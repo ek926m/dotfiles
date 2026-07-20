@@ -114,6 +114,8 @@
     $ composer global require laravel/installer
 
 # FONT
+    $ sudo dnf install jetbrains-mono-fonts-all
+    OR
     https://www.jetbrains.com/lp/mono/
 
 # KDE PART FROM HERE
