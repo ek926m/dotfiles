@@ -26,7 +26,6 @@
     $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
-    
     $ flatpak install com.redis.RedisInsight
     $ flatpak install com.mongodb.Compass
     $ flatpak install md.obsidian.Obsidian
@@ -166,6 +165,7 @@
     META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
     META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
+    META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
 
 #### window management
     ALT + ^ = Walk Through Windows of Current Application
