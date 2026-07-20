@@ -152,30 +152,43 @@
     steam
 
 ### my commands (keyboard -> shortcuts)
+    Name                                               Anwendungskennung                                  Version                               Zweig                   Installation
+    Discord                                            com.discordapp.Discord                             1.0.149                               stable                  system
+    Redis Insight                                      com.redis.RedisInsight                             3.6.0                                 stable                  system
+    Spotify                                            com.spotify.Client                                 1.2.92.147.g5b8f9367                  stable                  system
+    Visual Studio Code                                 com.visualstudio.code                              1.129.1                               stable                  system
+    DBeaver Community                                  io.dbeaver.DBeaverCommunity                        26.1.2                                stable                  system
 
+    
 #### add command or script
+    META + V = run-or-raise okular okular
     META + W = run-or-raise google-chrome google-chrome-stable
-    META + F = run-or-raise dolphin dolphin
+    META + E = run-or-raise Code "flatpak run com.visualstudio.code"
     META + T = run-or-raise konsole konsole
-    META + E = run-or-raise Code code
-    META + D = run-or-raise DBeaver dbeaver
-    META + C = run-or-raise com.discordapp.Discord "flatpak run com.discordapp.Discord"
+    META + F = run-or-raise dolphin dolphin
+    META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
+    META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
+    META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
+    META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
+    META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
+    META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
+    
 
 ## keyboard shortcuts
 ### map these to different work spaces
+    Super+V  -  Viewer
     Super+W  -  Web Browser
     Super+E  -  Code Editor
     Super+T  -  Terminal
     Super+F  -  File Browser
     Super+D  -  Database Browser
     Super+C  -  Communication
-    Super+S  -  Spotify
-
-    Super+K  -  Calendar
+    Super+S  -  Music
     Super+N  -  Notes
-    Super+M  -  Mail
-    Super+V  -  Viewer
+    Super+R  -  Cache Server Browser
+    Super+K  -  KI Agent
+    Super+M  -  Mongodb
 
 #### window management
     ALT + ^ = Walk Through Windows of Current Application
