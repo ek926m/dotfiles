@@ -113,6 +113,9 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
+# FONT
+    https://www.jetbrains.com/lp/mono/
+
 # KDE PART FROM HERE
 
 ### mac alfred alternative
