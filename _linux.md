@@ -120,7 +120,7 @@
     $ mkdir -p ~/.local/bin
     $ nano ~/.local/bin/run-or-raise
 
-#### this is the files content:
+#### run-or-raise:
     #!/bin/bash
     ## Usage: run-or-raise <window-class> <command-to-launch>
     
