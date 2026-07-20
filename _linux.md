@@ -26,7 +26,12 @@
     $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
+    
     $ flatpak install com.redis.RedisInsight
+    $ flatpak install com.mongodb.Compass
+    $ flatpak install md.obsidian.Obsidian
+    $ flatpak install com.getpostman.Postman
+    $ flatpak install ai.lmstudio.lm-studio
 
 ## system packages
     $ sudo dnf install steam
