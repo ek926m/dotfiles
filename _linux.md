@@ -89,23 +89,23 @@
     $ asdf install python latest
     $ asdf list all java
     $ asdf latest java openjdk
-    $ asdf install java openjdk-24.0.2
+    $ asdf install java openjdk-26.0.1
     
     $ asdf set nodejs latest
     $ asdf set ruby latest
     $ asdf set php latest
     $ asdf set python latest
-    $ asdf set java openjdk-24.0.2
+    $ asdf set java openjdk-26.0.1
     
     $ asdf plugin update --all
 
 
 ### create a .tool-versions file in home path
-    ruby 3.4.5
-    nodejs 24.5.0
-    php 8.4.11
-    python 3.13.5t
-    java openjdk-24.0.2
+    ruby 4.0.6
+    nodejs 26.5.0
+    php 8.5.8
+    python 3.14.6t
+    java openjdk-26.0.1
 
 
 ## test if it works: rails, npm libs, laravel
