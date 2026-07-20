@@ -117,14 +117,6 @@
 ### mac alfred alternative
     $ sudo dnf install kdotool
 
-#### usage to find names:
-    $ kdotool search --class "steam"
-    {ddff72a0-f13f-4eb5-b404-4f77947abda2}
-
-    $ kdotool getwindowclassname {ddff72a0-f13f-4eb5-b404-4f77947abda2}
-    steam
-
-
 #### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
     $ mkdir -p ~/.local/bin
     $ nano ~/.local/bin/run-or-raise
@@ -151,7 +143,13 @@
 #### make it runnable and test it
     $ chmod +x ~/.local/bin/run-or-raise
     $ run-or-raise firefox firefox
-    $ kdotool search --class "name"
+
+#### usage to find names:
+    $ kdotool search --class "steam"
+    {ddff72a0-f13f-4eb5-b404-4f77947abda2}
+
+    $ kdotool getwindowclassname {ddff72a0-f13f-4eb5-b404-4f77947abda2}
+    steam
 
 ### my commands (keyboard -> shortcuts)
 
