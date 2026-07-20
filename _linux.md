@@ -25,12 +25,7 @@
     $ flatpak install flathub com.discordapp.Discord
     $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
-
-## visual code
-    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
-    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-    
-    $ dnf check-update && sudo dnf install code
+    $ flatpak install com.visualstudio.code
 
 ## system packages
     $ sudo dnf install steam
@@ -58,6 +53,9 @@
     $ sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
     $ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     $ sudo systemctl enable --now docker
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker $USER
+    # relog user for docker commands to work without sudo
 
 ### spin up a container
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
