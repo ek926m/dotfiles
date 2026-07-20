@@ -162,8 +162,8 @@
     META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
-    META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
     META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
+    META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
     META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
 
