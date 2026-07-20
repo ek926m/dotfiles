@@ -155,10 +155,10 @@
     
 #### add command or script
     META + V = run-or-raise okular okular
-    META + W = run-or-raise google-chrome google-chrome-stable
-    META + E = run-or-raise Code "flatpak run com.visualstudio.code"
     META + T = run-or-raise konsole konsole
     META + F = run-or-raise dolphin dolphin
+    META + W = run-or-raise google-chrome google-chrome-stable
+    META + E = run-or-raise Code "flatpak run com.visualstudio.code"
     META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
@@ -166,22 +166,6 @@
     META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
     META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
-    
-
-## keyboard shortcuts
-### map these to different work spaces
-    Super+V  -  Document Viewer
-    Super+W  -  Web Browser
-    Super+E  -  Code Editor
-    Super+T  -  Terminal
-    Super+F  -  File Browser
-    Super+D  -  Database Browser
-    Super+C  -  Communication
-    Super+S  -  Music
-    Super+N  -  Notes
-    Super+R  -  Cache Server Browser
-    Super+K  -  KI Agent
-    Super+M  -  Mongodb
 
 #### window management
     ALT + ^ = Walk Through Windows of Current Application
@@ -196,90 +180,8 @@
     META + Q = Close Window
     META + ??? = Move Window to the Center
 
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-----
-
-## old notes
-
 ### disable swap
     $ sudo swapoff /dev/zram0
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
     $ sudo dnf remove zram-generator-defaults
-
-#### optional: tweak energy profile
-    $ tuned-adm active
-    $ tuned-adm list
-    $ sudo tuned-adm profile throughput-performance
-    $ sudo tuned-adm verify
-
-#### optional: play tft on android via pc remote connection
-    $ sudo dnf copr enable zeno/scrcpy
-    $ sudo dnf install scrcpy
-    # enable developer options
-    # enable usb debugging
-    # allow android and pc handshake
-    $ scrcpy
-
-#### optional: custom keymap for games
-    $ setxkbmap de nodeadkeys
-    $ setxkbmap -v
-    
-    # set 105 generic instead of 104 in keyboard settings
-    # set german no dead keys in keyboard settings
-
-#### optional: keymap script
-    $ nano keyboard_layout.sh
-    
-    #!/bin/bash
-    setxkbmap de nodeadkeys
-
-#### optional: test changes
-    # go to the kde autostart settings and use this script
-    # and make it runnable
-    # verify it after pc restart:
-    
-    $ setxkbmap -v
-    
-        WARNING: Running setxkbmap against an Xwayland server
-        Trying to build keymap using the following components:
-        keycodes:   evdev+aliases(qwertz)
-        types:      complete
-        compat:     complete
-        symbols:    pc+de(nodeadkeys)+inet(evdev)
-        geometry:   pc(pc105)
-    
-    
-#### optional: wow midnight beta:
-    add following flag in settings:
-    -d3d11
-    then it will launch and not crash
-
