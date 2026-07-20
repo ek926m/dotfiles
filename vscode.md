@@ -20,5 +20,5 @@
         "github.copilot.nextEditSuggestions.enabled": true,
         "editor.fontSize": 14,
         "chat.viewSessions.orientation": "stacked",
-        "editor.fontFamily": "Monaco, 'Courier New', monospace",
+        "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
     }
