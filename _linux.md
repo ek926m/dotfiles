@@ -113,6 +113,8 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
+# KDE PART FROM HERE
+
 ### mac alfred alternative
     $ sudo dnf install kdotool
 
