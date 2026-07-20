@@ -168,17 +168,54 @@
     META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
 
 #### window management
-    ALT + ^ = Walk Through Windows of Current Application
-    SHIFT + ALT + ^ = Walk Through Windows of Current Application (Reverse)
-    ALT + TAB = Walk Through Windows
-    SHIFT + ALT + TAB = Walk Through Windows (Reverse)
-    META + ARROW_LEFT = Quick Tile Window to the Left
-    META + ARROW_RIGHT = Quick Tile Window to the Right
-    META + ARROW_TOP =  Quick Tile Window to the Top
-    META + ARROW_BOTTOM = Quick Tile Window to the Bottom
-    META + ENTER = Maximize Window
-    META + Q = Close Window
-    META + ??? = Move Window to the Center
+    ALT + ^ 
+        = Walk Through Windows of Current Application
+        = Zwischen Fenstern der aktuellen Anwendung wechseln
+    SHIFT + ALT + ^ 
+        = Walk Through Windows of Current Application (Reverse)
+        = Zwischen Fenstern der aktuellen Anwendung wechseln (Gegenrichtung)
+    ALT + TAB 
+        = Walk Through Windows
+        = Zwischen Fenstern wechseln
+    SHIFT + ALT + TAB 
+        = Walk Through Windows (Reverse)
+        = Zwischen Fenstern wechseln (Gegenrichtung)
+    META + ARROW_LEFT 
+        = Quick Tile Window to the Left
+        = Fenster am linken Bildschirmrand anordnen
+    META + ARROW_RIGHT 
+        = Quick Tile Window to the Right
+        = Fenster am rechten Bildschirmrand anordnen
+    META + ARROW_TOP 
+        = Quick Tile Window to the Top
+        = Fenster am oberen Bildschirmrand anordnen
+    META + ARROW_BOTTOM 
+        = Quick Tile Window to the Bottom
+        = Fenster am unteren Bildschirmrand anordnen
+    META + ENTER 
+        = Maximize Window
+        = Fenster maximieren
+    META + Q 
+        = Close Window
+        = Fenster schließen
+    META + ??? 
+        = Move Window to the Center
+        = Fenster zentrieren
+
+### system settings:
+    - Animationen: Globale Animationsgeschwindigkeit: Sofort
+    - Maus: Zeigerbeschleunigung deaktivieren
+    - Energieverwaltung: Alles auf niemals
+    - Bildschirmsperre:
+        = Bildschirm automatisch sperren: Niemals
+        = Sofort
+    - Anzeige & Bildschirm: 
+        = Nachtlicht, immer an, 3.000K
+        = Bildschirmränder: alle deaktivieren
+    - Anwendungsumschalter: 
+        = uncheck: Ausgewähltes Fenster anzeigen
+        = Große Symbole
+        = 0ms
 
 ### disable swap
     $ sudo swapoff /dev/zram0
