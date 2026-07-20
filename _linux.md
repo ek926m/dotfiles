@@ -152,13 +152,6 @@
     steam
 
 ### my commands (keyboard -> shortcuts)
-    Name                                               Anwendungskennung                                  Version                               Zweig                   Installation
-    Discord                                            com.discordapp.Discord                             1.0.149                               stable                  system
-    Redis Insight                                      com.redis.RedisInsight                             3.6.0                                 stable                  system
-    Spotify                                            com.spotify.Client                                 1.2.92.147.g5b8f9367                  stable                  system
-    Visual Studio Code                                 com.visualstudio.code                              1.129.1                               stable                  system
-    DBeaver Community                                  io.dbeaver.DBeaverCommunity                        26.1.2                                stable                  system
-
     
 #### add command or script
     META + V = run-or-raise okular okular
@@ -177,7 +170,7 @@
 
 ## keyboard shortcuts
 ### map these to different work spaces
-    Super+V  -  Viewer
+    Super+V  -  Document Viewer
     Super+W  -  Web Browser
     Super+E  -  Code Editor
     Super+T  -  Terminal
