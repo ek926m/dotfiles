@@ -16,9 +16,8 @@
         "workbench.activityBar.location": "top",
         "window.commandCenter": false,
         "workbench.layoutControl.enabled": false,
-        "workbench.colorTheme": "Light Modern",
+        "workbench.colorTheme": "Light 2026",
         "github.copilot.nextEditSuggestions.enabled": true,
-        "editor.fontSize": 14,
         "chat.viewSessions.orientation": "stacked",
-        "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
+        "editor.fontFamily": "'JetBrains Mono'",
     }
