@@ -28,7 +28,7 @@
     $ flatpak install ai.lmstudio.lm-studio
 
 ## system packages
-    $ sudo dnf install steam
+    $ sudo dnf install keepassxc firefox steam okular konsole
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
 
 ## remove old packages
