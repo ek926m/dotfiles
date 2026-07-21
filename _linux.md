@@ -163,17 +163,19 @@
     META + V = run-or-raise okular okular
     META + T = run-or-raise konsole konsole
     META + F = run-or-raise dolphin dolphin
-    META + W = run-or-raise google-chrome google-chrome-stable
+    META + P = run-or-raise keepassxc keepassxc
+    META + W = run-or-raise firefox firefox
     META + E = run-or-raise Code "flatpak run com.visualstudio.code"
     META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
-    META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
     META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
+        
+    META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
     META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
     META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
-
+    alternative: META + W = run-or-raise google-chrome google-chrome-stable
 #### window management
     ALT + ^ 
         = Walk Through Windows of Current Application
