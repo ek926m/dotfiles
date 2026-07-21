@@ -1,10 +1,9 @@
 # fedora 44 (KDE)
 
-## rename pc
+## rename and update pc
     $ sudo hostnamectl set-hostname --static tux
-
-## update pc
     $ sudo dnf update -y
+    $ sudo dnf autoremove
 
 ## enable rpm fusion
 
@@ -17,9 +16,6 @@
 ## system packages
     $ sudo dnf install keepassxc firefox steam okular konsole jetbrains-mono-fonts-all
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
-
-## remove old packages
-    $ sudo dnf autoremove
 
 ## flatpak
     $ sudo dnf install flatpak
