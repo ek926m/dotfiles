@@ -157,7 +157,7 @@
     META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
     META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
-    alternative: META + W = run-or-raise google-chrome google-chrome-stable
+
 ### window management
     ALT + ^ 
         = Walk Through Windows of Current Application
@@ -218,3 +218,4 @@
     $ sudo dnf install fedora-workstation-repositories
     $ sudo dnf config-manager setopt google-chrome.enabled=1
     $ sudo dnf install google-chrome-stable
+    # alternative to firefox command: META + W = run-or-raise google-chrome google-chrome-stable
