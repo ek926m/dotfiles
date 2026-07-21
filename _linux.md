@@ -7,10 +7,19 @@
     $ sudo dnf update -y
 
 ## enable rpm fusion
+
 ### free repo
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
 ### nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+## system packages
+    $ sudo dnf install keepassxc firefox steam okular konsole jetbrains-mono-fonts-all
+    $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
+
+## remove old packages
+    $ sudo dnf autoremove
 
 ## flatpak
     $ sudo dnf install flatpak
@@ -27,13 +36,6 @@
     $ flatpak install com.getpostman.Postman
     $ flatpak install ai.lmstudio.lm-studio
 
-## system packages
-    $ sudo dnf install keepassxc firefox steam okular konsole
-    $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
-
-## remove old packages
-    $ sudo dnf autoremove
-
 ## edit .bashrc
     export CLICOLOR=1
     alias ls='ls --color=auto'
@@ -46,6 +48,7 @@
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
 ## docker installation
+
 ### remove conflicting packages
     $ sudo dnf remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine docker-cli docker-compose
 
@@ -94,7 +97,6 @@
     
     $ asdf plugin update --all
 
-
 ### create a .tool-versions file in home path
     ruby 4.0.6
     nodejs 26.5.0
@@ -102,32 +104,19 @@
     python 3.14.6t
     java openjdk-26.0.1
 
-
-## test if it works: rails, npm libs, laravel
+### test if it works: rails, npm libs, laravel
     $ gem install rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
-# FONT
-    $ sudo dnf install jetbrains-mono-fonts-all
-    OR
-    https://www.jetbrains.com/lp/mono/
-
-# optional: google-chrome-stable
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
-
-# KDE PART FROM HERE
-
-### mac alfred alternative
+## mac alfred alternative
     $ sudo dnf install kdotool
 
-#### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
+### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
     $ mkdir -p ~/.local/bin
     $ nano ~/.local/bin/run-or-raise
 
-#### run-or-raise:
+### run-or-raise:
     #!/bin/bash
     ## Usage: run-or-raise <window-class> <command-to-launch>
     
@@ -146,20 +135,20 @@
       nohup $CMD >/dev/null 2>&1 &
     fi
 
-#### make it runnable and test it
+### make it runnable and test it
     $ chmod +x ~/.local/bin/run-or-raise
     $ run-or-raise firefox firefox
 
-#### usage to find names:
+### usage to find names:
     $ kdotool search --class "steam"
     {ddff72a0-f13f-4eb5-b404-4f77947abda2}
 
     $ kdotool getwindowclassname {ddff72a0-f13f-4eb5-b404-4f77947abda2}
     steam
 
-### my commands (keyboard -> shortcuts)
+## my commands (keyboard -> shortcuts)
     
-#### add command or script
+### add command or script
     META + V = run-or-raise okular okular
     META + T = run-or-raise konsole konsole
     META + F = run-or-raise dolphin dolphin
@@ -176,7 +165,7 @@
     META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
     META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
     alternative: META + W = run-or-raise google-chrome google-chrome-stable
-#### window management
+### window management
     ALT + ^ 
         = Walk Through Windows of Current Application
         = Zwischen Fenstern der aktuellen Anwendung wechseln
@@ -211,7 +200,7 @@
         = Move Window to the Center
         = Fenster zentrieren
 
-### system settings:
+## system settings:
     - Animationen: Globale Animationsgeschwindigkeit: Sofort
     - Maus: Zeigerbeschleunigung deaktivieren
     - Energieverwaltung: Alles auf niemals
@@ -226,7 +215,12 @@
         = Große Symbole
         = 0ms
 
-### disable swap
+## optional: google-chrome-stable
+    $ sudo dnf install fedora-workstation-repositories
+    $ sudo dnf config-manager setopt google-chrome.enabled=1
+    $ sudo dnf install google-chrome-stable
+
+## disable swap
     $ sudo swapoff /dev/zram0
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
