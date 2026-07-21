@@ -7,10 +7,8 @@
 
 ## enable rpm fusion
 
-### free repo
+### free and nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-
-### nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ## system packages
@@ -23,14 +21,15 @@
 
     $ flatpak install flathub com.spotify.Client
     $ flatpak install flathub com.discordapp.Discord
-    $ flatpak install com.moonlight_stream.Moonlight
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
+    $ flatpak install md.obsidian.Obsidian
+
     $ flatpak install com.redis.RedisInsight
     $ flatpak install com.mongodb.Compass
-    $ flatpak install md.obsidian.Obsidian
     $ flatpak install com.getpostman.Postman
     $ flatpak install ai.lmstudio.lm-studio
+    $ flatpak install com.moonlight_stream.Moonlight
 
 ## edit .bashrc
     export CLICOLOR=1
