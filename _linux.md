@@ -109,7 +109,7 @@
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
-## mac alfred alternative
+## mac alfred alternative (for KDE)
     $ sudo dnf install kdotool
 
 ### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
