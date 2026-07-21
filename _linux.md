@@ -1,4 +1,4 @@
-# fedora 44
+# fedora 44 (KDE)
 
 ## rename pc
     $ sudo hostnamectl set-hostname --static tux
