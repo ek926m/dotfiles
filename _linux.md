@@ -215,13 +215,13 @@
         = Große Symbole
         = 0ms
 
-## optional: google-chrome-stable
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
-
 ## disable swap
     $ sudo swapoff /dev/zram0
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
     $ sudo dnf remove zram-generator-defaults
+
+## optional: google-chrome-stable
+    $ sudo dnf install fedora-workstation-repositories
+    $ sudo dnf config-manager setopt google-chrome.enabled=1
+    $ sudo dnf install google-chrome-stable
