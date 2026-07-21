@@ -12,11 +12,6 @@
 ### nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-## google-chrome-stable
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
-
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -117,6 +112,11 @@
     $ sudo dnf install jetbrains-mono-fonts-all
     OR
     https://www.jetbrains.com/lp/mono/
+
+# optional: google-chrome-stable
+    $ sudo dnf install fedora-workstation-repositories
+    $ sudo dnf config-manager setopt google-chrome.enabled=1
+    $ sudo dnf install google-chrome-stable
 
 # KDE PART FROM HERE
 
