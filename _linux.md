@@ -26,8 +26,8 @@
     $ flatpak install flathub com.discordapp.Discord
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
+    
     $ flatpak install md.obsidian.Obsidian
-
     $ flatpak install com.redis.RedisInsight
     $ flatpak install com.mongodb.Compass
     $ flatpak install com.getpostman.Postman
