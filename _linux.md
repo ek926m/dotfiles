@@ -218,3 +218,12 @@
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
     $ sudo dnf remove zram-generator-defaults
+
+## if google-chrome.repo is missing
+    [google-chrome]
+    name=google-chrome
+    baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64
+    skip_if_unavailable=True
+    gpgcheck=1
+    gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+    enabled=0
