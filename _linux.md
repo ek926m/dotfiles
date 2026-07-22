@@ -13,6 +13,11 @@
     $ sudo dnf install keepassxc firefox steam okular konsole jetbrains-mono-fonts-all
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel exfat-utils fuse-exfat re2c gd gd-devel libpq libpq-devel patch
 
+## google chrome
+    $ sudo dnf install fedora-workstation-repositories
+    $ sudo dnf config-manager setopt google-chrome.enabled=1
+    $ sudo dnf install google-chrome-stable
+
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -146,7 +151,7 @@
     META + T = run-or-raise konsole konsole
     META + F = run-or-raise dolphin dolphin
     META + P = run-or-raise keepassxc keepassxc
-    META + W = run-or-raise firefox firefox
+    META + W = run-or-raise google-chrome google-chrome-stable
     META + E = run-or-raise Code "flatpak run com.visualstudio.code"
     META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
@@ -213,9 +218,3 @@
     $ sudo zramctl --reset /dev/zram0
     $ sudo touch /etc/systemd/zram-generator.conf
     $ sudo dnf remove zram-generator-defaults
-
-## optional: google-chrome-stable
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
-    # alternative to firefox command: META + W = run-or-raise google-chrome google-chrome-stable
