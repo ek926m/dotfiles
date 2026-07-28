@@ -124,7 +124,5 @@
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
-### encrypt and zip a file
-    $ zip -er project.zip ./folder_to_zip/
 
 
