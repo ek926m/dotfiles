@@ -58,9 +58,6 @@
     $ brew install --cask discord
     $ brew install --cask docker
     $ brew install docker-compose
-
-    $ brew tap hashicorp/tap
-    $ brew install hashicorp/tap/terraform
     
     $ brew install --cask lm-studio
     $ brew install --cask redis-insight
@@ -68,7 +65,11 @@
     $ brew install --cask obsidian
     $ brew install --cask mongodb-compass
     $ brew install --cask nvidia-geforce-now
+    $ brew install --cask 1password
+    $ brew install --cask reaper
 
+    $ brew tap hashicorp/tap
+    $ brew install hashicorp/tap/terraform
 
 ### install and setup tooling
 
