@@ -1,5 +1,10 @@
 ### docker
 
+#### spin up a container
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+
 #### mysql + redis
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
