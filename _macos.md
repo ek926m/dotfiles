@@ -56,8 +56,6 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install --cask docker
-    $ brew install docker-compose
     
     $ brew install --cask lm-studio
     $ brew install --cask redis-insight
@@ -70,6 +68,15 @@
 
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
+
+### docker runtime
+#### for colima
+    $ brew install colima
+    $ colima stop
+    $ colima start --memory 4 --vm-type=vz --vz-rosetta
+#### for docker
+    $ brew install --cask docker
+    $ brew install docker-compose
 
 ### install and setup tooling
 
