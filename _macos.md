@@ -69,20 +69,6 @@
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
 
-### docker runtime
-#### for colima
-    $ brew install colima
-    $ colima start
-    # or
-    $ colima start --memory 4 --vm-type=vz --vz-rosetta
-#### for docker
-    $ brew install --cask docker
-    $ brew install docker-compose
-
-#### spin up a container
-    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
-    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
-
 ### install and setup tooling
 
 ### asdf
@@ -123,8 +109,22 @@
     $ gem install rails
     $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
-    
-#### encrypt and zip a file
+
+### docker runtime
+#### for colima
+    $ brew install colima
+    $ colima start
+    # or
+    $ colima start --memory 4 --vm-type=vz --vz-rosetta
+#### for docker
+    $ brew install --cask docker
+    $ brew install docker-compose
+
+#### spin up a container
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+
+### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
 
 
