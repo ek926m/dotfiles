@@ -72,7 +72,8 @@
 ### docker runtime
 #### for colima
     $ brew install colima
-    $ colima stop
+    $ colima start
+    # or
     $ colima start --memory 4 --vm-type=vz --vz-rosetta
 #### for docker
     $ brew install --cask docker
