@@ -46,6 +46,7 @@
     . ~/.asdf/plugins/java/set-java-home.bash
     
 ### packages
+    $ brew install font-jetbrains-mono
     $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
 
     $ brew install --cask alfred
