@@ -113,6 +113,9 @@
 ### docker runtime
 #### for colima
     $ brew install colima
+    $ sudo xcodebuild -license accept
+    $ brew services start colima
+    # or
     $ colima start
     # or
     $ colima start --memory 4 --vm-type=vz --vz-rosetta
