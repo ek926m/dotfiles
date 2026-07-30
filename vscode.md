@@ -13,4 +13,5 @@
         "workbench.colorTheme": "Light 2026",
         "chat.viewSessions.orientation": "stacked",
         "editor.fontFamily": "'JetBrains Mono'",
+        "editor.fontSize": 14,
     }
