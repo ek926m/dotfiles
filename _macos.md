@@ -113,7 +113,7 @@
 
 ### docker runtime
 #### for colima
-    $ brew install colima
+    $ brew install colima docker docker-compose
     $ sudo xcodebuild -license accept
     $ brew services start colima
     # or
