@@ -22,8 +22,6 @@
     defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
     defaults write -g NSToolbarFullScreenAnimationDuration -float 0
     defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
-    defaults write com.apple.dock autohide-time-modifier -float 0
-    defaults write com.apple.dock autohide-delay -float 0
     defaults write com.apple.dock expose-animation-duration -float 0
     defaults write com.apple.dock springboard-show-duration -float 0
     defaults write com.apple.dock springboard-hide-duration -float 0
@@ -47,8 +45,6 @@
     defaults delete -g NSDocumentRevisionsWindowTransformAnimation
     defaults delete -g NSToolbarFullScreenAnimationDuration
     defaults delete -g NSBrowserColumnAnimationSpeedMultiplier
-    defaults delete com.apple.dock autohide-time-modifier
-    defaults delete com.apple.dock autohide-delay
     defaults delete com.apple.dock expose-animation-duration
     defaults delete com.apple.dock springboard-show-duration
     defaults delete com.apple.dock springboard-hide-duration
