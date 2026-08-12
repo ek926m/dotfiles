@@ -4,6 +4,7 @@
     $ sudo hostnamectl set-hostname --static tux
     $ sudo dnf update -y
     $ sudo dnf autoremove
+    $ gsettings set org.gnome.desktop.interface enable-animations false
 
 ## enable rpm fusion free and nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
