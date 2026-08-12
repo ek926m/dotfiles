@@ -53,6 +53,7 @@
 ### add to .bashrc
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     . ~/.asdf/plugins/java/set-java-home.bash
+    export PATH="$(asdf where php)/.composer/vendor/bin:$PATH"
 
 ### you may need to install some system libs for the next steps
     $ asdf plugin add nodejs
