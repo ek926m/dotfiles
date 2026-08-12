@@ -1,4 +1,4 @@
-# fedora 44 (KDE)
+# fedora 44 gnome
 
 ## rename and update pc
     $ sudo hostnamectl set-hostname --static tux
@@ -10,29 +10,22 @@
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ## system packages
-    $ sudo dnf install firefox steam okular konsole jetbrains-mono-fonts-all
+    $ sudo dnf install steam gnome-tweaks
+    $ sudo dnf install firefox jetbrains-mono-fonts-all
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel re2c gd gd-devel libpq libpq-devel patch
-
-## google chrome
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
 
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
     $ flatpak install flathub com.spotify.Client
     $ flatpak install flathub com.discordapp.Discord
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install com.visualstudio.code
-    
     $ flatpak install md.obsidian.Obsidian
     $ flatpak install com.redis.RedisInsight
     $ flatpak install com.mongodb.Compass
     $ flatpak install com.getpostman.Postman
     $ flatpak install ai.lmstudio.lm-studio
-    $ flatpak install com.moonlight_stream.Moonlight
 
 ## edit .bashrc
     export CLICOLOR=1
@@ -88,7 +81,6 @@
 
 ### test if it works: rails, npm libs, laravel
     $ gem install rails
-    $ npm install -g nodemon @vue/cli    
     $ composer global require laravel/installer
 
 ## docker installation
@@ -102,130 +94,9 @@
     $ sudo systemctl enable --now docker
     $ sudo groupadd docker
     $ sudo usermod -aG docker $USER
-    # relog user for docker commands to work without sudo
+    # restart for docker commands to work without sudo
 
 ### spin up a container
     $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
-
-## mac alfred alternative (for KDE)
-    $ sudo dnf install kdotool
-
-### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
-    $ mkdir -p ~/.local/bin
-    $ nano ~/.local/bin/run-or-raise
-
-### run-or-raise:
-    #!/bin/bash
-    ## Usage: run-or-raise <window-class> <command-to-launch>
-    
-    CLASS=$1
-    CMD=$2
-    
-    ## Search for the window by class name
-    PID=$(kdotool search --class "$CLASS" | head -n 1)
-    
-    if [ -n "$PID" ]; then
-      # If found, activate (focus) it
-      kdotool windowactivate "$PID"
-    else
-      # If not found, launch it
-      # detach the process so it doesn't close with the script
-      nohup $CMD >/dev/null 2>&1 &
-    fi
-
-### make it runnable and test it
-    $ chmod +x ~/.local/bin/run-or-raise
-    $ run-or-raise firefox firefox
-
-### usage to find names:
-    $ kdotool search --class "steam"
-    {ddff72a0-f13f-4eb5-b404-4f77947abda2}
-
-    $ kdotool getwindowclassname {ddff72a0-f13f-4eb5-b404-4f77947abda2}
-    steam
-
-## my commands (keyboard -> shortcuts)
-    
-### add command or script
-    META + V = run-or-raise okular okular
-    META + T = run-or-raise konsole konsole
-    META + F = run-or-raise dolphin dolphin
-    META + P = run-or-raise keepassxc keepassxc
-    META + W = run-or-raise google-chrome google-chrome-stable
-    META + E = run-or-raise Code "flatpak run com.visualstudio.code"
-    META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
-    META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
-    META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
-    META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
-        
-    META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
-    META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
-    META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
-    META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
-
-### window management
-    ALT + ^ 
-        = Walk Through Windows of Current Application
-        = Zwischen Fenstern der aktuellen Anwendung wechseln
-    SHIFT + ALT + ^ 
-        = Walk Through Windows of Current Application (Reverse)
-        = Zwischen Fenstern der aktuellen Anwendung wechseln (Gegenrichtung)
-    ALT + TAB 
-        = Walk Through Windows
-        = Zwischen Fenstern wechseln
-    SHIFT + ALT + TAB 
-        = Walk Through Windows (Reverse)
-        = Zwischen Fenstern wechseln (Gegenrichtung)
-    META + ARROW_LEFT 
-        = Quick Tile Window to the Left
-        = Fenster am linken Bildschirmrand anordnen
-    META + ARROW_RIGHT 
-        = Quick Tile Window to the Right
-        = Fenster am rechten Bildschirmrand anordnen
-    META + ARROW_TOP 
-        = Quick Tile Window to the Top
-        = Fenster am oberen Bildschirmrand anordnen
-    META + ARROW_BOTTOM 
-        = Quick Tile Window to the Bottom
-        = Fenster am unteren Bildschirmrand anordnen
-    META + ENTER 
-        = Maximize Window
-        = Fenster maximieren
-    META + Q 
-        = Close Window
-        = Fenster schließen
-    META + ??? 
-        = Move Window to the Center
-        = Fenster zentrieren
-
-## system settings:
-    - Animationen: Globale Animationsgeschwindigkeit: Sofort
-    - Maus: Zeigerbeschleunigung deaktivieren
-    - Energieverwaltung: Alles auf niemals
-    - Bildschirmsperre:
-        = Bildschirm automatisch sperren: Niemals
-        = Sofort
-    - Anzeige & Bildschirm: 
-        = Nachtlicht, immer an, 3.000K
-        = Bildschirmränder: alle deaktivieren
-    - Anwendungsumschalter: 
-        = uncheck: Ausgewähltes Fenster anzeigen
-        = Große Symbole
-        = 0ms
-
-## disable swap
-    $ sudo swapoff /dev/zram0
-    $ sudo zramctl --reset /dev/zram0
-    $ sudo touch /etc/systemd/zram-generator.conf
-    $ sudo dnf remove zram-generator-defaults
-
-## if google-chrome.repo is missing
-    [google-chrome]
-    name=google-chrome
-    baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64
-    skip_if_unavailable=True
-    gpgcheck=1
-    gpgkey=https://dl.google.com/linux/linux_signing_key.pub
-    enabled=0

@@ -1,0 +1,232 @@
+# fedora 44 kde
+
+## rename and update pc
+    $ sudo hostnamectl set-hostname --static tux
+    $ sudo dnf update -y
+    $ sudo dnf autoremove
+
+## enable rpm fusion free and nonfree repo
+    $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+## system packages
+    $ sudo dnf install steam okular konsole
+    $ sudo dnf install firefox jetbrains-mono-fonts-all
+    $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel re2c gd gd-devel libpq libpq-devel patch
+
+## google chrome
+    $ sudo dnf install fedora-workstation-repositories
+    $ sudo dnf config-manager setopt google-chrome.enabled=1
+    $ sudo dnf install google-chrome-stable
+
+## flatpak
+    $ sudo dnf install flatpak
+    $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+    $ flatpak install flathub com.spotify.Client
+    $ flatpak install flathub com.discordapp.Discord
+    $ flatpak install io.dbeaver.DBeaverCommunity
+    $ flatpak install com.visualstudio.code
+    
+    $ flatpak install md.obsidian.Obsidian
+    $ flatpak install com.redis.RedisInsight
+    $ flatpak install com.mongodb.Compass
+    $ flatpak install com.getpostman.Postman
+    $ flatpak install ai.lmstudio.lm-studio
+    $ flatpak install com.moonlight_stream.Moonlight
+
+## edit .bashrc
+    export CLICOLOR=1
+    alias ls='ls --color=auto'
+    alias ll='ls -lah --color=auto'
+    alias grep='grep --color=auto'
+
+    git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
+    export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+
+## asdf installation
+    # https://asdf-vm.com/guide/getting-started.html
+    # https://github.com/asdf-vm/asdf/releases
+    $ cd && cd Downloads && wget https://github.com/asdf-vm/asdf/releases/download/v0.20.0/asdf-v0.20.0-linux-amd64.tar.gz && tar -xvzf asdf-v0.20.0-linux-amd64.tar.gz && sudo mv asdf /usr/bin/asdf
+
+### add to .bashrc
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    . ~/.asdf/plugins/java/set-java-home.bash
+    export PATH="$(asdf where php)/.composer/vendor/bin:$PATH"
+
+### you may need to install some system libs for the next steps
+    $ asdf plugin add nodejs
+    $ asdf plugin add ruby
+    $ asdf plugin add php
+    $ asdf plugin add python
+    $ asdf plugin add java
+    
+    $ asdf plugin list --urls
+    $ asdf install nodejs latest
+    $ asdf install ruby latest
+    $ asdf install php latest
+    $ asdf install python latest
+    $ asdf list all java
+    $ asdf latest java openjdk
+    $ asdf install java openjdk-26.0.1
+    
+    $ asdf set nodejs latest
+    $ asdf set ruby latest
+    $ asdf set php latest
+    $ asdf set python latest
+    $ asdf set java openjdk-26.0.1
+    
+    $ asdf plugin update --all
+
+### create a .tool-versions file in home path
+    ruby 4.0.6
+    nodejs 26.5.0
+    php 8.5.8
+    python 3.14.6t
+    java openjdk-26.0.1
+
+### test if it works: rails, npm libs, laravel
+    $ gem install rails
+    $ npm install -g nodemon @vue/cli    
+    $ composer global require laravel/installer
+
+## docker installation
+
+### remove conflicting packages
+    $ sudo dnf remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine docker-cli docker-compose
+
+### docker community edition installation
+    $ sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
+    $ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    $ sudo systemctl enable --now docker
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker $USER
+    # restart for docker commands to work without sudo
+
+### spin up a container
+    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
+    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+
+## mac alfred alternative (for KDE)
+    $ sudo dnf install kdotool
+
+### Create a file named run-or-raise in your ~/.local/bin/ folder (create the folder if it doesn't exist):
+    $ mkdir -p ~/.local/bin
+    $ nano ~/.local/bin/run-or-raise
+
+### run-or-raise:
+    #!/bin/bash
+    ## Usage: run-or-raise <window-class> <command-to-launch>
+    
+    CLASS=$1
+    CMD=$2
+    
+    ## Search for the window by class name
+    PID=$(kdotool search --class "$CLASS" | head -n 1)
+    
+    if [ -n "$PID" ]; then
+      # If found, activate (focus) it
+      kdotool windowactivate "$PID"
+    else
+      # If not found, launch it
+      # detach the process so it doesn't close with the script
+      nohup $CMD >/dev/null 2>&1 &
+    fi
+
+### make it runnable and test it
+    $ chmod +x ~/.local/bin/run-or-raise
+    $ run-or-raise firefox firefox
+
+### usage to find names:
+    $ kdotool search --class "steam"
+    {ddff72a0-f13f-4eb5-b404-4f77947abda2}
+
+    $ kdotool getwindowclassname {ddff72a0-f13f-4eb5-b404-4f77947abda2}
+    steam
+
+## my commands (keyboard -> shortcuts)
+    
+### add command or script
+    META + V = run-or-raise okular okular
+    META + T = run-or-raise konsole konsole
+    META + F = run-or-raise dolphin dolphin
+    META + P = run-or-raise keepassxc keepassxc
+    META + W = run-or-raise google-chrome google-chrome-stable
+    META + E = run-or-raise Code "flatpak run com.visualstudio.code"
+    META + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
+    META + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
+    META + S = run-or-raise Spotify "flatpak run com.spotify.Client"
+    META + N = run-or-raise Obsidian "flatpak run md.obsidian.Obsidian"
+        
+    META + R = run-or-raise Redis "flatpak run com.redis.RedisInsight"
+    META + K = run-or-raise Lmstudio "flatpak run ai.lmstudio.lm-studio"
+    META + M = run-or-raise Mongodb "flatpak run com.mongodb.Compass"
+    META + A = run-or-raise Postman "flatpak run com.getpostman.Postman"
+
+### window management
+    ALT + ^ 
+        = Walk Through Windows of Current Application
+        = Zwischen Fenstern der aktuellen Anwendung wechseln
+    SHIFT + ALT + ^ 
+        = Walk Through Windows of Current Application (Reverse)
+        = Zwischen Fenstern der aktuellen Anwendung wechseln (Gegenrichtung)
+    ALT + TAB 
+        = Walk Through Windows
+        = Zwischen Fenstern wechseln
+    SHIFT + ALT + TAB 
+        = Walk Through Windows (Reverse)
+        = Zwischen Fenstern wechseln (Gegenrichtung)
+    META + ARROW_LEFT 
+        = Quick Tile Window to the Left
+        = Fenster am linken Bildschirmrand anordnen
+    META + ARROW_RIGHT 
+        = Quick Tile Window to the Right
+        = Fenster am rechten Bildschirmrand anordnen
+    META + ARROW_TOP 
+        = Quick Tile Window to the Top
+        = Fenster am oberen Bildschirmrand anordnen
+    META + ARROW_BOTTOM 
+        = Quick Tile Window to the Bottom
+        = Fenster am unteren Bildschirmrand anordnen
+    META + ENTER 
+        = Maximize Window
+        = Fenster maximieren
+    META + Q 
+        = Close Window
+        = Fenster schließen
+    META + ??? 
+        = Move Window to the Center
+        = Fenster zentrieren
+
+## system settings:
+    - Animationen: Globale Animationsgeschwindigkeit: Sofort
+    - Maus: Zeigerbeschleunigung deaktivieren
+    - Energieverwaltung: Alles auf niemals
+    - Bildschirmsperre:
+        = Bildschirm automatisch sperren: Niemals
+        = Sofort
+    - Anzeige & Bildschirm: 
+        = Nachtlicht, immer an, 3.000K
+        = Bildschirmränder: alle deaktivieren
+    - Anwendungsumschalter: 
+        = uncheck: Ausgewähltes Fenster anzeigen
+        = Große Symbole
+        = 0ms
+
+## disable swap
+    $ sudo swapoff /dev/zram0
+    $ sudo zramctl --reset /dev/zram0
+    $ sudo touch /etc/systemd/zram-generator.conf
+    $ sudo dnf remove zram-generator-defaults
+
+## if google-chrome.repo is missing
+    [google-chrome]
+    name=google-chrome
+    baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64
+    skip_if_unavailable=True
+    gpgcheck=1
+    gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+    enabled=0
