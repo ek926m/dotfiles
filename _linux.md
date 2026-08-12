@@ -69,7 +69,7 @@
     $ asdf set ruby latest
     $ asdf set php latest
     $ asdf set python latest
-    $ asdf set java openjdk-26.0.1
+    $ asdf set java openjdk-26.0.2
     
     $ asdf plugin update --all
 
