@@ -63,7 +63,7 @@
     $ asdf install python latest
     $ asdf list all java
     $ asdf latest java openjdk
-    $ asdf install java openjdk-26.0.1
+    $ asdf install java openjdk-26.0.2
     
     $ asdf set nodejs latest
     $ asdf set ruby latest
@@ -78,7 +78,7 @@
     nodejs 26.5.0
     php 8.5.8
     python 3.14.6t
-    java openjdk-26.0.1
+    java openjdk-26.0.2
 
 ### test if it works: rails, npm libs, laravel
     $ gem install rails
