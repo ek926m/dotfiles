@@ -160,9 +160,9 @@
 ### key commands
 
 #### make ALTGR function like ALT
-- Systemeinstellungen > Tastatur > Tastenzuordnungen > Taste zum Wechsel in die dritte Tastaturebene > Rechte Alt-Taste wählt niemals die dritte Tastaturebene: check!
+    - Systemeinstellungen > Tastatur > Tastenzuordnungen > Taste zum Wechsel in die dritte Tastaturebene > Rechte Alt-Taste wählt niemals die dritte Tastaturebene: check!
 
-- Systemeinstellungen > Tastatur > Kurzbfehle > Neu hinzufügen > Befehl oder Script...
+    - Systemeinstellungen > Tastatur > Kurzbfehle > Neu hinzufügen > Befehl oder Script...
 
     ALT + V = run-or-raise okular okular
     ALT + T = run-or-raise konsole konsole
@@ -174,29 +174,23 @@
     ALT + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     ALT + S = run-or-raise elisa elisa
 
-### window management (* is default)
+### window management
     ALT + TAB 
-        *
         = Walk Through Windows
         = Zwischen Fenstern wechseln
     SHIFT + ALT + TAB
-        *
         = Walk Through Windows (Reverse)
         = Zwischen Fenstern wechseln (Gegenrichtung)
     META + ARROW_LEFT
-        *
         = Quick Tile Window to the Left
         = Fenster am linken Bildschirmrand anordnen
     META + ARROW_RIGHT
-        *
         = Quick Tile Window to the Right
         = Fenster am rechten Bildschirmrand anordnen
     META + ARROW_TOP
-        *
         = Quick Tile Window to the Top
         = Fenster am oberen Bildschirmrand anordnen
     META + ARROW_BOTTOM
-        *
         = Quick Tile Window to the Bottom
         = Fenster am unteren Bildschirmrand anordnen
     META + ENTER 
@@ -243,7 +237,7 @@
     $ chmod +x ~/.local/bin/code
 
 ## firewall
-remember to block everything in the native firewall app
+    remember to block everything in the native firewall app
 
 # tpm specific setup (for example thinkpads)
 
