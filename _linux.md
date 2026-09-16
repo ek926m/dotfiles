@@ -161,9 +161,13 @@
 
 #### make ALTGR function like ALT
     - Systemeinstellungen > Tastatur > Tastenzuordnungen > Taste zum Wechsel in die dritte Tastaturebene > Rechte Alt-Taste wählt niemals die dritte Tastaturebene: check!
+#### make RIGHT CTRL function like ALTGR
+    - Systemeinstellungen > Tastatur > Tastenzuordnungen > Taste zum Wechsel in die dritte Tastaturebene > Rechte Strg-Taste: check!
 
+#### setup key commands
     - Systemeinstellungen > Tastatur > Kurzbfehle > Neu hinzufügen > Befehl oder Script...
 
+#### commands
     ALT + V = run-or-raise okular okular
     ALT + T = run-or-raise konsole konsole
     ALT + F = run-or-raise dolphin dolphin
