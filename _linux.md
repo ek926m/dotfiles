@@ -332,4 +332,14 @@
 
     Once it shows registered, you can open your Fedora KDE network settings, add a new Mobile Broadband connection, and enter the APN provided by your carrier to get online.
 
-    
+### setup apn
+
+    For Telekom Deutschland (Deutsche Telekom), the standard modern APN for mobile internet is internet.v6.telekom.  Here are the exact settings you need to enter in Fedora:
+
+    APN: internet.v6.telekom
+    Username: telekom
+    Password: tm
+
+    use kde ui for that or nmcli
+
+    $ nmcli connection add type gsm ifname wwan0 con-name "Telekom" apn "internet.v6.telekom" user "telekom" password "tm"
