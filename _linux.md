@@ -304,3 +304,32 @@
 
     # verify with the DISKSIZE column
     $ zramctl
+
+## wwan module
+
+    $ mmcli -L
+    /org/freedesktop/ModemManager1/Modem/0 [quectel] EM120R_GL
+
+    $ lspci -nn | grep -i modem
+    08:00.0 Unassigned class [ff00]: Quectel Wireless Solutions Co., Ltd. EM120R-GL LTE Modem [1eac:1001]
+
+
+    $ sudo mkdir -p /etc/ModemManager/fcc-unlock.d
+
+    $ sudo ln -sfn /usr/share/ModemManager/fcc-unlock.available.d/1eac:1001 /etc/ModemManager/fcc-unlock.d/1eac:1001
+
+    $ sudo systemctl restart ModemManager
+
+    $ systemctl status ModemManager.service 
+
+    $ sudo mmcli -m 0 -e
+    error: couldn't enable the modem: 'GDBus.Error:org.freedesktop.ModemManager1.Error.Core.WrongState: Wrong state: modem in failed state'
+
+    switch to physical sim: 1=sim 2=esim
+    $ sudo mmcli -m 0 --set-primary-sim-slot=1
+
+    $ sudo mmcli -m 0 -e
+
+    Once it shows registered, you can open your Fedora KDE network settings, add a new Mobile Broadband connection, and enter the APN provided by your carrier to get online.
+
+    
