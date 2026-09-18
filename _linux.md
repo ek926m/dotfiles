@@ -253,10 +253,18 @@
 ## firewall
     remember to block everything in the native firewall app
 
+## if you need to change password encrypted ssd
+    $ sudo cat /etc/crypttab
+    # note your UUID= part without UUID=
+    $ sudo cryptsetup luksChangeKey /dev/disk/by-uuid/<your_uuid>
+    $ sudo cryptsetup luksOpen --test-passphrase /dev/disk/by-uuid/<your_uuid>
+
+## if you need external ssd encryption
+    - use KDE Partition Tools GUI
+
 # tpm specific setup (for example thinkpads)
 
 ## bios settings
-
     - Security > Secure Boot: Enabled
     - Security > Security Chip: Enabled (TPM2)
     - Startup > UEFI/Legacy Boot: UEFI only
@@ -266,7 +274,6 @@
     - Config > Network > Wake on LAN: Disabled
 
 ## firmware updates
-
     $ sudo nano /etc/fwupd/fwupd.conf
 
     [fwupd]
@@ -277,7 +284,6 @@
     $ fwupdmgr update
 
 ## tpm2 setup
-
     $ sudo cat /etc/crypttab
     # note your UUID= part without UUID=
     $ sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=7 /dev/disk/by-uuid/<your_uuid>
@@ -286,23 +292,10 @@
     $ sudo dracut -f
     $ reboot
 
-## if you need to change password encrypted ssd
-
-    $ sudo cat /etc/crypttab
-    # note your UUID= part without UUID=
-    $ sudo cryptsetup luksChangeKey /dev/disk/by-uuid/<your_uuid>
-    $ sudo cryptsetup luksOpen --test-passphrase /dev/disk/by-uuid/<your_uuid>
-
 ## register fingerprint in kde
-
     - Systemsettings > User > Register Fingerprint
 
-## if you need external ssd encryption
-
-    - use KDE Partition Tools GUI
-
 ## wwan module
-
     $ mmcli -L
     /org/freedesktop/ModemManager1/Modem/0 [quectel] EM120R_GL
 
