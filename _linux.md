@@ -35,6 +35,16 @@
     $ flatpak install ai.lmstudio.lm-studio
     $ flatpak install com.moonlight_stream.Moonlight
 
+## vs code specific addition due to flatpak
+    $ mkdir -p ~/.local/bin
+
+    cat << 'EOF' > ~/.local/bin/code
+    #!/bin/bash
+    flatpak run com.visualstudio.code "$@"
+    EOF
+
+    $ chmod +x ~/.local/bin/code
+
 ## edit .bashrc
     export CLICOLOR=1
     alias ls='ls --color=auto'
@@ -226,18 +236,6 @@
         = uncheck: Ausgewähltes Fenster anzeigen
         = Große Symbole
         = 0ms
-
-## vs code specific addition due to flatpak
-
-
-    $ mkdir -p ~/.local/bin
-
-    cat << 'EOF' > ~/.local/bin/code
-    #!/bin/bash
-    flatpak run com.visualstudio.code "$@"
-    EOF
-
-    $ chmod +x ~/.local/bin/code
 
 ## firewall
     remember to block everything in the native firewall app
