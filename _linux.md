@@ -129,6 +129,19 @@
     $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
+## increase swap size to match ram
+    $ sudo nano /usr/lib/systemd/zram-generator.conf
+    # use a multiply of 1024, ideal your ram size
+
+    [zram0]
+    zram-size = 16384
+
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl restart systemd-zram-setup@zram0.service
+
+    # verify with the DISKSIZE column
+    $ zramctl
+
 ## mac alfred alternative (for KDE)
     $ sudo dnf install kdotool
 
@@ -287,20 +300,6 @@
 ## if you need external ssd encryption
 
     - use KDE Partition Tools GUI
-
-## increase swap size to match ram
-
-    $ sudo nano /usr/lib/systemd/zram-generator.conf
-    # use a multiply of 1024, ideal your ram size
-
-    [zram0]
-    zram-size = 16384
-
-    $ sudo systemctl daemon-reload
-    $ sudo systemctl restart systemd-zram-setup@zram0.service
-
-    # verify with the DISKSIZE column
-    $ zramctl
 
 ## wwan module
 
