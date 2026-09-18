@@ -234,6 +234,8 @@
     SHIFT + ALT + ^ 
         = Walk Through Windows of Current Application (Reverse)
         = Zwischen Fenstern der aktuellen Anwendung wechseln (Gegenrichtung)
+    STRG + UP
+        = Fenster aller Arbeitsflächen anzeigen
 
 ## system settings:
     - Animationen: Globale Animationsgeschwindigkeit: Sofort
