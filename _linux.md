@@ -107,7 +107,7 @@
     ruby 4.0.7
     nodejs 26.8.2
 
-### test if it works: rails, npm libs, laravel
+### rails, laravel
     $ gem install rails
     $ composer global require laravel/installer
 
