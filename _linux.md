@@ -297,6 +297,9 @@
 ## register fingerprint in kde
     - Systemsettings > User > Register Fingerprint
 
+## check battery health
+    $ upower -i $(upower -e | grep 'BAT')
+
 ## wwan module
     $ mmcli -L
     /org/freedesktop/ModemManager1/Modem/0 [quectel] EM120R_GL
