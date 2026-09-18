@@ -131,7 +131,7 @@
 
 ## increase swap size to match ram
     $ sudo nano /usr/lib/systemd/zram-generator.conf
-    # use a multiply of 1024, ideal your ram size
+    # 8192 / 16384 / 32768 / 65536 / 131072
 
     [zram0]
     zram-size = 16384
