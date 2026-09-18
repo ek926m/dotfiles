@@ -14,7 +14,7 @@
     $ sudo dnf install steam firefox jetbrains-mono-fonts-all gnome-disks keepassxc vlc elisa
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel re2c gd gd-devel libpq libpq-devel patch
 
-## if needd: google chrome
+## if needed: google chrome
     $ sudo dnf install fedora-workstation-repositories
     $ sudo dnf config-manager setopt google-chrome.enabled=1
     $ sudo dnf install google-chrome-stable
