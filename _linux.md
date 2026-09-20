@@ -35,6 +35,12 @@
     $ flatpak install ai.lmstudio.lm-studio
     $ flatpak install com.moonlight_stream.Moonlight
 
+### flatpak geforce now
+    # https://www.nvidia.com/de-de/geforce-now/system-reqs/#linux-os
+    $ flatpak remote-add --user --if-not-exists GeForceNOW https://international.download.nvidia.com/GFNLinux/flatpak/geforcenow.flatpakrepo
+    $ flatpak install --user GeForceNOW com.nvidia.geforcenow
+    $ flatpak run com.nvidia.geforcenow
+
 ## vs code specific addition due to flatpak
     $ mkdir -p ~/.local/bin
 
