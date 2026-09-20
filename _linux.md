@@ -288,6 +288,7 @@
 
     $ fwupdmgr refresh
     $ fwupdmgr update
+    $ fwupdmgr get-upgrades
 
 ## tpm2 setup
     $ sudo cat /etc/crypttab
