@@ -280,10 +280,14 @@
     - Security > Secure Boot: Enabled
     - Security > Security Chip: Enabled (TPM2)
     - Startup > UEFI/Legacy Boot: UEFI only
-    - Config > Power > Sleep State: Windows 10 and Linux
+    - Config > Power > Sleep State: Linux S3
     - Security > Virtualization: Enabled (incl. VT-d)
     - Config > Thunderbolt 4 > Security Level: User
     - Config > Network > Wake on LAN: Disabled
+
+## verify sleep state in linux
+    $ cat /sys/power/mem_sleep
+    s2idle [deep]
 
 ## firmware updates
     $ sudo nano /etc/fwupd/fwupd.conf
