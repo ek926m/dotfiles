@@ -178,4 +178,16 @@
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
 
-
+### alfred replacement
+    open -a "Firefox"               # option + w
+    open -a "Microsoft Teams"       # option + c
+    open -a "Microsoft Outlook"     # option + m
+    open -a "Finder"                # option + f
+    open -a "Terminal"              # option + t
+    open -a "Preview"               # option + v
+    open -a "KeePassXC"             # option + x
+    open -a "Visual Studio Code"    # option + e
+    open -a "DBeaver"               # option + d
+    open -a "RedisInsight"          # option + r
+    open -a "Obsidian"              # option + n
+    open -a "Spotify"               # option + s
