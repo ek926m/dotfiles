@@ -178,7 +178,7 @@
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
 
-### alfred replacement
+### alfred replacement IF it was possible to easy override system input, but it isnt
     open -a "Firefox"               # option + w
     open -a "Microsoft Teams"       # option + c
     open -a "Microsoft Outlook"     # option + m
