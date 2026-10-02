@@ -178,6 +178,11 @@
     $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
 
+### convert flac to alac without any losses
+    # converting to alac
+    $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
+    # deleting flac
+    $ find . -type f -name "*.flac" -delete
 
 ### alfred replacement IF it was possible to easy override system input, but it isnt
     open -a "Firefox"               # option + w
