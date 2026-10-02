@@ -99,6 +99,7 @@
     $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
 
     $ brew install --cask alfred
+    $ brew install --cask vorssaint
     $ brew install --cask rectangle
     $ brew install --cask visual-studio-code
     $ brew install --cask spotify
