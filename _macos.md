@@ -107,7 +107,7 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    
+    $ brew install --cask font-noto-sans-mono
     $ brew install --cask lm-studio
     $ brew install --cask redis-insight
     $ brew install --cask postman
