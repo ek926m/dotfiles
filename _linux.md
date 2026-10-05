@@ -209,6 +209,7 @@
     ALT + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     ALT + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     ALT + S = run-or-raise elisa elisa
+    ALT + R = run-or-raise RedisInsight "flatpak run com.redis.RedisInsight"
 
 ### window management
     ALT + TAB 
