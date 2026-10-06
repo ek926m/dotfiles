@@ -98,6 +98,8 @@
     $ brew install font-jetbrains-mono
     $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
 
+    $ brew install --cask font-fira-code
+    
     $ brew install --cask alfred
     $ brew install --cask vorssaint
     $ brew install --cask rectangle
@@ -107,7 +109,7 @@
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-    $ brew install --cask font-noto-sans-mono
+
     $ brew install --cask lm-studio
     $ brew install --cask redis-insight
     $ brew install --cask postman
