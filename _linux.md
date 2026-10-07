@@ -45,11 +45,6 @@
     # https://github.com/asdf-vm/asdf/releases
     $ cd && cd Downloads && wget https://github.com/asdf-vm/asdf/releases/download/v0.20.0/asdf-v0.20.0-linux-amd64.tar.gz && tar -xvzf asdf-v0.20.0-linux-amd64.tar.gz && sudo mv asdf /usr/bin/asdf
 
-### add to .bashrc
-    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-    . ~/.asdf/plugins/java/set-java-home.bash
-    export PATH="$(asdf where php)/.composer/vendor/bin:$PATH"
-
 ## docker installation
 
 ### remove conflicting packages
