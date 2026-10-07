@@ -80,42 +80,6 @@
 
 ### asdf
     $ brew install asdf
-    # https://github.com/asdf-vm/asdf-plugins/tree/master/plugins
-    
-    $ asdf plugin add nodejs
-    $ asdf plugin add ruby
-    $ asdf plugin add php
-    $ asdf plugin add python
-    $ asdf plugin add java
-    
-    $ asdf plugin list --urls
-    $ asdf install nodejs latest
-    $ asdf install ruby latest
-    $ asdf install php latest
-    $ asdf install python latest
-    $ asdf list all java
-    $ asdf latest java openjdk
-    $ asdf install java openjdk-24.0.2
-
-    $ asdf set nodejs latest
-    $ asdf set ruby latest
-    $ asdf set php latest
-    $ asdf set python latest
-    $ asdf set java openjdk-24.0.2
-
-    $ asdf plugin update --all
-
-### create a .tool-versions file in home path
-    ruby 3.4.5
-    nodejs 24.5.0
-    php 8.4.11
-    python 3.13.5t
-    java openjdk-24.0.2
-
-#### rails, npm libs, laravel
-    $ gem install rails
-    $ npm install -g nodemon @vue/cli    
-    $ composer global require laravel/installer
 
 ### docker runtime
 #### for colima
