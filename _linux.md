@@ -301,7 +301,7 @@
     $ fwupdmgr update
     $ fwupdmgr get-upgrades
 
-### if fwupdmgr makes discover error out
+### if fwupd makes discover error out, remove cache
     $ sudo systemctl stop fwupd
     $ sudo rm -rf /var/cache/fwupd/*
     $ sudo systemctl start fwupd
