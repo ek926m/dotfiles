@@ -58,9 +58,9 @@
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
 
-### [git](https://github.com/ek926m/dotfiles/blob/main/git.md)
+## [git](https://github.com/ek926m/dotfiles/blob/main/git.md)
 
-### [asdf](https://github.com/ek926m/dotfiles/blob/main/asdf.md)
+## [asdf](https://github.com/ek926m/dotfiles/blob/main/asdf.md)
     $ brew install asdf
 
 ### docker runtime
