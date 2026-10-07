@@ -55,9 +55,6 @@
     export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
     export PATH="/opt/homebrew/opt/mysql/bin:$PATH" 
     export PATH="/Users/$USER/.local/bin:$PATH"
-
-    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-    . ~/.asdf/plugins/java/set-java-home.bash
     
 ### packages
     $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
