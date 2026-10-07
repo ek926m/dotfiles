@@ -22,18 +22,8 @@
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
     $ flatpak install io.dbeaver.DBeaverCommunity
-    $ flatpak install com.visualstudio.code
-
     $ flatpak install flathub com.discordapp.Discord
-    $ flatpak install flathub com.spotify.Client
-    $ flatpak install md.obsidian.Obsidian
-    $ flatpak install com.redis.RedisInsight
-    $ flatpak install com.mongodb.Compass
-    $ flatpak install com.getpostman.Postman
-    $ flatpak install ai.lmstudio.lm-studio
-    $ flatpak install com.moonlight_stream.Moonlight
 
 ### flatpak geforce now
     # https://www.nvidia.com/de-de/geforce-now/system-reqs/#linux-os
@@ -205,11 +195,10 @@
     ALT + F = run-or-raise dolphin dolphin
     ALT + X = run-or-raise keepassxc keepassxc
     ALT + W = run-or-raise firefox firefox
-    ALT + E = run-or-raise Code "flatpak run com.visualstudio.code"
+    ALT + E = run-or-raise kate kate
     ALT + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
     ALT + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     ALT + S = run-or-raise elisa elisa
-    ALT + R = run-or-raise RedisInsight "flatpak run com.redis.RedisInsight"
 
 ### window management
     ALT + TAB 
