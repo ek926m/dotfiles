@@ -17,7 +17,6 @@
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     $ flatpak install io.dbeaver.DBeaverCommunity
-    $ flatpak install flathub com.discordapp.Discord
 
 ## edit .bashrc
     export CLICOLOR=1
@@ -157,7 +156,6 @@
     ALT + W = run-or-raise firefox firefox
     ALT + E = run-or-raise kate kate
     ALT + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
-    ALT + C = run-or-raise Discord "flatpak run com.discordapp.Discord"
     ALT + S = run-or-raise elisa elisa
 
 ### window management
