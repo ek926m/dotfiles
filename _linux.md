@@ -301,6 +301,14 @@
     $ fwupdmgr update
     $ fwupdmgr get-upgrades
 
+### if fwupdmgr makes discover error out
+    $ sudo systemctl stop fwupd
+    $ sudo rm -rf /var/cache/fwupd/*
+    $ sudo systemctl start fwupd
+
+### if it still does not work, remove integration in discover
+    $ sudo dnf remove plasma-discover-fwupd
+
 ## tpm2 setup
     $ sudo cat /etc/crypttab
     # note your UUID= part without UUID=
