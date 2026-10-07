@@ -1,4 +1,4 @@
-### .bashrc
+### .bashrc on linux / .bash_profile on mac
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     . ~/.asdf/plugins/java/set-java-home.bash
     export PATH="$(asdf where php)/.composer/vendor/bin:$PATH"
