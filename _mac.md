@@ -78,8 +78,10 @@
 
 ### install and setup tooling
 
-### asdf
+### [asdf](https://github.com/ek926m/dotfiles/blob/main/_asdf.md)
     $ brew install asdf
+
+
 
 ### docker runtime
 #### for colima
