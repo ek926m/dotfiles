@@ -16,10 +16,8 @@
 ### dbeaver
     $ cd && cd Downloads && wget https://dbeaver.io/files/dbeaver-ce-latest-linux-x86_64.rpm && sudo dnf install ./dbeaver-ce-latest-linux-x86_64.rpm
 
-## flatpak
-    $ sudo dnf install flatpak
-    $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    $ flatpak install io.dbeaver.DBeaverCommunity
+### vscodium
+    $ cd && cd Downloads && wget https://github.com/VSCodium/vscodium/releases/download/1.135.06055/codium-1.135.06055-el8.x86_64.rpm && sudo dnf install ./codium-1.135.06055-el8.x86_64.rpm
 
 ## edit .bashrc
     export CLICOLOR=1
