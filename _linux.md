@@ -5,7 +5,6 @@
     $ sudo dnf update -y
     $ sudo dnf autoremove
 
-
 ## enable rpm fusion free and nonfree repo
     $ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
     $ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -14,32 +13,11 @@
     $ sudo dnf install steam jetbrains-mono-fonts-all firefox keepassxc vlc elisa kate
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel re2c gd gd-devel libpq libpq-devel patch
 
-## if needed: google chrome
-    $ sudo dnf install fedora-workstation-repositories
-    $ sudo dnf config-manager setopt google-chrome.enabled=1
-    $ sudo dnf install google-chrome-stable
-
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     $ flatpak install io.dbeaver.DBeaverCommunity
     $ flatpak install flathub com.discordapp.Discord
-
-### flatpak geforce now
-    # https://www.nvidia.com/de-de/geforce-now/system-reqs/#linux-os
-    $ flatpak remote-add --user --if-not-exists GeForceNOW https://international.download.nvidia.com/GFNLinux/flatpak/geforcenow.flatpakrepo
-    $ flatpak install --user GeForceNOW com.nvidia.geforcenow
-    $ flatpak run com.nvidia.geforcenow
-
-## vs code specific addition due to flatpak
-    $ mkdir -p ~/.local/bin
-
-    cat << 'EOF' > ~/.local/bin/code
-    #!/bin/bash
-    flatpak run com.visualstudio.code "$@"
-    EOF
-
-    $ chmod +x ~/.local/bin/code
 
 ## edit .bashrc
     export CLICOLOR=1
