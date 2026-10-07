@@ -75,7 +75,7 @@
 
 ### install and setup tooling
 
-### [asdf](https://github.com/ek926m/dotfiles/blob/main/_asdf.md)
+### [asdf](https://github.com/ek926m/dotfiles/blob/main/asdf.md)
     $ brew install asdf
 
 
