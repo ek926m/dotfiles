@@ -40,7 +40,7 @@
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-## [asdf](https://github.com/ek926m/dotfiles/blob/main/_asdf.md)
+## [asdf](https://github.com/ek926m/dotfiles/blob/main/asdf.md)
     # https://asdf-vm.com/guide/getting-started.html
     # https://github.com/asdf-vm/asdf/releases
     $ cd && cd Downloads && wget https://github.com/asdf-vm/asdf/releases/download/v0.20.0/asdf-v0.20.0-linux-amd64.tar.gz && tar -xvzf asdf-v0.20.0-linux-amd64.tar.gz && sudo mv asdf /usr/bin/asdf
