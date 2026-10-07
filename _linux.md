@@ -124,11 +124,6 @@
     $ sudo usermod -aG docker $USER
     # restart for docker commands to work without sudo
 
-### spin up a container
-    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
-    $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
-    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
-
 ## increase swap size to match ram
     $ sudo nano /usr/lib/systemd/zram-generator.conf
     # 8192 / 16384 / 32768 / 65536 / 131072
@@ -261,9 +256,6 @@
     $ sudo cryptsetup luksChangeKey /dev/disk/by-uuid/<your_uuid>
     $ sudo cryptsetup luksOpen --test-passphrase /dev/disk/by-uuid/<your_uuid>
 
-## if you need external ssd encryption
-    - use KDE Partition Tools GUI
-
 # tpm specific setup (for example thinkpads)
 
 ## bios settings
@@ -307,46 +299,5 @@
     $ sudo dracut -f
     $ reboot
 
-## register fingerprint in kde
-    - Systemsettings > User > Register Fingerprint
-
 ## check battery health
     $ upower -i $(upower -e | grep 'BAT')
-
-## wwan module
-    $ mmcli -L
-    /org/freedesktop/ModemManager1/Modem/0 [quectel] EM120R_GL
-
-    $ lspci -nn | grep -i modem
-    08:00.0 Unassigned class [ff00]: Quectel Wireless Solutions Co., Ltd. EM120R-GL LTE Modem [1eac:1001]
-
-
-    $ sudo mkdir -p /etc/ModemManager/fcc-unlock.d
-
-    $ sudo ln -sfn /usr/share/ModemManager/fcc-unlock.available.d/1eac:1001 /etc/ModemManager/fcc-unlock.d/1eac:1001
-
-    $ sudo systemctl restart ModemManager
-
-    $ systemctl status ModemManager.service 
-
-    $ sudo mmcli -m 0 -e
-    error: couldn't enable the modem: 'GDBus.Error:org.freedesktop.ModemManager1.Error.Core.WrongState: Wrong state: modem in failed state'
-
-    switch to physical sim: 1=sim 2=esim
-    $ sudo mmcli -m 0 --set-primary-sim-slot=1
-
-    $ sudo mmcli -m 0 -e
-
-    Once it shows registered, you can open your Fedora KDE network settings, add a new Mobile Broadband connection, and enter the APN provided by your carrier to get online.
-
-### setup apn
-
-    For Telekom Deutschland (Deutsche Telekom), the standard modern APN for mobile internet is internet.v6.telekom.  Here are the exact settings you need to enter in Fedora:
-
-    APN: internet.v6.telekom
-    Username: telekom
-    Password: tm
-
-    use kde ui for that or nmcli
-
-    $ nmcli connection add type gsm ifname wwan0 con-name "Telekom" apn "internet.v6.telekom" user "telekom" password "tm"
