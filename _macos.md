@@ -95,7 +95,6 @@
     . ~/.asdf/plugins/java/set-java-home.bash
     
 ### packages
-    $ brew install font-jetbrains-mono
     $ brew install git mysql redis awscli saml2aws tmux bash openssl wget curl libyaml ruby-build sqlite3 gmp libsodium imagemagick bison re2c gd libiconv autoconf automake libtool icu4c oniguruma libzip composer
 
     $ brew install --cask font-jetbrains-mono
@@ -104,20 +103,10 @@
     $ brew install --cask vorssaint
     $ brew install --cask rectangle
     $ brew install --cask visual-studio-code
-    $ brew install --cask spotify
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community    
     $ brew install --cask cyberduck
     $ brew install --cask discord
-
-    $ brew install --cask lm-studio
-    $ brew install --cask redis-insight
-    $ brew install --cask postman
-    $ brew install --cask obsidian
-    $ brew install --cask mongodb-compass
-    $ brew install --cask nvidia-geforce-now
-    $ brew install --cask 1password
-    $ brew install --cask reaper
 
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
@@ -175,11 +164,6 @@
     $ brew install --cask docker
     $ brew install docker-compose
 
-#### spin up a container
-    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
-    $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
-    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
-
 ### convert flac to alac without any losses
     # converting to alac
     $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
@@ -189,13 +173,10 @@
 ### alfred replacement IF it was possible to easy override system input, but it isnt
     open -a "Firefox"               # option + w
     open -a "Microsoft Teams"       # option + c
-    open -a "Microsoft Outlook"     # option + m
     open -a "Finder"                # option + f
     open -a "Terminal"              # option + t
     open -a "Preview"               # option + v
     open -a "KeePassXC"             # option + x
     open -a "Visual Studio Code"    # option + e
     open -a "DBeaver"               # option + d
-    open -a "RedisInsight"          # option + r
-    open -a "Obsidian"              # option + n
-    open -a "Spotify"               # option + s
+    open -a "Music"                 # option + s
