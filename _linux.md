@@ -175,3 +175,5 @@
     # note your UUID= part without UUID=
     $ sudo cryptsetup luksChangeKey /dev/disk/by-uuid/<your_uuid>
     $ sudo cryptsetup luksOpen --test-passphrase /dev/disk/by-uuid/<your_uuid>
+
+## [thinkpad](https://github.com/ek926m/dotfiles/blob/main/thinkpad.md)
