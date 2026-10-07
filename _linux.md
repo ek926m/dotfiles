@@ -155,7 +155,7 @@
     ALT + F = run-or-raise dolphin dolphin
     ALT + X = run-or-raise keepassxc keepassxc
     ALT + W = run-or-raise firefox firefox
-    ALT + E = run-or-raise kate kate
+    ALT + E = run-or-raise codium codium
     ALT + D = run-or-raise dbeaver-ce dbeaver-ce
     ALT + S = run-or-raise elisa elisa
 
