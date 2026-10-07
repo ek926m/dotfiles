@@ -13,6 +13,9 @@
     $ sudo dnf install steam jetbrains-mono-fonts-all firefox keepassxc vlc elisa kate
     $ sudo dnf install ncdu tmux btop htop nano git gcc ruby-devel libxml2-devel sqlite sqlite3 sqlite-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libjpeg libjpeg-devel libicu libicu-devel oniguruma oniguruma-devel libtidy libtidy-devel libxslt libxslt-devel libzip libzip-devel php-cli composer java-latest-openjdk gcc-c++ autoconf automake bison libffi-devel libtool readline-devel php-mysqlnd libyaml-devel re2c gd gd-devel libpq libpq-devel patch
 
+### dbeaver
+    $ cd && cd Downloads && wget https://dbeaver.io/files/dbeaver-ce-latest-linux-x86_64.rpm && sudo dnf install ./dbeaver-ce-latest-linux-x86_64.rpm
+
 ## flatpak
     $ sudo dnf install flatpak
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -155,7 +158,7 @@
     ALT + X = run-or-raise keepassxc keepassxc
     ALT + W = run-or-raise firefox firefox
     ALT + E = run-or-raise kate kate
-    ALT + D = run-or-raise DBeaver "flatpak run io.dbeaver.DBeaverCommunity"
+    ALT + D = run-or-raise dbeaver-ce dbeaver-ce
     ALT + S = run-or-raise elisa elisa
 
 ### window management
