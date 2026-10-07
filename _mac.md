@@ -14,47 +14,12 @@
     defaults write com.apple.dock autohide-time-modifier -int 0
     killall Dock
 
-    defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
-    defaults write -g NSScrollAnimationEnabled -bool false
-    defaults write -g NSWindowResizeTime -float 0.001
-    defaults write -g QLPanelAnimationDuration -float 0
-    defaults write -g NSScrollViewRubberbanding -bool false
-    defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
-    defaults write -g NSToolbarFullScreenAnimationDuration -float 0
-    defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
-    defaults write com.apple.dock expose-animation-duration -float 0
-    defaults write com.apple.dock springboard-show-duration -float 0
-    defaults write com.apple.dock springboard-hide-duration -float 0
-    defaults write com.apple.dock springboard-page-duration -float 0
-    defaults write com.apple.finder DisableAllAnimations -bool true
-    defaults write com.apple.Mail DisableSendAnimations -bool true
-    defaults write com.apple.Mail DisableReplyAnimations -bool true
-    defaults write NSGlobalDomain NSWindowResizeTime .001
-
     # restore default settings
 
     defaults delete com.apple.dock autohide-delay
     defaults delete com.apple.dock autohide-time-modifier
     killall Dock
-
-    defaults delete -g NSAutomaticWindowAnimationsEnabled
-    defaults delete -g NSScrollAnimationEnabled
-    defaults delete -g NSWindowResizeTime
-    defaults delete -g QLPanelAnimationDuration
-    defaults delete -g NSScrollViewRubberbanding
-    defaults delete -g NSDocumentRevisionsWindowTransformAnimation
-    defaults delete -g NSToolbarFullScreenAnimationDuration
-    defaults delete -g NSBrowserColumnAnimationSpeedMultiplier
-    defaults delete com.apple.dock expose-animation-duration
-    defaults delete com.apple.dock springboard-show-duration
-    defaults delete com.apple.dock springboard-hide-duration
-    defaults delete com.apple.dock springboard-page-duration
-    defaults delete com.apple.finder DisableAllAnimations
-    defaults delete com.apple.Mail DisableSendAnimations
-    defaults delete com.apple.Mail DisableReplyAnimations
-    defaults delete NSGlobalDomain NSWindowResizeTime
     
-
 ### from zsh to bash
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
@@ -102,12 +67,12 @@
     $ brew install --cask alfred
     $ brew install --cask vorssaint
     $ brew install --cask rectangle
-    $ brew install --cask visual-studio-code
-    $ brew install --cask google-chrome
+    $ brew install --cask vscodium
+    $ brew install --cask firefox
     $ brew install --cask dbeaver-community    
+
     $ brew install --cask cyberduck
     $ brew install --cask discord
-
     $ brew tap hashicorp/tap
     $ brew install hashicorp/tap/terraform
 
@@ -177,6 +142,6 @@
     open -a "Terminal"              # option + t
     open -a "Preview"               # option + v
     open -a "KeePassXC"             # option + x
-    open -a "Visual Studio Code"    # option + e
+    open -a "vscodium"              # option + e
     open -a "DBeaver"               # option + d
     open -a "Music"                 # option + s
