@@ -41,16 +41,20 @@
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
 
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-    . ~/.asdf/plugins/java/set-java-home.bash
+    [[ -r ~/.asdf/plugins/java/set-java-home.bash ]] && . ~/.asdf/plugins/java/set-java-home.bash
+    [[ -r ~/.asdf/plugins/dotnet/set-dotnet-env.bash ]] && . ~/.asdf/plugins/dotnet/set-dotnet-env.bash
 
     if php_dir="$(asdf where php 2>/dev/null)"; then
         export PATH="$php_dir/.composer/vendor/bin:$PATH"
     fi
 
-    [[ $- == *i* ]] && fastfetch
+    [[ $- == *i* ]] && command -v fastfetch >/dev/null && fastfetch
 
 
 ## homebrew
+### install
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # open a new terminal
 
 ### shell
     $ brew install bash
@@ -58,7 +62,7 @@
     $ chsh -s /opt/homebrew/bin/bash
 
 ### packages
-    $ brew install pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
+    $ brew install asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
 
     $ brew install fastfetch git tmux wget curl ffmpeg mysql redis
 
@@ -78,13 +82,13 @@
     $ brew install awscli saml2aws
     $ brew install --cask google-chrome
     $ brew install --cask redis-insight
-    $ npx @puppeteer/browsers install chromedriver@stable
 
 ## git
 
 ### generate key
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
+    # paste the key into github
     $ ssh -T git@github.com
 
 ### git config
@@ -94,7 +98,6 @@
 
 
 ## asdf
-    $ brew install asdf
 
 ### you may need to install some system libs for the next steps
     $ asdf plugin add nodejs
@@ -103,7 +106,6 @@
     $ asdf plugin add python
     $ asdf plugin add java
     $ asdf plugin add dotnet
-    $ asdf plugin add composer
     $ asdf plugin add terraform
     
     $ asdf plugin list --urls
@@ -115,7 +117,6 @@
     $ asdf list all java
     $ asdf latest java openjdk
     $ asdf install java openjdk-27
-    $ asdf install composer latest
     $ asdf install terraform latest
     
     # run from your home path to create .tool-versions file
@@ -125,30 +126,35 @@
     $ asdf set python latest
     $ asdf set dotnet latest
     $ asdf set java openjdk-27
-    $ asdf set composer latest
     $ asdf set terraform latest
 
-    $ asdf plugin update --all
+    $ asdf plugin add composer
+    $ asdf install composer latest
+    $ asdf set composer latest
 
-### rails, laravel
+    # cat ~/.tool-versions
+
+### rails, laravel, chromedriver
+    # open a new terminal
     $ gem install rails
     $ composer global require laravel/installer
+    $ npm install -g chromedriver
+    $ asdf reshim nodejs
 
 
 ## docker runtime
+## pick one
 ### for colima
     $ brew install colima docker docker-compose
-    $ sudo xcodebuild -license accept
-    $ brew services start colima
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
 ### for docker
     $ brew install --cask docker
     $ brew install docker-compose
 
 ### spin up a container
-    $ docker run --name some-mysql --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
-    $ docker run --name some-postgres --restart=always -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
-    $ docker run --name some-redis --restart=always -p 6379:6379 -d redis:latest
+    $ docker run --name some-mysql --restart=always -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    $ docker run --name some-postgres --restart=always -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
+    $ docker run --name some-redis --restart=always -p 127.0.0.1:6379:6379 -d redis:latest
 
 
 ## other stuff
