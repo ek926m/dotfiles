@@ -1,6 +1,5 @@
 # mac (apple silicon)
 
-## setup
 ### system
     $ sudo softwareupdate --install-rosetta --agree-to-license
     $ xcode-select --install
@@ -51,8 +50,7 @@
     [[ $- == *i* ]] && command -v fastfetch >/dev/null && fastfetch
 
 
-## homebrew
-### install
+### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # open a new terminal
 
@@ -80,9 +78,7 @@
     $ brew install awscli saml2aws
     $ brew install --cask redis-insight
 
-## git
-
-### generate key
+### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
     # paste the key into github
@@ -94,9 +90,7 @@
     $ git config --global user.name "Your Name"
 
 
-## asdf
-
-### you may need to install some system libs for the next steps
+### asdf
     $ asdf plugin add nodejs
     $ asdf plugin add ruby
     $ asdf plugin add php
@@ -137,11 +131,10 @@
     $ composer global require laravel/installer
     $ npm install -g chromedriver
 
-## docker runtime (pick one)
-### for colima
+### for colima docker runtime OR
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
-### for docker
+### for docker desktop
     $ brew install --cask docker
     $ brew install docker-compose
 
@@ -149,9 +142,6 @@
     $ docker run --name some-mysql --restart=always -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-postgres --restart=always -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 127.0.0.1:6379:6379 -d redis:latest
-
-
-## other stuff
 
 ### vscode user json
     {
