@@ -61,12 +61,6 @@
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
-    $ brew install --cask cyberduck
-
-### only work additions
-    $ brew install awscli saml2aws
-    $ brew install --cask vorssaint
-    $ brew install --cask redis-insight
 
 ### git
     $ ssh-keygen -t rsa -b 4096
@@ -118,6 +112,11 @@
     # open a new terminal
     $ gem install rails
     $ composer global require laravel/installer
+
+### only work additions
+    $ brew install awscli saml2aws
+    $ brew install --cask vorssaint
+    $ brew install --cask redis-insight
     $ npm install -g chromedriver
 
 ### colima docker
