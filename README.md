@@ -65,7 +65,6 @@
     # paste the key into github
     $ ssh -T git@github.com
 
-#### git config
     $ git config --global color.ui true
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
