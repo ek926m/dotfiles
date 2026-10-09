@@ -136,11 +136,8 @@
     $ gem install rails
     $ composer global require laravel/installer
     $ npm install -g chromedriver
-    $ asdf reshim nodejs
 
-
-## docker runtime
-## pick one
+## docker runtime (pick one)
 ### for colima
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
