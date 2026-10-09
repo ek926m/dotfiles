@@ -65,7 +65,6 @@
     $ brew install fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
 
 ### casks
-    $ brew install --cask font-jetbrains-mono
     $ brew install --cask alfred
     $ brew install --cask rectangle
     $ brew install --cask visual-studio-code
@@ -171,11 +170,14 @@
         "workbench.layoutControl.enabled": false,
         "editor.fontSize": 14,
         "chat.viewSessions.orientation": "stacked",
-        "editor.fontFamily": "'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
+        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
         "workbench.colorTheme": "Light Modern",
         "editor.lineHeight": 1.4,
         "workbench.iconTheme": "vscode-icons",
     }
+
+### terminal
+    [import terminal file](https://github.com/ek926m/dotfiles/edit/main/terminal.md)
 
 ### convert flac to alac without any losses
     # converting to alac
