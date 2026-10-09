@@ -89,7 +89,6 @@
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-
 ### asdf
     $ asdf plugin add nodejs
     $ asdf plugin add ruby
@@ -131,12 +130,9 @@
     $ composer global require laravel/installer
     $ npm install -g chromedriver
 
-### for colima docker runtime OR
+### colima docker
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
-### for docker desktop
-    $ brew install --cask docker
-    $ brew install docker-compose
 
 ### spin up a container
     $ docker run --name some-mysql --restart=always -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
