@@ -5,10 +5,9 @@
     $ xcode-select --install
     $ sudo scutil --set HostName mac
 
-#### remove animations
-    defaults write com.apple.dock autohide-delay -float 0
-    defaults write com.apple.dock autohide-time-modifier -int 0
-    killall Dock
+    $ defaults write com.apple.dock autohide-delay -float 0
+    $ defaults write com.apple.dock autohide-time-modifier -int 0
+    $ killall Dock
     
 #### from zsh to bash
     $ chsh -s /bin/bash
