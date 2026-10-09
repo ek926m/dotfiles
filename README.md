@@ -142,10 +142,6 @@
         "workbench.iconTheme": "vscode-icons",
     }
 
-#### terminal
-- [import terminal light](https://github.com/ek926m/dotfiles/edit/main/terminal_light.terminal)
-- [import terminal dark](https://github.com/ek926m/dotfiles/edit/main/terminal_dark.terminal)
-
 #### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
 
