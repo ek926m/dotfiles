@@ -177,7 +177,8 @@
     }
 
 ### terminal
-    [import terminal file](https://github.com/ek926m/dotfiles/edit/main/terminal.md)
+- [import terminal light](https://github.com/ek926m/dotfiles/edit/main/terminal_light.md)
+- [import terminal dark](https://github.com/ek926m/dotfiles/edit/main/terminal_dark.md)
 
 ### convert flac to alac without any losses
     # converting to alac
