@@ -183,6 +183,10 @@
 ### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
 
+### delete a disk safe with zeros
+    $ diskutil list # choose your drive
+    $ diskutil secureErase 0 /dev/disk4
+
 ### convert flac to alac without any losses
     # converting to alac
     $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
