@@ -118,7 +118,6 @@
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
 
-#### spin up a container
     $ docker run --name some-mysql --restart=always -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-postgres --restart=always -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 127.0.0.1:6379:6379 -d redis:latest
@@ -155,9 +154,6 @@
     $ diskutil list
     $ diskutil secureErase 0 /dev/disk4
 
-#### convert flac to alac without any losses
-    # converting to alac
+#### convert flac to alac without any losses and delete flac
     $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
-
-    # deleting flac
     $ find . -type f -name "*.flac" -delete
