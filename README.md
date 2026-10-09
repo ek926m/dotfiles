@@ -1,20 +1,20 @@
-# mac (apple silicon)
+## mac (apple silicon)
 
-### system
+#### system
     $ sudo softwareupdate --install-rosetta --agree-to-license
     $ xcode-select --install
     $ sudo scutil --set HostName mac
 
-### remove animations
+#### remove animations
     defaults write com.apple.dock autohide-delay -float 0
     defaults write com.apple.dock autohide-time-modifier -int 0
     killall Dock
     
-### from zsh to bash
+#### from zsh to bash
     $ chsh -s /bin/bash
     $ cd && touch .hushlogin
 
-### ~/.bash_profile
+#### ~/.bash_profile
     export BASH_SILENCE_DEPRECATION_WARNING=1
     export CLICOLOR=1
     alias ls='ls -G'
@@ -42,19 +42,18 @@
     [[ $- == *i* ]] && command -v fastfetch >/dev/null && fastfetch
 
 
-### homebrew
+#### homebrew
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # open a new terminal
 
-### shell
+#### shell
     $ brew install bash
     $ echo /opt/homebrew/bin/bash | sudo tee -a /etc/shells
     $ chsh -s /opt/homebrew/bin/bash
 
-### packages
+#### packages
     $ brew install fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
 
-### casks
     $ brew install --cask alfred
     $ brew install --cask rectangle
     $ brew install --cask visual-studio-code
@@ -62,18 +61,18 @@
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
 
-### git
+#### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
     # paste the key into github
     $ ssh -T git@github.com
 
-### git config
+#### git config
     $ git config --global color.ui true
     $ git config --global user.email "your@mail.com"
     $ git config --global user.name "Your Name"
 
-### asdf
+#### asdf
     $ asdf plugin add nodejs
     $ asdf plugin add ruby
     $ asdf plugin add php
@@ -108,27 +107,27 @@
 
     # cat ~/.tool-versions
 
-### rails, laravel, chromedriver
+#### rails, laravel, chromedriver
     # open a new terminal
     $ gem install rails
     $ composer global require laravel/installer
 
-### only work additions
+#### only work additions
     $ brew install awscli saml2aws
     $ brew install --cask vorssaint
     $ brew install --cask redis-insight
     $ npm install -g chromedriver
 
-### colima docker
+#### colima docker
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
 
-### spin up a container
+#### spin up a container
     $ docker run --name some-mysql --restart=always -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
     $ docker run --name some-postgres --restart=always -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 127.0.0.1:6379:6379 -d redis:latest
 
-### vscode user json
+#### vscode user json
     {
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
@@ -148,19 +147,19 @@
         "workbench.iconTheme": "vscode-icons",
     }
 
-### terminal
+#### terminal
 - [import terminal light](https://github.com/ek926m/dotfiles/edit/main/terminal_light.terminal)
 - [import terminal dark](https://github.com/ek926m/dotfiles/edit/main/terminal_dark.terminal)
 
-### encrypt and zip a file
+#### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
 
-### delete a disk safe with zeros
+#### delete a disk safe with zeros
     # choose your drive
     $ diskutil list
     $ diskutil secureErase 0 /dev/disk4
 
-### convert flac to alac without any losses
+#### convert flac to alac without any losses
     # converting to alac
     $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
 
