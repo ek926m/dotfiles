@@ -60,14 +60,12 @@
     $ brew install --cask visual-studio-code
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community
-
-### only private additions
     $ brew install --cask discord
     $ brew install --cask cyberduck
 
 ### only work additions
-    $ brew install --cask vorssaint
     $ brew install awscli saml2aws
+    $ brew install --cask vorssaint
     $ brew install --cask redis-insight
 
 ### git
