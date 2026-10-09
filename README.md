@@ -62,9 +62,7 @@
     $ chsh -s /opt/homebrew/bin/bash
 
 ### packages
-    $ brew install asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
-
-    $ brew install fastfetch git tmux wget curl ffmpeg mysql redis
+    $ brew install fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
 
 ### casks
     $ brew install --cask font-jetbrains-mono
