@@ -70,7 +70,7 @@
     $ brew install --cask font-jetbrains-mono
     $ brew install --cask alfred
     $ brew install --cask rectangle
-    $ brew install --cask vscodium
+    $ brew install --cask visual-studio-code
     $ brew install --cask firefox
     $ brew install --cask keepassxc
     $ brew install --cask dbeaver-community
@@ -159,7 +159,7 @@
 
 ## other stuff
 
-### vscodium user json
+### vscode user json
     {
         "editor.wordWrap": "on",
         "security.workspace.trust.untrustedFiles": "open",
