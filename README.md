@@ -21,15 +21,15 @@
     alias ll='ls -lahG'
     alias grep='grep --color=auto'
 
-    export HOMEBREW_PREFIX=/opt/homebrew
-    export PATH="$HOMEBREW_PREFIX/sbin:$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/opt/bison/bin:$HOMEBREW_PREFIX/opt/mysql/bin:$HOME/.local/bin:$PATH"
-    export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/icu4c/lib/pkgconfig:$HOMEBREW_PREFIX/opt/libxml2/lib/pkgconfig:$HOMEBREW_PREFIX/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
-    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl"
-
     git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
     export PS1="\n\[\e[00;32m\]\u\[\e[00;32m\]@\[\e[00;32m\]\h\[\e[00;38m\] \[\e[0;33m\]\w\[\e[00;37m\] \[\033[00;35m\]\$(git_branch):\n$ \[\e[0m\]"
+
+    export HOMEBREW_PREFIX=/opt/homebrew
+    export PATH="$HOMEBREW_PREFIX/sbin:$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/opt/bison/bin:$HOMEBREW_PREFIX/opt/mysql/bin:$HOME/.local/bin:$PATH"
+    export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/icu4c/lib/pkgconfig:$HOMEBREW_PREFIX/opt/libxml2/lib/pkgconfig:$HOMEBREW_PREFIX/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
+    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl"
 
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
     [[ -r ~/.asdf/plugins/java/set-java-home.bash ]] && . ~/.asdf/plugins/java/set-java-home.bash
