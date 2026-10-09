@@ -181,7 +181,8 @@
     $ zip -er project.zip ./folder_to_zip/
 
 ### delete a disk safe with zeros
-    $ diskutil list # choose your drive
+    # choose your drive
+    $ diskutil list
     $ diskutil secureErase 0 /dev/disk4
 
 ### convert flac to alac without any losses
