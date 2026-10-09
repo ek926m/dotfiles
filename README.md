@@ -46,12 +46,10 @@
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # open a new terminal
 
-#### shell
     $ brew install bash
     $ echo /opt/homebrew/bin/bash | sudo tee -a /etc/shells
     $ chsh -s /opt/homebrew/bin/bash
 
-#### packages
     $ brew install fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
 
     $ brew install --cask alfred
