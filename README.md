@@ -103,17 +103,6 @@
 
     # cat ~/.tool-versions
 
-#### rails, laravel, chromedriver
-    # open a new terminal
-    $ gem install rails
-    $ composer global require laravel/installer
-
-#### only work additions
-    $ brew install awscli saml2aws
-    $ brew install --cask vorssaint
-    $ brew install --cask redis-insight
-    $ npm install -g chromedriver
-
 #### colima docker
     $ brew install colima docker docker-compose
     $ colima start --cpu 4 --memory 8 --vm-type vz --mount-type virtiofs --vz-rosetta
@@ -141,6 +130,17 @@
         "editor.lineHeight": 1.4,
         "workbench.iconTheme": "vscode-icons",
     }
+
+#### rails, laravel, chromedriver
+    # open a new terminal
+    $ gem install rails
+    $ composer global require laravel/installer
+
+#### only work additions
+    $ brew install awscli saml2aws
+    $ brew install --cask vorssaint
+    $ brew install --cask redis-insight
+    $ npm install -g chromedriver
 
 #### encrypt and zip a file
     $ zip -er project.zip ./folder_to_zip/
