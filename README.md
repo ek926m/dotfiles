@@ -104,10 +104,6 @@
     $ asdf set java openjdk-27
     $ asdf set terraform latest
 
-    $ asdf plugin add composer
-    $ asdf install composer latest
-    $ asdf set composer latest
-
     # cat ~/.tool-versions
 
 #### colima docker
