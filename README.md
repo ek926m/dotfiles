@@ -58,6 +58,9 @@
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
 
+    $ brew install --cask nvidia-geforce-now
+    $ brew install --cask cyberduck
+
 #### git
     $ ssh-keygen -t rsa -b 4096
     $ cat ~/.ssh/id_rsa.pub
