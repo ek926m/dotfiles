@@ -60,6 +60,7 @@
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
     $ brew install --cask claude-code
+    $ brew install --cask redis-insight
     $ brew install --cask nvidia-geforce-now
     $ brew install --cask cyberduck
 
@@ -151,7 +152,6 @@
 #### only work additions
     $ brew install awscli saml2aws
     $ brew install --cask vorssaint
-    $ brew install --cask redis-insight
     $ npm install -g chromedriver
 
 #### encrypt and zip a file
