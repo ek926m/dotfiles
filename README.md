@@ -51,7 +51,7 @@
     $ echo /opt/homebrew/bin/bash | sudo tee -a /etc/shells
     $ chsh -s /opt/homebrew/bin/bash
 
-    $ brew install coreutils fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk
+    $ brew install coreutils fastfetch git tmux wget curl ffmpeg mysql redis asdf pkgconf autoconf automake libtool bison re2c openssl readline xz zstd libffi libyaml gmp libsodium libzip oniguruma icu4c libiconv libxml2 gettext gd freetype libpng jpeg gpg gawk imagemagick tcl-tk font-jetbrains-mono
 
     $ brew install --cask alfred
     $ brew install --cask rectangle
