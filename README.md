@@ -59,7 +59,7 @@
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
-
+    $ brew install --cask claude-code
     $ brew install --cask nvidia-geforce-now
     $ brew install --cask cyberduck
 
@@ -122,9 +122,6 @@
     $ docker run --name some-postgres --restart=always -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=root -d postgres:latest
     $ docker run --name some-redis --restart=always -p 127.0.0.1:6379:6379 -d redis:latest
 
-#### claude code
-    $ brew install --cask claude-code
-    
 
 #### vscode user json
     {
