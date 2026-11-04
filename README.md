@@ -57,7 +57,7 @@
     $ brew install --cask google-chrome
     $ brew install --cask dbeaver-community
     $ brew install --cask discord
-
+    $ brew install --cask claude-code
     $ brew install --cask nvidia-geforce-now
     $ brew install --cask cyberduck
 
