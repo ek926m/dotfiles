@@ -84,6 +84,10 @@
     $ asdf install nodejs latest
     $ asdf install ruby latest
     $ asdf install php latest
+    # if php buggy: Unable to find the wrapper "https"
+        # brew install openssl@3
+        # sed -i '' 's/openssl@1.1/openssl@3/g' ~/.asdf/plugins/php/bin/install
+        # asdf install php latest
     $ asdf install python latest
     $ asdf install dotnet latest
     $ asdf list all java
