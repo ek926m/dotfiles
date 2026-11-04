@@ -138,7 +138,7 @@
         "workbench.layoutControl.enabled": false,
         "editor.fontSize": 14,
         "chat.viewSessions.orientation": "stacked",
-        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+        "editor.fontFamily": "'JetBrains Mono',Menlo, Monaco, 'Courier New', monospace",
         "workbench.colorTheme": "Light Modern",
         "editor.lineHeight": 1.4,
         "workbench.iconTheme": "vscode-icons",
