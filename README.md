@@ -79,6 +79,8 @@
     $ asdf plugin add java
     $ asdf plugin add dotnet
     $ asdf plugin add terraform
+    $ asdf plugin add golang
+    $ asdf plugin add rust
     
     $ asdf plugin list --urls
     $ asdf install nodejs latest
@@ -94,6 +96,8 @@
     $ asdf latest java openjdk
     $ asdf install java openjdk-27
     $ asdf install terraform latest
+    $ asdf install golang latest
+    $ asdf install rust latest
     
     # run from your home path to create .tool-versions file
     $ asdf set nodejs latest
@@ -103,6 +107,8 @@
     $ asdf set dotnet latest
     $ asdf set java openjdk-27
     $ asdf set terraform latest
+    $ asdf set golang latest
+    $ asdf set rust latest
 
     # cat ~/.tool-versions
 
