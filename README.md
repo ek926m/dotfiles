@@ -165,3 +165,15 @@
 #### convert flac to alac without any losses and delete flac
     $ find . -type f -name "*.flac" -exec bash -c 'ffmpeg -i "$1" -c:v copy -c:a alac "${1%.flac}.m4a"' _ {} \;
     $ find . -type f -name "*.flac" -delete
+
+##### roots
+    ek@mac ~ :
+    $ sudo /opt/homebrew/Library/Homebrew/vendor/portable-ruby/4.0.9/bin/ruby --disable=gems,rubyopt /opt/homebrew/Library/Homebrew/utils/emudhra_certificates.rb
+    Password:
+    Removing these roots can break HTTPS connections to some websites.
+    Removed roots that trust compromised eMudhra certificates.
+    Backup: /etc/ssl/cert.pem.bak
+    To restore it:
+      sudo cp -p /etc/ssl/cert.pem.bak /etc/ssl/cert.pem
+    
+    Run `brew doctor` now and after macOS updates, which can restore the roots.
