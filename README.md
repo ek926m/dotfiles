@@ -177,3 +177,6 @@
       sudo cp -p /etc/ssl/cert.pem.bak /etc/ssl/cert.pem
     
     Run `brew doctor` now and after macOS updates, which can restore the roots.
+
+##### pipe in terminal does not work, use this setting
+<img width="734" height="637" alt="Bildschirmfoto 2026-11-09 um 13 10 05" src="https://github.com/user-attachments/assets/e6bbad8c-61c9-428b-bfb0-5f1d3bb4a761" />
